@@ -4,8 +4,8 @@ import { IconTrophy } from "@tabler/icons-react";
 const PrizeData = [
   {
     id: 1,
-    name: "1'st Price",
-    prize: "50,000",
+    name: "1'st Prize",
+    prize: "1,00,000/- Rs",
     benefit: [
       {
         title: "Parks from Devfolio",
@@ -24,7 +24,7 @@ const PrizeData = [
   {
     id: 2,
     name: "2'nd Prize",
-    prize: "30,000",
+    prize: "50,000/- Rs",
     benefit: [
       {
         title: "Parks from Devfolio",
@@ -43,7 +43,7 @@ const PrizeData = [
   {
     id: 3,
     name: "3'rd Prize",
-    prize: "20,000",
+    prize: "30,000/- Rs",
     benefit: [
       {
         title: "Parks from Devfolio",
@@ -61,35 +61,33 @@ const PrizeData = [
   },
 ];
 
-export const PrizesSection = () => {
+export const Prizes = () => {
   return (
-    <div className="home w-screen overflow-hidden pb-10">
+    <div className="home h-full w-screen overflow-hidden p-14 lg:h-screen">
       <div className="stars"></div>
-      <div className="stars2"></div>
-      <div className="stars3"></div>
-      <div className="pt-12 px-10 pb-6 text-gray-100 text-4xl font-bold font-jetbrains_mono">
+      <div className="mb-10 text-center font-jetbrains_mono text-4xl font-bold text-gray-100 lg:mb-0">
         Prizes
       </div>
-      <div className="w-full my-6 flex flex-col justify-between xl:space-x-10 xl:flex-row space-y-4 lg:space-y-0 space-x-0 px-14 h-full">
+      <div className="flex h-full w-fulls space-y-10 lg:space-y-0 flex-wrap items-center justify-evenly">
         {PrizeData.map((value) => (
           <div
             key={value.name}
-            className=" h-[500px] w-[400px] rounded-md p-5 space-y-6 flex justify-center items-center flex-col"
+            className=" flex flex-col m-5 items-center justify-center space-y-5 rounded-md"
           >
-            <div className="bg-white rounded-full p-4">
-              <IconTrophy size={100} className="text-blue-900" />
+            <div className="rounded-full bg-white p-4">
+              <IconTrophy size={90} className="text-blue-900" />
             </div>
-            <div className="text-center text-white text-3xl font-jetbrains_mono font-semibold">
+            <div className="text-center font-jetbrains_mono text-2xl font-semibold text-white">
               {value.name}
-              <div className="text-center mt-2 text-white text-2xl font-jetbrains_mono font-semibold">
+              <div className="mt-2 text-center font-jetbrains_mono text-xl font-semibold text-blue-600">
                 {value.prize}
               </div>
             </div>
-            <ul className="text-white space-y-4 pl-6 text-md font-jetbrains_mono font-medium text-left flex justify-start flex-col">
+            <ul className="flex flex-col justify-start space-y-3 pl-6 text-left font-jetbrains_mono font-medium text-white">
               {value.benefit.map((items) => (
-                <li className="flex items-center text-lg" key={items.title}>
-                  <div className="w-3 h-3 bg-blue-500 mr-2 rounded-full flex items-center justify-center">
-                    <div className="w-1 h-1 bg-white rounded-full"></div>
+                <li className="flex items-center text-sm" key={items.title}>
+                  <div className="mr-2 flex h-3 w-3 items-center justify-center rounded-full bg-blue-500">
+                    <div className="h-1 w-1 rounded-full bg-white"></div>
                   </div>
                   {items.title}
                 </li>

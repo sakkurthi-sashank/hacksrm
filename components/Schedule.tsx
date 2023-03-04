@@ -30,14 +30,12 @@ export const Schedule = () => {
   return (
     <div className={clsx("home w-screen overflow-hidden")}>
       <div className="stars"></div>
-      <div className="stars2"></div>
-      <div className="stars3"></div>
-      <div className="pt-8 px-10 text-4xl text-gray-100 font-bold font-jetbrains_mono">
+      <div className="px-10 pt-8 font-jetbrains_mono text-4xl font-bold text-gray-100">
         Schedule
       </div>
-      <div className="w-full h-full flex">
-        <div className="py-12 w-full flex flex-col space-y-8 px-10 font-inter">
-          <ol className="border-l-2 border-blue-500 space-y-6">
+      <div className="flex h-full w-full">
+        <div className="flex w-full flex-col space-y-8 py-12 px-10 font-inter">
+          <ol className="space-y-6 border-l-2 border-blue-500">
             {TimelineData.map((value) => (
               <li key={value.title}>
                 <div className="flex-start md:flex">
@@ -58,7 +56,7 @@ export const Schedule = () => {
             ))}
           </ol>
         </div>
-        <div className="w-full hidden xl:block h-full pt-20">
+        <div className="hidden h-full w-full pt-28 xl:block">
           <picture>
             <img src="./timeline.svg" className="max-w-xl" alt="" />
           </picture>

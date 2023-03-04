@@ -7,5 +7,6 @@
     "Hackathon",
     "jetbrains",
     "tabler"
-  ]
+  ],
+  "css.lint.unknownAtRules": "ignore"
 }
