@@ -74,7 +74,7 @@ export const Main = () => {
         </div>
       </div>
       {/* Hero Section */}
-      <div className="flex h-[70%] flex-col items-center justify-between font-jetbrains_mono font-semibold lg:flex-row">
+      <div className="flex h-[65%] flex-col items-center justify-between font-jetbrains_mono font-semibold lg:flex-row">
         <div className="flex h-full w-full flex-col items-center justify-center space-y-4">
           <div className="font-jetbrains_mono text-3xl text-white md:text-4xl xl:text-4xl">
             Hackathon Starts In

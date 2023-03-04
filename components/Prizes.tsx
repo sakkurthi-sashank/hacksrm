@@ -63,7 +63,7 @@ const PrizeData = [
 
 export const Prizes = () => {
   return (
-    <div className="home h-full w-screen overflow-hidden p-14 lg:h-screen">
+    <div className="home h-full w-screen overflow-hidden p-0 py-6 lg:p-14 lg:h-screen">
       <div className="stars"></div>
       <div className="mb-10 text-center font-jetbrains_mono text-4xl font-bold text-gray-100 lg:mb-0">
         Prizes
@@ -72,7 +72,7 @@ export const Prizes = () => {
         {PrizeData.map((value) => (
           <div
             key={value.name}
-            className=" flex flex-col m-5 items-center justify-center space-y-5 rounded-md"
+            className="flex flex-col m-5 items-center justify-center space-y-5 rounded-md"
           >
             <div className="rounded-full bg-white p-4">
               <IconTrophy size={90} className="text-blue-900" />

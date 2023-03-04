@@ -22,7 +22,8 @@ export const TimelineData = [
   {
     date: "023.07.2021",
     title: "Hackathon Ends",
-    description: "Participants Need to Submit their projects",
+    description:
+      "Participants Need to Submit their projects in Devfolio before dead Line",
   },
 ];
 
