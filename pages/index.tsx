@@ -1,6 +1,7 @@
 import { Main } from "@/components/Main";
 import { Prizes } from "@/components/Prizes";
 import { Schedule } from "@/components/Schedule";
+import { Themes } from "@/components/Themes";
 import clsx from "clsx";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Head from "next/head";
@@ -25,6 +26,7 @@ const index = () => {
       <Main />
       <Schedule />
       <Prizes />
+      <Themes />
     </div>
   );
 };

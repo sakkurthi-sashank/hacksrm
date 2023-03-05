@@ -43,7 +43,7 @@ export const Schedule = () => {
                   <div className="-ml-[16px] flex h-[30px] w-[30px] items-center justify-center rounded-full bg-blue-100 text-blue-600">
                     <IconCalendarEvent className="h-4 w-4" />
                   </div>
-                  <div className="ml-6 mb-10 block max-w-md rounded-lg">
+                  <div className="ml-6 mb-4 block max-w-md rounded-lg">
                     <div className="space-y-2">
                       <div className="text-sm text-gray-200">{value.date}</div>
                       <div className="text-lg text-gray-50">{value.title}</div>

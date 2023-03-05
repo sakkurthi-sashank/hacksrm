@@ -6,14 +6,15 @@ const Links = () => [
   },
   {
     id: 2,
-    name: "Prices",
-    href: "/prices",
-  },
-  {
-    id: 3,
     name: "Schedule",
     href: "/schedule",
   },
+  {
+    id: 3,
+    name: "Prizes",
+    href: "/prizes",
+  },
+
   {
     id: 4,
     name: "Themes",
