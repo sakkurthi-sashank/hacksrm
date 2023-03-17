@@ -47,9 +47,8 @@ const themesData = [
 
 export const Themes = () => {
   return (
-    <div className="home w-screen overflow-hidden p-8">
-      <div className="stars"></div>
-      <div className="mb-10 w-full font-jetbrains_mono text-4xl font-semibold text-white">
+    <div className="w-screen p-8">
+      <div className="pb-5 text-center font-josefin_sans text-5xl font-bold text-gray-100">
         Themes
       </div>
       <div className="flex flex-wrap justify-around">
@@ -59,15 +58,15 @@ export const Themes = () => {
             key={value.id}
           >
             <div className="w-full space-y-6">
-              <div className="w-56 rounded-md bg-white py-1.5 text-center font-jetbrains_mono text-xl font-semibold text-blue-700">
+              <div className="w-fit rounded-md bg-white font-josefin_sans text-xl font-semibold text-blue-700 px-2 py-1.5">
                 {value.name}
               </div>
-              <div className="max-w-lg font-inter text-base text-gray-200">
+              <div className="max-w-lg font-josefin_sans font-light text-white">
                 {value.description}
               </div>
             </div>
             <picture className="flex w-full justify-center">
-              <img src={value.img} className="w-60" alt="" />
+              <img src={value.img} width={240} height={"100%"} alt="" />
             </picture>
           </div>
         ))}

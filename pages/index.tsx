@@ -3,13 +3,19 @@ import { Prizes } from "@/components/Prizes";
 import { Schedule } from "@/components/Schedule";
 import { Themes } from "@/components/Themes";
 import clsx from "clsx";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, Josefin_Sans, Poppins } from "next/font/google";
 import Head from "next/head";
 
-const jetbrains_mono = JetBrains_Mono({
-  weight: ["300", "700"],
+const josefin_Sans = Josefin_Sans({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
+  variable: "--font-josefin-sans",
+});
+
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
 });
 
 const inter = Inter({
@@ -19,9 +25,12 @@ const inter = Inter({
 
 const index = () => {
   return (
-    <div className={clsx(jetbrains_mono.variable, inter.variable)}>
+    <div
+      className={clsx(josefin_Sans.variable, inter.variable, poppins.variable)}
+    >
       <Head>
         <title>Home | Hack Srm</title>
+        <meta name="description" content="HackSrm website" />
       </Head>
       <Main />
       <Schedule />

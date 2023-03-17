@@ -1,23 +1,31 @@
 import React from "react";
-import { IconTrophy } from "@tabler/icons-react";
+import { IconDiscountCheckFilled, IconMedal } from "@tabler/icons-react";
+import clsx from "clsx";
 
 const PrizeData = [
   {
     id: 1,
     name: "1'st Prize",
     prize: "1,00,000/- Rs",
+    medalBackground: "text-yellow-500",
     benefit: [
       {
-        title: "Parks from Devfolio",
+        title: "6 months free 1Password family subscription.",
       },
       {
-        title: "10,000/- Rs from Polygon",
+        title: "Coding Blocks 90% off discount coupons",
       },
       {
-        title: "Parks from Devfolio",
+        title: "CipherSchools 85% off discount coupons",
       },
       {
-        title: "10,000/- Rs from Polygon",
+        title: "Swags from Devfolio",
+      },
+      {
+        title: "Fold Premium access",
+      },
+      {
+        title: " Internship and Full-time opportunities",
       },
     ],
   },
@@ -25,18 +33,22 @@ const PrizeData = [
     id: 2,
     name: "2'nd Prize",
     prize: "50,000/- Rs",
+    medalBackground: "text-[#808080]",
     benefit: [
       {
-        title: "Parks from Devfolio",
+        title: "Swags from Devfolio",
       },
       {
-        title: "10,000/- Rs from Polygon",
+        title: "Coding Blocks 80% off discount coupons",
       },
       {
-        title: "Parks from Devfolio",
+        title: "CipherSchools 75% off discount coupons",
       },
       {
-        title: "10,000/- Rs from Polygon",
+        title: "Fold Premium access",
+      },
+      {
+        title: "Internship and Full-time opportunities",
       },
     ],
   },
@@ -44,18 +56,22 @@ const PrizeData = [
     id: 3,
     name: "3'rd Prize",
     prize: "30,000/- Rs",
+    medalBackground: "text-[#cd7f32]",
     benefit: [
       {
-        title: "Parks from Devfolio",
+        title: "Swags from Devfolio",
       },
       {
-        title: "10,000/- Rs from Polygon",
+        title: "Coding Blocks 70% off discount coupons",
       },
       {
-        title: "Parks from Devfolio",
+        title: "CipherSchools 65% off discount coupons",
       },
       {
-        title: "10,000/- Rs from Polygon",
+        title: "Fold Premium access",
+      },
+      {
+        title: "Internship and Full-time opportunities",
       },
     ],
   },
@@ -63,36 +79,45 @@ const PrizeData = [
 
 export const Prizes = () => {
   return (
-    <div className="home h-full w-screen overflow-hidden p-0 py-6 lg:p-14 lg:h-screen">
-      <div className="stars"></div>
-      <div className="mb-10 text-center font-jetbrains_mono text-4xl font-bold text-gray-100 lg:mb-0">
-        Prizes
+    <div className="w-screen py-10">
+      <div className="pt-10 text-center font-josefin_sans text-5xl font-bold text-gray-100">
+        Prize&nbsp;Pool
       </div>
-      <div className="flex h-full w-fulls space-y-10 lg:space-y-0 flex-wrap items-center justify-evenly">
+      <div className="flex h-full w-full flex-wrap justify-evenly px-2 py-10">
         {PrizeData.map((value) => (
-          <div
-            key={value.name}
-            className="flex flex-col m-5 items-center justify-center space-y-5 rounded-md"
-          >
-            <div className="rounded-full bg-white p-4">
-              <IconTrophy size={90} className="text-blue-900" />
+          <div key={value.id} className="m-5 w-96 rounded-xl bg-white">
+            <div>
+              <IconMedal
+                className={clsx(
+                  "mx-auto mt-5 h-36 w-36",
+                  value.medalBackground
+                )}
+              />
             </div>
-            <div className="text-center font-jetbrains_mono text-2xl font-semibold text-white">
+            <div className="p-2 text-center font-josefin_sans text-3xl font-bold text-gray-800">
               {value.name}
-              <div className="mt-2 text-center font-jetbrains_mono text-xl font-semibold text-blue-600">
-                {value.prize}
-              </div>
             </div>
-            <ul className="flex flex-col justify-start space-y-3 pl-6 text-left font-jetbrains_mono font-medium text-white">
-              {value.benefit.map((items) => (
-                <li className="flex items-center text-sm" key={items.title}>
-                  <div className="mr-2 flex h-3 w-3 items-center justify-center rounded-full bg-blue-500">
-                    <div className="h-1 w-1 rounded-full bg-white"></div>
+            <div className="p-2 text-center font-inter text-xl font-light text-gray-700">
+              {value.prize}
+            </div>
+            <div className="space-y-2 py-4 pb-8">
+              {value.benefit.map((value) => (
+                <div
+                  key={value.title}
+                  className="flex space-x-2 px-8 py-0.5 text-start"
+                >
+                  <div className="rounded-full">
+                    <IconDiscountCheckFilled className="inline-block w-6 text-blue-600" />
                   </div>
-                  {items.title}
-                </li>
+                  <div
+                    key={value.title}
+                    className="font-josefin_sans text-base font-normal text-gray-800"
+                  >
+                    {value.title}
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
