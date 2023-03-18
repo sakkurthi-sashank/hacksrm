@@ -79,7 +79,7 @@ const PrizeData = [
 
 export const Prizes = () => {
   return (
-    <div className="w-screen py-10">
+    <div className="py-10">
       <div className="pt-10 text-center font-josefin_sans text-5xl font-bold text-gray-100">
         Prize&nbsp;Pool
       </div>

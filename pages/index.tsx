@@ -32,10 +32,12 @@ const index = () => {
         <title>Home | Hack Srm</title>
         <meta name="description" content="HackSrm website" />
       </Head>
-      <Main />
-      <Schedule />
-      <Prizes />
-      <Themes />
+      <div className="flex flex-col">
+        <Main />
+        <Schedule />
+        <Prizes />
+        <Themes />
+      </div>
     </div>
   );
 };

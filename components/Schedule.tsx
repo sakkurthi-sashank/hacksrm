@@ -30,7 +30,7 @@ export const TimelineData = [
 
 export const Schedule = () => {
   return (
-    <div className="w-screen py-14">
+    <div className="py-14">
       <div className="text-center font-josefin_sans text-5xl font-bold text-gray-100">
         Schedule
       </div>

@@ -47,7 +47,7 @@ const themesData = [
 
 export const Themes = () => {
   return (
-    <div className="w-screen p-8">
+    <div className="p-8">
       <div className="pb-5 text-center font-josefin_sans text-5xl font-bold text-gray-100">
         Themes
       </div>

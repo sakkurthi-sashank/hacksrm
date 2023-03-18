@@ -57,7 +57,7 @@ const Dates = [
 
 export const Main = () => {
   return (
-    <div className="flex h-screen w-screen flex-col">
+    <div className="flex h-screen flex-col">
       {/* Header Section */}
       <div className="flex h-16 items-center justify-evenly px-6">
         <div className="hidden w-full md:block lg:w-2/3">
