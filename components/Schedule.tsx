@@ -1,5 +1,4 @@
 import { IconCalendarEvent } from "@tabler/icons-react";
-import { clsx } from "clsx";
 import React from "react";
 
 export const TimelineData = [

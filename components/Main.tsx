@@ -65,7 +65,7 @@ export const Main = () => {
             {Links().map((link) => (
               <div
                 key={link.id}
-                className="cursor-pointer font-normal text-gray-100 hover:text-sky-500"
+                className="cursor-pointer rounded-md px-2 py-1 font-normal text-gray-100 hover:bg-gray-50 hover:text-sky-600"
               >
                 {link.name}
               </div>
