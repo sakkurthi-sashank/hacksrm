@@ -1,5 +1,3 @@
-import { IconSparkles } from "@tabler/icons-react";
-
 const themesData = [
   {
     id: 1,
@@ -47,26 +45,23 @@ const themesData = [
 
 export const Themes = () => {
   return (
-    <div className="relative">
-      <div className="background-animation"></div>
+    <div className="bg-gray-950 ">
       <div className="p-3">
-        <div className="mb-14 text-center text-4xl font-bold text-white">
+        <div className="mb-10 text-center font-orbitron text-4xl font-semibold text-white">
           Themes
         </div>
-        <div className="flex flex-wrap justify-around">
+        <div className="flex flex-wrap justify-around py-10">
           {themesData.map((value) => (
             <div
-              className="mb-10 mt-6 flex flex-col justify-between space-y-5 rounded-lg bg-opacity-60 bg-clip-padding p-5 backdrop-blur-xl backdrop-filter"
+              className="mb-10 mt-6 flex flex-col justify-between space-y-5 rounded-xl border-2 border-violet-500 bg-violet-700 bg-opacity-5 p-5"
               key={value.id}
             >
+              <div className="relative">
+                <div className="background-animation"></div>
+              </div>
               <div className="w-full space-y-3">
-                <div className="flex items-center space-x-4">
-                  <div className="flex h-12 w-12 flex-none items-center justify-center rounded-lg text-gray-100">
-                    <IconSparkles size={24} />
-                  </div>
-                  <div className="w-fit rounded-md font-inter text-xl font-semibold text-gray-100">
-                    {value.name}
-                  </div>
+                <div className="w-fit rounded-md font-inter text-xl font-semibold text-gray-100">
+                  {value.name}
                 </div>
                 <div className="max-w-lg font-inter font-light text-gray-300">
                   {value.description}

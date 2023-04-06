@@ -46,7 +46,7 @@ const FAQData = [
 
 export function FAQ() {
   return (
-    <div className="relative min-h-screen py-4">
+    <div className="relative min-h-screen bg-gray-950 py-4">
       <div className="background-animation"></div>
       <div className="mx-auto px-4 md:px-10 ">
         <div className="mb-20 text-4xl font-bold text-white">

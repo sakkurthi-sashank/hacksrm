@@ -10,23 +10,21 @@ import { Schedule } from "@/components/Schedule";
 import { Sponsors } from "@/components/Sponsores";
 import { Themes } from "@/components/Themes";
 import { WhyHackSRMAp } from "@/components/WhyHackSrmAp";
-import { Josefin_Sans, Inter } from "next/font/google";
-import clsx from "clsx";
-
-const josefin_Sans = Josefin_Sans({
-  weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
-  variable: "--font-josefin-sans",
-});
+import { Inter, Orbitron } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  variable: "--font-orbitron",
+});
+
 export default function Home() {
   return (
-    <div className={clsx(josefin_Sans.variable, inter.variable)}>
+    <div className={inter.variable + " " + orbitron.variable}>
       <Header />
       <Hero />
       <WhyHackSRMAp />

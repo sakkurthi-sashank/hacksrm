@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        josefin_sans: "var(--font-josefin-sans)",
         inter: "var(--font-inter)",
+        orbitron: "var(--font-orbitron)",
       },
     },
   },

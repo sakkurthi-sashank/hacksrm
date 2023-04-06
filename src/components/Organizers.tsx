@@ -61,7 +61,7 @@ const OrganizersData = [
 
 export const Organizers = () => {
   return (
-    <div className="relative min-h-screen py-6 sm:py-8 lg:py-16">
+    <div className="relative min-h-screen bg-gray-950 py-6 sm:py-8 lg:py-16">
       <div className="background-animation"></div>
       <div className="mx-auto max-w-screen-xl px-4 md:px-8 ">
         <div className="mb-20 text-4xl font-bold text-white">

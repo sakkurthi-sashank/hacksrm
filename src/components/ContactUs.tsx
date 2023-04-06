@@ -11,11 +11,11 @@ export const ContactUs = () => {
             Contact Us
           </div>
         </div>
-        <div className="mx-auto max-w-2xl px-6 text-center font-inter text-lg sm:px-0 sm:text-2xl">
+        <div className="mx-auto max-w-2xl px-6 text-center font-inter text-lg text-gray-200 sm:px-0 sm:text-2xl">
           Our team is always ready to help you. If you have any questions, feel
           free to contact us.
         </div>
-        <div className="mt-16 flex w-full flex-col items-center justify-around space-y-10 sm:mt-24 sm:flex-row sm:space-y-0">
+        <div className="mt-16 flex w-full flex-col items-center justify-around space-y-10 text-gray-200 sm:mt-24 sm:flex-row sm:space-y-0">
           <div className="flex flex-col items-center">
             <IconMail className="h-14 w-14 sm:h-24 sm:w-24" stroke={1} />
             <div className="text-center text-xl antialiased sm:text-2xl">
