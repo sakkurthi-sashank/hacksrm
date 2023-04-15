@@ -40,10 +40,10 @@ const WhyHackSRMApData = [
   },
 ];
 
-export function WhyHackSRMAp() {
+export const WhyHackSRMAp = () => {
   return (
     <section className="relative my-0 min-h-screen bg-gray-950 px-6 py-16 sm:px-14 sm:py-28">
-      <div className="background-animation"></div>
+      <div className="absolute bottom-[50%] left-0 right-0 top-[50%] z-0 m-auto h-[200px] max-w-4xl bg-gradient-to-b from-blue-700 to-gray-950 blur-[160px]"></div>
       <picture>
         <img
           alt="Background pattern"
@@ -69,8 +69,8 @@ export function WhyHackSRMAp() {
         <div className="mt-20">
           <ul className="grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {WhyHackSRMApData.map((feature, index) => (
-              <li className="flex gap-x-4" key={feature.title}>
-                <div className="flex h-12 w-12 flex-none items-center justify-center rounded-lg border border-gray-700 bg-gray-900 text-sky-500">
+              <li className="z-10 flex gap-x-4" key={feature.title}>
+                <div className="flex h-12 w-12 flex-none items-center justify-center rounded-lg border border-gray-700 bg-gray-900 text-blue-500">
                   {feature.icon}
                 </div>
                 <div>
@@ -88,4 +88,4 @@ export function WhyHackSRMAp() {
       </div>
     </section>
   );
-}
+};

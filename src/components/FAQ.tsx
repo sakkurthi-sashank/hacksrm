@@ -47,14 +47,18 @@ const FAQData = [
 export function FAQ() {
   return (
     <div className="relative min-h-screen bg-gray-950 py-4">
-      <div className="background-animation"></div>
-      <div className="mx-auto px-4 md:px-10 ">
+      <div className="absolute bottom-[50%] left-0 right-0 top-[50%] z-0 m-auto h-[200px] max-w-4xl bg-gradient-to-b from-blue-700 to-gray-950 blur-[160px]"></div>
+      <div className="mx-auto px-4 md:px-10">
         <div className="mb-20 text-4xl font-bold text-white">
           Frequently Asked Questions
         </div>
         <div className="mx-auto flex max-w-2xl flex-col space-y-3 rounded-md">
           {FAQData.map((faq) => {
-            return <QuestionsAndAnswers key={faq.question} faq={faq} />;
+            return (
+              <div key={faq.question} className="z-10">
+                <QuestionsAndAnswers key={faq.question} faq={faq} />
+              </div>
+            );
           })}
         </div>
       </div>
@@ -75,7 +79,7 @@ const QuestionsAndAnswers = ({
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className="flex cursor-pointer justify-between  gap-2 py-3 text-gray-800 hover:text-cyan-500 active:text-cyan-500"
+        className="flex cursor-pointer justify-between  gap-2 py-3 text-gray-800 hover:text-blue-500 active:text-cyan-500"
       >
         <span className="md:text-md font-normal antialiased transition duration-100">
           {faq.question}
@@ -85,7 +89,7 @@ const QuestionsAndAnswers = ({
         </span>
       </div>
       {isOpen ? (
-        <p className="mb-4 font-normal text-gray-600 antialiased">
+        <p className="mb-4 py-2 font-normal text-gray-600 antialiased">
           {faq.answer}
         </p>
       ) : null}

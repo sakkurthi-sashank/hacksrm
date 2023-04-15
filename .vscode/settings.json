@@ -1,3 +1,11 @@
 {
-  "cSpell.words": ["hackathon", "hacksrm", "Nada", "tabler", "webp"]
+  "cSpell.words": [
+    "Devfolio",
+    "hackathon",
+    "hacksrm",
+    "Nada",
+    "tabler",
+    "webp"
+  ],
+  "html.format.wrapAttributes": "auto"
 }

@@ -7,7 +7,7 @@ import { Hero } from "@/components/Hero";
 import { Organizers } from "@/components/Organizers";
 import { Prizes } from "@/components/Prizes";
 import { Schedule } from "@/components/Schedule";
-import { Sponsors } from "@/components/Sponsores";
+import { Sponsors } from "@/components/Sponsors";
 import { Themes } from "@/components/Themes";
 import { WhyHackSRMAp } from "@/components/WhyHackSrmAp";
 import { Inter, Orbitron } from "next/font/google";
