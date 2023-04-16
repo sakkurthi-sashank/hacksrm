@@ -8,8 +8,8 @@ const NavLinks = [
   "Schedule",
   "FAQs",
   "Sponsors",
-  // "Team",
-  // "Contact Us",
+  "Team",
+  "Contact Us",
 ];
 
 export const Header = () => {
@@ -21,7 +21,7 @@ export const Header = () => {
         <div className="flex h-full items-center justify-around px-4">
           {NavLinks.map((link) => (
             <div
-              className="cursor-pointer font-inter text-gray-200 antialiased hover:text-blue-500"
+              className="cursor-pointer font-ibm_plex_mono text-gray-200 antialiased hover:text-blue-500"
               key={link}
             >
               {link}
@@ -75,7 +75,7 @@ export const Header = () => {
           <div className="absolute left-0 right-0 top-14 flex flex-col space-y-6 bg-gray-950 bg-opacity-95 px-10 py-8 backdrop-blur-lg backdrop-filter">
             {NavLinks.map((link) => (
               <div
-                className="cursor-pointer font-inter text-gray-200 antialiased hover:text-blue-500"
+                className="cursor-pointer font-ibm_plex_mono text-gray-200 antialiased hover:text-blue-500"
                 key={link}
               >
                 {link}

@@ -29,7 +29,7 @@ export const CategoryPrizes = () => {
   return (
     <div className="relative min-h-screen bg-gray-950 px-3 py-10">
       <div className="absolute bottom-[50%] left-0 right-0 top-[50%] z-0 m-auto h-[200px] max-w-4xl bg-gradient-to-b from-blue-700 to-gray-950 blur-[160px]"></div>
-      <div className="mb-10 text-center font-orbitron text-4xl font-semibold text-white">
+      <div className="mb-10 text-center font-ibm_plex_mono text-4xl font-semibold text-white">
         Category Prizes
       </div>
       <div className="flex flex-wrap justify-evenly gap-10 py-8">

@@ -58,24 +58,27 @@ export const Themes = () => {
   return (
     <div className="bg-gray-950 ">
       <div className="p-3">
-        <div className="mb-10 text-center font-orbitron text-4xl font-semibold text-white">
+        <div className="mb-10 text-center font-ibm_plex_mono text-4xl font-semibold text-white">
           Hackathon Themes
         </div>
         <div className="grid gap-4 px-6 sm:grid-cols-2 md:gap-6 lg:grid-cols-2 xl:grid-cols-2 xl:gap-8">
           {themesData.map((theme) => (
-            <div className="flex flex-col items-center overflow-hidden rounded-lg border border-blue-800 md:flex-row" key={theme.id}>
+            <div
+              className="flex flex-col items-center overflow-hidden rounded-lg border border-blue-800 md:flex-row"
+              key={theme.id}
+            >
               <a className="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
                 <div className="absolute inset-0 flex h-full w-full items-center justify-center bg-gray-950 text-blue-500">
                   {theme.icon}
                 </div>
               </a>
 
-              <div className="flex flex-col gap-2 p-4 lg:p-6">
+              <div className="flex flex-col gap-2 p-4 font-ibm_plex_mono lg:p-6">
                 <h2 className="text-xl font-semibold text-gray-200">
                   {theme.name}
                 </h2>
 
-                <p className="text-gray-400">{theme.description}</p>
+                <p className=" text-gray-400">{theme.description}</p>
               </div>
             </div>
           ))}

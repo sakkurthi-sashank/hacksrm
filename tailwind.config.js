@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         inter: "var(--font-inter)",
         orbitron: "var(--font-orbitron)",
+        ibm_plex_mono: "var(--font-ibm-plex-mono)",
       },
     },
   },

@@ -10,11 +10,17 @@ import { Schedule } from "@/components/Schedule";
 import { Sponsors } from "@/components/Sponsors";
 import { Themes } from "@/components/Themes";
 import { WhyHackSRMAp } from "@/components/WhyHackSrmAp";
-import { Inter, Orbitron } from "next/font/google";
+import { Inter, Orbitron, IBM_Plex_Mono } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const ibm_plex_mono = IBM_Plex_Mono({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-ibm-plex-mono",
 });
 
 const orbitron = Orbitron({
@@ -24,16 +30,20 @@ const orbitron = Orbitron({
 
 export default function Home() {
   return (
-    <div className={inter.variable + " " + orbitron.variable}>
+    <div
+      className={
+        inter.variable + " " + orbitron.variable + " " + ibm_plex_mono.variable
+      }
+    >
       <Header />
       <Hero />
       <WhyHackSRMAp />
       <Prizes />
-      <Challenges />
-      <CategoryPrizes />
+      {/* <Challenges />
+      <CategoryPrizes /> */}
       <Themes />
-      <Schedule />
-      <Sponsors />
+      {/* <Schedule />
+      <Sponsors /> */}
       <Organizers />
       <FAQ />
       <ContactUs />
