@@ -61,7 +61,7 @@ const OrganizersData = [
 
 export const Organizers = () => {
   return (
-    <div className="relative min-h-screen bg-gray-950 py-6 sm:py-8 lg:py-16">
+    <div className="min-h-screen bg-gray-950 py-6 sm:py-8 lg:py-16">
       <div className="mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="py-16 text-center font-ibm_plex_mono text-4xl font-bold text-white antialiased sm:text-5xl">
           Organizers Team

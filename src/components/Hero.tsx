@@ -31,7 +31,7 @@ let Timer = [
 export const Hero = () => {
   return (
     <>
-      <div className="relative flex min-h-screen flex-col items-center justify-evenly bg-black">
+      <div className="flex min-h-screen flex-col items-center justify-evenly bg-gray-950">
         <div className="mt-10 flex flex-row justify-center gap-2 bg-gradient-to-b from-purple-100 to-blue-600 bg-clip-text font-ibm_plex_mono text-4xl font-bold text-transparent lg:text-8xl">
           <div className="flex flex-col gap-2 text-center">
             <span>18</span>
@@ -67,16 +67,20 @@ export const Hero = () => {
             Organized by
           </div>
           <div className="flex items-center justify-center space-x-4">
-            <img
-              src="https://srmap.edu.in/file/2019/12/Logo-2.png?x70332"
-              alt="SRM Logo"
-              className="z-10 h-10 rounded bg-white p-2"
-            />
-            <img
-              src="https://github.com/NextTechLabAP/Branding/blob/master/Logos/With_Text/Unstacked/Unstacked_with_text.png?raw=true"
-              alt="NextTech Logo"
-              className="z-10 h-10 rounded bg-white p-2"
-            />
+            <picture>
+              <img
+                src="https://srmap.edu.in/file/2019/12/Logo-2.png?x70332"
+                alt="SRM Logo"
+                className="z-10 h-10 rounded bg-white p-2"
+              />
+            </picture>
+            <picture>
+              <img
+                src="https://github.com/NextTechLabAP/Branding/blob/master/Logos/With_Text/Unstacked/Unstacked_with_text.png?raw=true"
+                alt="NextTech Logo"
+                className="z-10 h-10 rounded bg-white p-2"
+              />
+            </picture>
           </div>
         </div>
 

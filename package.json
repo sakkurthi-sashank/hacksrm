@@ -10,6 +10,8 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@react-three/drei": "^9.65.3",
+    "@react-three/fiber": "^8.12.1",
     "@tabler/icons-react": "^2.13.2",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
@@ -17,6 +19,7 @@
     "clsx": "^1.2.1",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "maath": "^0.5.3",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",

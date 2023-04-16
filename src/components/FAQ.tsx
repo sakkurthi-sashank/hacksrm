@@ -46,7 +46,7 @@ const FAQData = [
 
 export function FAQ() {
   return (
-    <div className="relative min-h-screen bg-gray-950 py-4">
+    <div className="min-h-screen bg-gray-950 py-4">
       <div className="py-16 text-center font-ibm_plex_mono text-4xl font-bold text-white antialiased sm:text-5xl">
         Frequently Asked Questions
       </div>
@@ -81,9 +81,9 @@ const QuestionsAndAnswers = ({
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className="flex cursor-pointer justify-between  gap-2 py-3 text-gray-200 hover:text-blue-500 active:text-blue-500"
+        className="flex cursor-pointer justify-between  gap-2 py-3 text-gray-100 hover:text-blue-500 active:text-blue-500"
       >
-        <span className="md:text-md font-normal antialiased transition duration-100">
+        <span className="text-lg font-normal antialiased transition duration-100">
           {faq.question}
         </span>
         <span>
@@ -91,7 +91,7 @@ const QuestionsAndAnswers = ({
         </span>
       </div>
       {isOpen ? (
-        <p className="mb-4 py-2 font-normal text-gray-400 antialiased">
+        <p className="mb-4 py-2 font-normal text-gray-300 antialiased">
           {faq.answer}
         </p>
       ) : null}

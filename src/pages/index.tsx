@@ -11,6 +11,7 @@ import { Sponsors } from "@/components/Sponsors";
 import { Themes } from "@/components/Themes";
 import { WhyHackSRMAp } from "@/components/WhyHackSrmAp";
 import { Inter, Orbitron, IBM_Plex_Mono } from "next/font/google";
+import { BackgroundAnimation } from "@/components/BackgroundAnimation";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function Home() {
         inter.variable + " " + orbitron.variable + " " + ibm_plex_mono.variable
       }
     >
+      <BackgroundAnimation />
       <Header />
       <Hero />
       <WhyHackSRMAp />

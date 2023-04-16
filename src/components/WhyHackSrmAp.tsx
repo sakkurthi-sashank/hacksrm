@@ -42,7 +42,7 @@ const WhyHackSRMApData = [
 
 export const WhyHackSRMAp = () => {
   return (
-    <section className="relative my-0 min-h-screen bg-gray-950 px-6 py-16 sm:px-14 sm:py-28">
+    <section className="my-0 min-h-screen bg-gray-950 px-6 py-16 sm:px-14 sm:py-28">
       <div className="text-gray-300">
         <div className="max-w-xl space-y-3 font-inter">
           <h2 className="mb-6 font-ibm_plex_mono text-3xl font-semibold text-gray-100 sm:text-4xl">

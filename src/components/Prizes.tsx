@@ -43,43 +43,41 @@ const plans = [
 
 export function Prizes() {
   return (
-    <section className="min-h-screen bg-slate-950 px-3 pb-10 md:pb-0">
-      <div className="relative text-gray-300">
-        <div className="mb-10 text-center font-ibm_plex_mono text-4xl font-semibold text-white">
-          Prizes Worth
-        </div>
-        <div className="flex flex-wrap items-center justify-around">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`relative mt-6 flex min-h-[500px] min-w-[330px] max-w-sm flex-1 flex-col items-stretch rounded-xl py-2 ${
-                plan.isMostPop
-                  ? "border-2 border-blue-400 bg-blue-700 bg-opacity-10"
-                  : "border border-gray-800"
-              }`}
-            >
-              <div className="flex flex-1 flex-col rounded-xl">
-                <div className="space-y-4 p-10">
-                  <span className="text-xl font-medium text-gray-200">
-                    {plan.name}
-                  </span>
-                  <div className="text-3xl font-semibold text-blue-400">
-                    ₹ {plan.price}
-                    <span className="text-xl font-normal">/-</span>
-                  </div>
+    <section className="min-h-screen bg-slate-950 px-3 pb-10 text-gray-300 md:pb-0">
+      <div className="mb-10 text-center font-ibm_plex_mono text-4xl font-semibold text-white">
+        Prizes Worth
+      </div>
+      <div className="flex flex-wrap items-center justify-around">
+        {plans.map((plan, index) => (
+          <div
+            key={index}
+            className={`relative mt-6 flex min-h-[500px] min-w-[330px] max-w-sm flex-1 flex-col items-stretch rounded-xl py-2 ${
+              plan.isMostPop
+                ? "border-2 border-blue-400 bg-blue-700 bg-opacity-10"
+                : "border border-gray-800"
+            }`}
+          >
+            <div className="flex flex-1 flex-col rounded-xl">
+              <div className="space-y-4 p-10">
+                <span className="text-xl font-medium text-gray-200">
+                  {plan.name}
+                </span>
+                <div className="text-3xl font-semibold text-blue-400">
+                  ₹ {plan.price}
+                  <span className="text-xl font-normal">/-</span>
                 </div>
-                <ul className="space-y-3 px-8 pb-4 font-ibm_plex_mono">
-                  {plan.features.map((feature, index) => (
-                    <li key={index} className="flex items-center gap-5">
-                      <IconCheck size={20} />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
               </div>
+              <ul className="space-y-3 px-8 pb-4 font-ibm_plex_mono">
+                {plan.features.map((feature, index) => (
+                  <li key={index} className="flex items-center gap-5">
+                    <IconCheck size={20} />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
