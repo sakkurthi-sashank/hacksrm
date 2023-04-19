@@ -12,11 +12,10 @@
   "dependencies": {
     "@react-three/drei": "^9.65.3",
     "@react-three/fiber": "^8.12.1",
-    "@tabler/icons-react": "^2.13.2",
+    "@tabler/icons-react": "^2.16.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
-    "clsx": "^1.2.1",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "maath": "^0.5.3",
@@ -27,9 +26,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.22",
     "prettier": "^2.8.7",
-    "prettier-plugin-tailwindcss": "^0.2.6",
+    "prettier-plugin-tailwindcss": "^0.2.7",
     "tailwindcss": "^3.3.1"
   }
 }

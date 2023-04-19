@@ -56,9 +56,9 @@ export const WhyHackSRMAp = () => {
         </div>
         <div className="mt-20 font-ibm_plex_mono">
           <ul className="grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-            {WhyHackSRMApData.map((feature, index) => (
+            {WhyHackSRMApData.map((feature) => (
               <li className="z-10 flex gap-x-4" key={feature.title}>
-                <div className="flex h-12 w-12 flex-none items-center justify-center rounded-lg border border-gray-700 bg-gray-900 text-blue-500">
+                <div className="flex h-12 w-12 flex-none items-center justify-center rounded-md border border-gray-800 text-blue-500">
                   {feature.icon}
                 </div>
                 <div>

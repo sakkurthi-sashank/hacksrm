@@ -15,14 +15,16 @@ export const BackgroundAnimation = () => {
 
 export const Stars = (props: any) => {
   const ref = useRef<HTMLInputElement>();
+
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.5 })
+    random.inSphere(new Float32Array(4500), { radius: 1.25 })
   );
-  useFrame((state, delta) => {
+
+  useFrame((_state, delta) => {
     // @ts-ignore
-    ref.current.rotation.x -= delta / 10;
+    ref.current.rotation.x -= delta / 30;
     // @ts-ignore
-    ref.current.rotation.y -= delta / 15;
+    ref.current.rotation.y -= delta / 35;
   });
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
@@ -35,7 +37,7 @@ export const Stars = (props: any) => {
       >
         <PointMaterial
           transparent
-          color="#e5e7eb"
+          color="#6b7280"
           size={0.005}
           sizeAttenuation={true}
           depthWrite={false}

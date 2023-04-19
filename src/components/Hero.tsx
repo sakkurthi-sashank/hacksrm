@@ -1,55 +1,68 @@
-const timeleft =
-  new Date("May 13, 2023 01:02:00").getTime() - new Date().getTime();
-
-let Timer = [
-  {
-    value:
-      // "00",
-      Math.floor(timeleft / (1000 * 60 * 60 * 24)) < 10
-        ? "0" + Math.floor(timeleft / (1000 * 60 * 60 * 24))
-        : Math.floor(timeleft / (1000 * 60 * 60 * 24)),
-    name: "Days",
-  },
-  {
-    value:
-      // "00",
-      Math.floor((timeleft / (1000 * 60 * 60)) % 24) < 10
-        ? "0" + Math.floor((timeleft / (1000 * 60 * 60)) % 24)
-        : Math.floor((timeleft / (1000 * 60 * 60)) % 24),
-    name: "Hours",
-  },
-  {
-    value:
-      // "00",
-      Math.floor((timeleft / 1000 / 60) % 60) < 10
-        ? "0" + Math.floor((timeleft / 1000 / 60) % 60)
-        : Math.floor((timeleft / 1000 / 60) % 60),
-    name: "Minutes",
-  },
-];
+import { useEffect, useState } from "react";
 
 export const Hero = () => {
+  const [days, setDays] = useState("00");
+  const [hours, setHours] = useState("00");
+  const [minutes, setMinutes] = useState("00");
+  const [seconds, setSeconds] = useState("00");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const timeleft =
+        new Date("May 13, 2023 01:02:00").getTime() - new Date().getTime();
+      setDays(
+        `${
+          Math.floor(timeleft / (1000 * 60 * 60 * 24)) < 10
+            ? "0" + Math.floor(timeleft / (1000 * 60 * 60 * 24))
+            : Math.floor(timeleft / (1000 * 60 * 60 * 24))
+        }`
+      );
+      setHours(
+        `${
+          Math.floor((timeleft / (1000 * 60 * 60)) % 24) < 10
+            ? "0" + Math.floor((timeleft / (1000 * 60 * 60)) % 24)
+            : Math.floor((timeleft / (1000 * 60 * 60)) % 24)
+        }`
+      );
+      setMinutes(
+        `${
+          Math.floor((timeleft / 1000 / 60) % 60) < 10
+            ? "0" + Math.floor((timeleft / 1000 / 60) % 60)
+            : Math.floor((timeleft / 1000 / 60) % 60)
+        }`
+      );
+      setSeconds(
+        `${
+          Math.floor((timeleft / 1000) % 60) < 10
+            ? "0" + Math.floor((timeleft / 1000) % 60)
+            : Math.floor((timeleft / 1000) % 60)
+        }`
+      );
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center justify-evenly bg-gray-950">
-        <div className="mt-10 flex flex-row justify-center gap-2 bg-gradient-to-b from-purple-100 to-blue-600 bg-clip-text font-ibm_plex_mono text-4xl font-bold text-transparent lg:text-8xl">
+      <div className="flex min-h-screen flex-col items-center justify-evenly">
+        <div className="mt-10 flex flex-row justify-center gap-2 bg-gradient-to-b from-purple-200 to-blue-700 bg-clip-text font-ibm_plex_mono text-4xl font-bold text-transparent lg:text-8xl">
           <div className="flex flex-col gap-2 text-center">
-            <span>18</span>
+            <span>{days}</span>
             <span className="text-sm lg:text-lg">Days</span>
           </div>
           <span>:</span>
           <div className="flex flex-col gap-2 text-center">
-            <span>19</span>
+            <span>{hours}</span>
             <span className="text-sm lg:text-lg">Hours</span>
           </div>
           <span>:</span>
           <div className="flex flex-col gap-2 text-center">
-            <span>54</span>
+            <span>{minutes}</span>
             <span className="text-sm lg:text-lg">Minutes</span>
           </div>
           <span>:</span>
           <div className="flex flex-col gap-2 text-center">
-            <span>23</span>
+            <span>{seconds}</span>
             <span className="text-sm lg:text-lg">Seconds</span>
           </div>
         </div>
@@ -63,32 +76,33 @@ export const Hero = () => {
         </div>
 
         <div className="z-10 flex flex-col space-y-5 text-white">
-          <div className="text-center font-ibm_plex_mono text-sm text-white antialiased lg:text-xl">
+          <h5 className="text-center font-ibm_plex_mono text-sm text-white antialiased lg:text-xl">
             Organized by
-          </div>
+          </h5>
+          <h1></h1>
           <div className="flex items-center justify-center space-x-4">
             <picture>
               <img
                 src="https://srmap.edu.in/file/2019/12/Logo-2.png?x70332"
                 alt="SRM Logo"
-                className="z-10 h-10 rounded bg-white p-2"
+                className="z-10 h-10 rounded-sm bg-white p-2"
               />
             </picture>
             <picture>
               <img
                 src="https://github.com/NextTechLabAP/Branding/blob/master/Logos/With_Text/Unstacked/Unstacked_with_text.png?raw=true"
                 alt="NextTech Logo"
-                className="z-10 h-10 rounded bg-white p-2"
+                className="z-10 h-10 rounded-sm bg-white p-2"
               />
             </picture>
           </div>
         </div>
 
-        <div className="z-10 flex w-full justify-center space-x-4">
-          <button className="rounded-md bg-blue-600 px-4 py-3 text-white">
+        <div className="z-10 flex w-full justify-center space-x-4 font-ibm_plex_mono">
+          <button className="rounded-sm bg-blue-700 px-4 py-2 text-white hover:bg-blue-800">
             Apply with Devfolio
           </button>
-          <button className="rounded-md bg-white px-4 py-3 text-blue-600">
+          <button className="rounded-sm bg-white px-4 py-2 text-blue-600 hover:bg-gray-100">
             Join Discord
           </button>
         </div>
