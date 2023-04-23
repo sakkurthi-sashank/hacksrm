@@ -56,7 +56,7 @@ const themesData = [
 
 export const Themes = () => {
   return (
-    <div className="bg-gray-950 ">
+    <div className=" ">
       <div className="p-3">
         <div className="mb-10 text-center font-ibm_plex_mono text-4xl font-semibold text-white">
           Hackathon Themes
@@ -68,7 +68,7 @@ export const Themes = () => {
               key={theme.id}
             >
               <a className="group relative block h-48 w-full shrink-0 self-start overflow-hidden bg-gray-100 md:h-full md:w-32 lg:w-48">
-                <div className="absolute inset-0 flex h-full w-full items-center justify-center bg-gray-950 text-blue-500">
+                <div className="absolute inset-0 flex h-full w-full items-center justify-center  text-blue-500">
                   {theme.icon}
                 </div>
               </a>

@@ -15,7 +15,7 @@ const NavLinks = [
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className="fixed left-0 right-0 top-0 z-20 h-14 bg-gray-950 bg-opacity-80 backdrop-blur-lg backdrop-filter">
+    <div className="fixed left-0 right-0 top-0 z-20 h-14  bg-opacity-80 backdrop-blur-lg backdrop-filter">
       {/* Desktop Header */}
       <div className="hidden h-full md:block">
         <div className="flex h-full items-center justify-around px-4">
@@ -72,7 +72,7 @@ export const Header = () => {
           </button>
         </div>
         {openMenu && (
-          <div className="absolute left-0 right-0 top-14 flex flex-col space-y-6 bg-gray-950 bg-opacity-95 px-10 py-8 backdrop-blur-lg backdrop-filter">
+          <div className="absolute left-0 right-0 top-14 flex flex-col space-y-6  bg-opacity-95 px-10 py-8 backdrop-blur-lg backdrop-filter">
             {NavLinks.map((link) => (
               <div
                 className="cursor-pointer font-ibm_plex_mono text-gray-200 antialiased hover:text-blue-500"

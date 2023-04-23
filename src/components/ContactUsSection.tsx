@@ -2,7 +2,7 @@ import { IconBrandDiscord, IconMail } from "@tabler/icons-react";
 
 export const ContactUs = () => {
   return (
-    <div className="min-h-screen bg-gray-950 py-10">
+    <div className="min-h-screen  py-10">
       <div className="py-16 text-center font-ibm_plex_mono text-4xl font-bold text-white antialiased sm:text-5xl">
         Contact Us
       </div>

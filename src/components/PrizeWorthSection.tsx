@@ -41,7 +41,7 @@ const plans = [
   },
 ];
 
-export function Prizes() {
+export const PrizeWorthSection = () => {
   return (
     <section className="min-h-screen bg-slate-950 px-3 pb-10 text-gray-300 md:pb-0">
       <div className="mb-10 text-center font-ibm_plex_mono text-4xl font-semibold text-white">
@@ -81,4 +81,4 @@ export function Prizes() {
       </div>
     </section>
   );
-}
+};

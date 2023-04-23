@@ -41,9 +41,9 @@ const challengesData = [
   },
 ];
 
-export const Challenges = () => {
+export const ChallengesSection = () => {
   return (
-    <div className="relative bg-gray-950 px-4 py-20">
+    <div className="relative px-4 py-20">
       <div className="mb-10 text-center font-ibm_plex_mono text-4xl font-semibold text-white">
         Sponsor Challenges
       </div>
@@ -52,7 +52,7 @@ export const Challenges = () => {
           <div key={challenge.id} className="z-10">
             <article className="hover:animate-background w-full min-w-[330px] max-w-md rounded-xl bg-gradient-to-r from-blue-500 to-blue-900 p-0.5 shadow-xl shadow-gray-700/25 transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
               <div className="p-1.4 min-h-[180px] rounded-[10px] bg-gray-950/90 p-4 sm:p-6">
-                <h3 className="z-10 mt-0.5 font-inter text-lg font-medium text-white">
+                <h3 className="font-inter z-10 mt-0.5 text-lg font-medium text-white">
                   {challenge.label}
                 </h3>
                 <ul className="text-md mt-2 space-y-2 font-ibm_plex_mono text-gray-400">

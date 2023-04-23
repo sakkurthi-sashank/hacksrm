@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const Hero = () => {
+export const HeroSection = () => {
   const [days, setDays] = useState("00");
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
@@ -45,7 +45,7 @@ export const Hero = () => {
   return (
     <>
       <div className="flex min-h-screen flex-col items-center justify-evenly">
-        <div className="mt-10 flex flex-row justify-center gap-2 bg-gradient-to-b from-purple-200 to-blue-700 bg-clip-text font-ibm_plex_mono text-4xl font-bold text-transparent lg:text-8xl">
+        <div className="mt-10 flex flex-row justify-center gap-2 bg-gradient-to-b from-purple-200 to-blue-700 bg-clip-text text-4xl font-bold text-transparent lg:text-8xl">
           <div className="flex flex-col gap-2 text-center">
             <span>{days}</span>
             <span className="text-sm lg:text-lg">Days</span>
@@ -67,16 +67,16 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="z-10 text-center font-ibm_plex_mono text-6xl font-bold text-white  sm:text-7xl md:text-8xl lg:text-9xl">
+        <div className="z-10 text-center text-6xl font-bold text-white  sm:text-7xl md:text-8xl lg:text-9xl">
           Hack SRM
         </div>
 
-        <div className="z-10 text-center font-ibm_plex_mono text-xl font-normal text-white antialiased  sm:text-xl md:text-2xl lg:text-3xl">
+        <div className="z-10 text-center text-xl font-normal text-white antialiased  sm:text-xl md:text-2xl lg:text-3xl">
           13th - 15th May 2023
         </div>
 
         <div className="z-10 flex flex-col space-y-5 text-white">
-          <h5 className="text-center font-ibm_plex_mono text-sm text-white antialiased lg:text-xl">
+          <h5 className="text-center text-sm text-white antialiased lg:text-xl">
             Organized by
           </h5>
           <h1></h1>
@@ -98,11 +98,11 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="z-10 flex w-full justify-center space-x-4 font-ibm_plex_mono">
-          <button className="rounded-sm bg-blue-700 px-4 py-2 text-white hover:bg-blue-800">
+        <div className="z-10 flex w-full justify-center space-x-4">
+          <button className="rounded-sm bg-blue-700 px-2.5 py-2 text-white hover:bg-blue-800">
             Apply with Devfolio
           </button>
-          <button className="rounded-sm bg-white px-4 py-2 text-blue-600 hover:bg-gray-100">
+          <button className="rounded-sm bg-white px-2.5 py-2 text-blue-600 hover:bg-gray-100">
             Join Discord
           </button>
         </div>

@@ -44,9 +44,9 @@ const FAQData = [
   },
 ];
 
-export function FAQ() {
+export function FAQSection() {
   return (
-    <div className="min-h-screen bg-gray-950 py-4">
+    <div className="min-h-screen  py-4">
       <div className="py-16 text-center font-ibm_plex_mono text-4xl font-bold text-white antialiased sm:text-5xl">
         Frequently Asked Questions
       </div>
