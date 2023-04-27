@@ -1,4 +1,4 @@
-import { ChallengesSection } from "./components/ChallangesSection";
+import { ChallengesSection } from "./components/ChallengesSection";
 import { ContactUs } from "./components/ContactUsSection";
 import { FAQSection } from "./components/FAQSection";
 import { Header } from "./components/Header";
