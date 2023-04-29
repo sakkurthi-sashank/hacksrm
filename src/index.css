@@ -5,6 +5,6 @@
 @tailwind utilities;
 
 html {
-  @apply bg-gray-950 font-ibm_plex_mono;
+  @apply bg-black font-ibm_plex_mono;
   scroll-behavior: smooth;
 }

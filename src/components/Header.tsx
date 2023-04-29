@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const NavLinks = [
+  "Home",
   "About",
   "Prizes",
   "Themes",

@@ -58,7 +58,7 @@ export const Themes = () => {
         {themesData.map((theme) => (
           <div
             key={theme.id}
-            className="flex flex-col items-center justify-center space-y-4 rounded-lg  p-8 shadow-lg bg-gray-950 z-10"
+            className="z-10 flex flex-col items-center justify-center space-y-4  rounded-lg p-8 shadow-lg"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-violet-500">
               {theme.id === 1 && <IconActivity size={32} color="white" />}

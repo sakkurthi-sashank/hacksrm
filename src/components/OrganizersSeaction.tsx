@@ -78,6 +78,13 @@ const OrganizersData = [
     linkedin: "#",
     twitter: "#",
   },
+  {
+    name: "Random Name",
+    image:
+      "https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=256",
+    linkedin: "#",
+    twitter: "#",
+  },
 ];
 
 export const OrganizersSection = () => {

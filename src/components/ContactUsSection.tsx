@@ -26,6 +26,26 @@ export const ContactUs = () => {
           </div>
         </div>
       </div>
+
+      <div className="z-10 flex flex-col space-y-6 pt-8 text-white">
+        <h5 className="text-center text-2xl text-gray-200">Organized by</h5>
+        <div className="flex items-center justify-center space-x-6">
+          <picture>
+            <img
+              src="https://srmap.edu.in/file/2019/12/Logo-2.png?x70332"
+              alt="SRM Logo"
+              className="z-10 h-12 rounded-sm bg-white p-2"
+            />
+          </picture>
+          <picture>
+            <img
+              src="/next-tech-lab-logo.png"
+              alt="NextTech Logo"
+              className="z-10 h-12 rounded-sm bg-white p-2"
+            />
+          </picture>
+        </div>
+      </div>
     </section>
   );
 };

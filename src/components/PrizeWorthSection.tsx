@@ -18,20 +18,23 @@ const plans = [
 
 export const PrizeWorthSection = () => {
   return (
-    <section id="Prizes" className=" my-0 px-6 py-10 sm:px-20 sm:py-24">
-      <div className="mb-6 bg-gradient-to-b from-violet-500 to-violet-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:text-5xl">
+    <section
+      id="Prizes"
+      className="my-0 flex min-h-screen flex-col justify-evenly px-6 py-10 sm:px-20 sm:py-24"
+    >
+      <div className="mb-6 bg-gradient-to-b from-violet-600 to-violet-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:text-5xl">
         Prizes
       </div>
 
-      <div className="mb-10 text-center text-4xl font-semibold text-violet-400 sm:text-5xl">
+      <div className="mb-10 text-center text-4xl font-semibold text-violet-400">
         Worth ₹ 2,00,000 /-
       </div>
 
-      <div className="flex flex-wrap items-center gap-5 justify-around py-10">
+      <div className="flex flex-wrap items-center justify-around gap-5 py-10">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="relative flex w-full max-w-sm flex-col items-center justify-center rounded-lg border-2 border-violet-400 bg-violet-700 bg-opacity-10 px-5 py-10"
+            className="relative flex w-full max-w-sm flex-col items-center justify-center border-2 border-violet-500 bg-violet-700 bg-opacity-20 px-5 py-10"
           >
             <div>
               <img src={plan.imageSrc} className="w-28" alt="" />
