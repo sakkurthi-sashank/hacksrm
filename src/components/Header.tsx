@@ -1,15 +1,14 @@
 import { useState } from "react";
 
 const NavLinks = [
-  "Home",
   "About",
   "Prizes",
   "Themes",
   "Schedule",
-  "FAQs",
   "Sponsors",
-  "Team",
-  "Contact Us",
+  "Organizers",
+  "FAQs",
+  "ContactUs",
 ];
 
 export const Header = () => {
@@ -20,12 +19,13 @@ export const Header = () => {
       <div className="hidden h-full md:block">
         <div className="flex h-full items-center justify-around px-4">
           {NavLinks.map((link) => (
-            <div
-              className="cursor-pointer font-ibm_plex_mono text-gray-200 antialiased hover:text-blue-500"
+            <a
+              className="violet cursor-pointer text-gray-300 antialiased hover:text-violet-500"
               key={link}
+              href={`#${link}`}
             >
               {link}
-            </div>
+            </a>
           ))}
         </div>
       </div>
@@ -74,12 +74,13 @@ export const Header = () => {
         {openMenu && (
           <div className="absolute left-0 right-0 top-14 flex flex-col space-y-6 bg-gray-950  bg-opacity-95 px-10 py-8 backdrop-blur-lg backdrop-filter">
             {NavLinks.map((link) => (
-              <div
-                className="cursor-pointer font-ibm_plex_mono text-gray-200 antialiased text-lg hover:text-blue-500"
+              <a
+                className="violet cursor-pointer text-lg text-gray-200 antialiased hover:text-violet-500"
                 key={link}
+                href={`#${link}`}
               >
                 {link}
-              </div>
+              </a>
             ))}
           </div>
         )}

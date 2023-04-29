@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { OrganizersSection } from "./components/OrganizersSeaction";
 import { PrizeWorthSection } from "./components/PrizeWorthSection";
+import { Themes } from "./components/ThemeSection";
 import { ThreeJsBackground } from "./components/ThreeJsBackground";
 import { WhyHackSRMAp } from "./components/WhyHackSrmApSection";
 
@@ -16,8 +17,9 @@ export const App = () => {
       <HeroSection />
       <WhyHackSRMAp />
       <PrizeWorthSection />
-      <OrganizersSection />
       <ChallengesSection />
+      <Themes />
+      <OrganizersSection />
       <FAQSection />
       <ContactUs />
     </div>

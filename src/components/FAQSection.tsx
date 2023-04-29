@@ -46,8 +46,8 @@ const FAQData = [
 
 export function FAQSection() {
   return (
-    <div className="min-h-screen  py-4">
-      <div className="py-16 text-center font-ibm_plex_mono text-4xl font-bold text-white antialiased sm:text-5xl">
+    <section id="FAQs" className="min-h-screen py-4 pt-20">
+      <div className="mb-20 bg-gradient-to-b from-violet-500 to-violet-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:text-5xl">
         Frequently Asked Questions
       </div>
       <div className="mx-auto px-3">
@@ -61,7 +61,7 @@ export function FAQSection() {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -73,15 +73,12 @@ const QuestionsAndAnswers = ({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div
-      className="border-y border-gray-800 px-4 font-ibm_plex_mono"
-      key={faq.question}
-    >
+    <div className="violet border-y border-gray-800 px-4" key={faq.question}>
       <div
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className="flex cursor-pointer justify-between  gap-2 py-3 text-gray-100 hover:text-blue-500 active:text-blue-500"
+        className="flex cursor-pointer justify-between gap-2 py-3 text-gray-100 hover:text-violet-500 active:text-violet-500"
       >
         <span className="text-lg font-normal antialiased transition duration-100">
           {faq.question}
