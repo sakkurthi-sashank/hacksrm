@@ -48,7 +48,7 @@ export const HeroSection = () => {
       id="Home"
       className="m-auto flex min-h-screen flex-col items-center justify-evenly pt-16"
     >
-      <div className="flex flex-row justify-center gap-1 bg-gradient-to-b from-violet-500 to-violet-200 bg-clip-text text-4xl font-bold text-transparent lg:text-6xl">
+      <div className="title-gradient flex flex-row justify-center gap-1 text-4xl font-bold lg:text-6xl">
         <div className="flex flex-col gap-2 text-center">
           <span>{days}</span>
           <span className="text-sm lg:text-lg">Days</span>
@@ -75,42 +75,18 @@ export const HeroSection = () => {
       </div>
 
       <div className="text-md z-10 flex flex-col items-center justify-center space-x-2 space-y-1 sm:text-2xl">
-        <span className="violet bg-gradient-to-b from-violet-500 to-violet-200 bg-clip-text text-transparent">
-          18th - 19th May 2023
-        </span>
-        <div className="violet flex items-center space-x-3 bg-gradient-to-b from-violet-400 to-violet-200 bg-clip-text text-transparent">
-          <IconMapPin size={20} className="text-violet-300" />
+        <span className="indigo title-gradient">18th - 19th May 2023</span>
+        <div className="indigo title-gradient flex items-center space-x-3">
+          <IconMapPin size={20} className="text-indigo-300" />
           <span>SRM University - AP</span>
         </div>
       </div>
 
-      {/* <div className="z-10 flex flex-col space-y-2 text-white">
-        <h5 className="text-center text-sm text-white antialiased lg:text-xl">
-          Organized by
-        </h5>
-        <div className="flex items-center justify-center space-x-4">
-          <picture>
-            <img
-              src="https://srmap.edu.in/file/2019/12/Logo-2.png?x70332"
-              alt="SRM Logo"
-              className="z-10 h-8 rounded-sm bg-white p-2"
-            />
-          </picture>
-          <picture>
-            <img
-              src="https://github.com/NextTechLabAP/Branding/blob/master/Logos/With_Text/Unstacked/Unstacked_with_text.png?raw=true"
-              alt="NextTech Logo"
-              className="z-10 h-8 rounded-sm bg-white p-2"
-            />
-          </picture>
-        </div>
-      </div> */}
-
       <div className="flex w-full justify-center space-x-4 pt-3 text-sm sm:text-base">
-        <button className="z-10 rounded-sm bg-violet-700 px-2.5 py-2 text-white hover:bg-violet-800">
+        <button className="z-10 rounded-sm bg-indigo-700 px-2.5 py-2 text-white hover:bg-indigo-800">
           Apply with Devfolio
         </button>
-        <button className="z-10 rounded-sm bg-white px-2.5 py-2 text-violet-600 hover:bg-gray-100">
+        <button className="z-10 rounded-sm bg-white px-2.5 py-2 text-indigo-600 hover:bg-gray-100">
           Join Discord
         </button>
       </div>

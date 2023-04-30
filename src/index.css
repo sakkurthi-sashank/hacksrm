@@ -8,3 +8,9 @@ html {
   @apply bg-black font-ibm_plex_mono;
   scroll-behavior: smooth;
 }
+
+@layer components {
+  .title-gradient {
+    @apply bg-gradient-to-b from-indigo-600 to-indigo-300 bg-clip-text text-transparent;
+  }
+}

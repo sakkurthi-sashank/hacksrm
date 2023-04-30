@@ -49,7 +49,7 @@ const themesData = [
 export const Themes = () => {
   return (
     <section id="Themes" className="min-h-screen w-full px-0 py-16 md:px-10">
-      <div className="mb-20 bg-gradient-to-b from-violet-500 to-violet-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:text-5xl">
+      <div className="mb-20 bg-gradient-to-b from-indigo-500 to-indigo-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:text-5xl">
         Themes / Tracks
       </div>
 
@@ -60,7 +60,7 @@ export const Themes = () => {
             key={theme.id}
             className="z-10 flex flex-col items-center justify-center space-y-4  rounded-lg p-8 shadow-lg"
           >
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-violet-500">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-500">
               {theme.id === 1 && <IconActivity size={32} color="white" />}
               {theme.id === 2 && <IconBooks size={32} color="white" />}
               {theme.id === 3 && <IconShieldCheck size={32} color="white" />}

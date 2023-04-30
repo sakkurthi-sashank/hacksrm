@@ -22,11 +22,11 @@ export const PrizeWorthSection = () => {
       id="Prizes"
       className="my-0 flex min-h-screen flex-col justify-evenly px-6 py-10 sm:px-20 sm:py-24"
     >
-      <div className="mb-6 bg-gradient-to-b from-violet-600 to-violet-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:text-5xl">
+      <div className="mb-6 bg-gradient-to-b from-indigo-600 to-indigo-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:text-5xl">
         Prizes
       </div>
 
-      <div className="mb-10 text-center text-4xl font-semibold text-violet-400">
+      <div className="mb-10 text-center text-4xl font-semibold text-indigo-400">
         Worth ₹ 2,00,000 /-
       </div>
 
@@ -34,7 +34,7 @@ export const PrizeWorthSection = () => {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="relative flex w-full max-w-sm flex-col items-center justify-center border-2 border-violet-500 bg-violet-700 bg-opacity-20 px-5 py-10"
+            className="relative flex w-full max-w-sm flex-col items-center justify-center border-2 border-indigo-500 bg-indigo-700 bg-opacity-20 px-5 py-10"
           >
             <div>
               <img src={plan.imageSrc} className="w-28" alt="" />
@@ -43,7 +43,7 @@ export const PrizeWorthSection = () => {
               <span className="text-xl font-medium text-gray-200">
                 {plan.name}
               </span>
-              <div className="text-3xl font-semibold text-violet-400">
+              <div className="text-3xl font-semibold text-indigo-400">
                 ₹ {plan.price}
                 <span className="text-xl font-normal">/-</span>
               </div>

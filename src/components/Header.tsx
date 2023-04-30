@@ -21,7 +21,7 @@ export const Header = () => {
         <div className="flex h-full items-center justify-around px-4">
           {NavLinks.map((link) => (
             <a
-              className="violet cursor-pointer text-gray-300 antialiased hover:text-violet-500"
+              className="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500"
               key={link}
               href={`#${link}`}
             >
@@ -76,7 +76,7 @@ export const Header = () => {
           <div className="absolute left-0 right-0 top-14 flex flex-col space-y-6 bg-gray-950  bg-opacity-95 px-10 py-8 backdrop-blur-lg backdrop-filter">
             {NavLinks.map((link) => (
               <a
-                className="violet cursor-pointer text-lg text-gray-200 antialiased hover:text-violet-500"
+                className="indigo cursor-pointer text-lg text-gray-200 antialiased hover:text-indigo-500"
                 key={link}
                 href={`#${link}`}
               >
