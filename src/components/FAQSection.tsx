@@ -47,7 +47,7 @@ const FAQData = [
 export function FAQSection() {
   return (
     <section id="FAQs" className="min-h-screen py-4 pt-20">
-      <div className="mb-20 bg-gradient-to-b from-indigo-500 to-indigo-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:text-5xl">
+      <div className="mb-20 text-center text-4xl font-semibold text-indigo-600 sm:text-5xl">
         Frequently Asked Questions
       </div>
       <div className="mx-auto px-3">
@@ -73,12 +73,15 @@ const QuestionsAndAnswers = ({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="indigo border-y border-gray-800 px-4" key={faq.question}>
+    <div
+      className="rounded-md border border-gray-300 px-4 shadow"
+      key={faq.question}
+    >
       <div
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className="flex cursor-pointer justify-between gap-2 py-3 text-gray-100 hover:text-indigo-500 active:text-indigo-500"
+        className="flex cursor-pointer justify-between gap-2 py-3 text-gray-800 hover:text-indigo-500 active:text-indigo-500"
       >
         <span className="text-lg font-normal antialiased transition duration-100">
           {faq.question}
@@ -88,7 +91,7 @@ const QuestionsAndAnswers = ({
         </span>
       </div>
       {isOpen ? (
-        <p className="mb-4 py-2 font-normal text-gray-300 antialiased">
+        <p className="mb-4 py-2 font-normal text-gray-700 antialiased">
           {faq.answer}
         </p>
       ) : null}

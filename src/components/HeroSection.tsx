@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { IconMapPin } from "@tabler/icons-react";
+import { ThreeJsBackground } from "./ThreeJsBackground";
 
 export const HeroSection = () => {
   const [days, setDays] = useState("00");
@@ -10,7 +10,7 @@ export const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const timeleft =
-        new Date("May 18, 2023 18:00:00").getTime() - new Date().getTime();
+        new Date("May 19, 2023 12:00:00").getTime() - new Date().getTime();
       setDays(
         `${
           Math.floor(timeleft / (1000 * 60 * 60 * 24)) < 10
@@ -44,52 +44,71 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section
-      id="Home"
-      className="m-auto flex min-h-screen flex-col items-center justify-evenly pt-16"
-    >
-      <div className="title-gradient flex flex-row justify-center gap-1 text-4xl font-bold lg:text-6xl">
-        <div className="flex flex-col gap-2 text-center">
-          <span>{days}</span>
-          <span className="text-sm lg:text-lg">Days</span>
-        </div>
-        <span>:</span>
-        <div className="flex flex-col gap-2 text-center">
-          <span>{hours}</span>
-          <span className="text-sm lg:text-lg">Hours</span>
-        </div>
-        <span>:</span>
-        <div className="flex flex-col gap-2 text-center">
-          <span>{minutes}</span>
-          <span className="text-sm lg:text-lg">Minutes</span>
-        </div>
-        <span>:</span>
-        <div className="flex flex-col gap-2 text-center">
-          <span>{seconds}</span>
-          <span className="text-sm lg:text-lg">Seconds</span>
-        </div>
-      </div>
+    <div className="relative">
+      <ThreeJsBackground />
+      <section
+        id="Home"
+        className="m-auto flex min-h-screen flex-col items-center justify-evenly bg-gray-900 pt-16"
+      >
+        <div className="flex w-full flex-col items-center justify-center px-0 xl:flex-row-reverse xl:justify-between xl:px-6">
+          <img
+            className="z-10 h-[300px] w-auto xl:h-[580px]"
+            src="hack-srm-logo.svg"
+          />
+          <div className="w-full space-y-0 xl:space-y-10">
+            <div className="title-gradient flex flex-row justify-center gap-1 text-4xl font-bold lg:text-7xl">
+              <div className="flex flex-col gap-2 text-center">
+                <span>{days}</span>
+                <span className="text-sm lg:text-lg">Days</span>
+              </div>
+              <span>:</span>
+              <div className="flex flex-col gap-2 text-center">
+                <span>{hours}</span>
+                <span className="text-sm lg:text-lg">Hours</span>
+              </div>
+              <span>:</span>
+              <div className="flex flex-col gap-2 text-center">
+                <span>{minutes}</span>
+                <span className="text-sm lg:text-lg">Minutes</span>
+              </div>
+              <span>:</span>
+              <div className="flex flex-col gap-2 text-center">
+                <span>{seconds}</span>
+                <span className="text-sm lg:text-lg">Seconds</span>
+              </div>
+            </div>
 
-      <div className="flex w-full justify-center pb-5">
-        <img className="h-40 w-auto md:h-96" src="hack-srm-logo.png" />
-      </div>
+            {/* Venue and Date */}
+            <div className="flex flex-col items-center justify-center space-y-2 pt-6 text-white">
+              <div className="flex flex-col items-center justify-center space-y-2 text-white">
+                <span className="text-center text-base lg:text-xl">
+                  Dates:
+                  <span className="pl-3 font-medium text-indigo-500">
+                    19th - 20th May 2023
+                  </span>
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center space-y-2 text-white">
+                <span className="text-center text-2xl font-bold lg:text-4xl">
+                  SRM University AP
+                </span>
+                <span className="text-sm lg:text-lg">
+                  Amaravati, Andhra Pradesh
+                </span>
+              </div>
+            </div>
 
-      <div className="text-md z-10 flex flex-col items-center justify-center space-x-2 space-y-1 sm:text-2xl">
-        <span className="indigo title-gradient">18th - 19th May 2023</span>
-        <div className="indigo title-gradient flex items-center space-x-3">
-          <IconMapPin size={20} className="text-indigo-300" />
-          <span>SRM University - AP</span>
+            <div className="flex w-full justify-center space-x-3 pt-16 text-sm sm:text-base">
+              <button className="z-10 rounded-sm bg-indigo-700 p-3 text-white hover:bg-indigo-800">
+                Apply with Devfolio
+              </button>
+              <button className="z-10 rounded-sm bg-white p-3 text-indigo-600 hover:bg-gray-100">
+                Join Discord
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="flex w-full justify-center space-x-4 pt-3 text-sm sm:text-base">
-        <button className="z-10 rounded-sm bg-indigo-700 px-2.5 py-2 text-white hover:bg-indigo-800">
-          Apply with Devfolio
-        </button>
-        <button className="z-10 rounded-sm bg-white px-2.5 py-2 text-indigo-600 hover:bg-gray-100">
-          Join Discord
-        </button>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };

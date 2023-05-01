@@ -81,7 +81,7 @@ export const OrganizersSection = () => {
       id="Organizers"
       className="min-h-screen px-2 pb-10 pt-0 sm:px-10 sm:pt-10"
     >
-      <div className="my-10 bg-gradient-to-b from-indigo-500 to-indigo-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:mt-20 sm:text-5xl">
+      <div className="my-10 text-center text-4xl font-semibold text-indigo-600 sm:mt-20 sm:text-5xl">
         Organizers Team
       </div>
       <div className="grid grid-cols-3 gap-x-4 gap-y-8 md:grid-cols-5  lg:grid-cols-6 lg:gap-x-8 lg:gap-y-12">
@@ -94,10 +94,10 @@ export const OrganizersSection = () => {
               src={organizer.image}
               loading="lazy"
               alt=""
-              className="object-fit h-16 rounded-full object-center sm:h-28"
+              className="object-fit h-16 rounded-lg object-center sm:h-28"
             />
             <div>
-              <div className="indigo mb-2 text-center text-sm font-normal text-indigo-600 antialiased md:text-lg">
+              <div className="indigo mb-2 text-center text-sm font-normal text-gray-800 antialiased md:text-lg">
                 {organizer.name}
               </div>
 
@@ -106,22 +106,22 @@ export const OrganizersSection = () => {
                   <a
                     href="#"
                     target="_blank"
-                    className="text-indigo-300 transition duration-100 hover:text-indigo-600 active:text-gray-600"
+                    className="text-gray-500 transition duration-100"
                   >
                     <IconBrandLinkedin
-                      className="h-4 w-4 sm:h-6 sm:w-6"
-                      stroke={1}
+                      className="h-4 w-4 hover:fill-blue-600 hover:text-white sm:h-6 sm:w-6"
+                      stroke={1.5}
                     />
                   </a>
 
                   <a
                     href="#"
                     target="_blank"
-                    className="text-indigo-300 transition duration-100 hover:text-indigo-600 active:text-indigo-600"
+                    className="text-gray-500 transition duration-100"
                   >
                     <IconBrandTwitter
-                      className="h-4 w-4 sm:h-6 sm:w-6"
-                      stroke={1}
+                      className="h-4 w-4 hover:fill-sky-600 hover:text-white sm:h-6 sm:w-6"
+                      stroke={1.5}
                     />
                   </a>
                 </div>

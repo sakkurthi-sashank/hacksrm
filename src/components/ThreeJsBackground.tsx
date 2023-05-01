@@ -5,7 +5,7 @@ import { random } from "maath";
 
 export const ThreeJsBackground = () => {
   return (
-    <div className="fixed inset-0 z-0">
+    <div className="absolute inset-0 z-0">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Stars />
       </Canvas>
@@ -17,14 +17,14 @@ export const Stars = (props: any) => {
   const ref = useRef<HTMLInputElement>();
 
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(4500), { radius: 1.25 })
+    random.inSphere(new Float32Array(4500), { radius: 1.5 })
   );
 
   useFrame((_state, delta) => {
     // @ts-ignore
-    ref.current.rotation.x -= delta / 30;
+    ref.current.rotation.x -= delta / 50;
     // @ts-ignore
-    ref.current.rotation.y -= delta / 35;
+    ref.current.rotation.y -= delta / 50;
   });
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
@@ -37,7 +37,7 @@ export const Stars = (props: any) => {
       >
         <PointMaterial
           transparent
-          color="#6b7280"
+          color="white"
           size={0.005}
           sizeAttenuation={true}
           depthWrite={false}

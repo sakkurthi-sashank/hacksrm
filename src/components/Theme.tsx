@@ -49,16 +49,16 @@ const themesData = [
 export const Themes = () => {
   return (
     <section id="Themes" className="min-h-screen w-full px-0 py-16 md:px-10">
-      <div className="mb-20 bg-gradient-to-b from-indigo-500 to-indigo-200 bg-clip-text text-center text-4xl font-semibold text-transparent sm:text-5xl">
+      <div className="mb-20 text-center text-4xl font-semibold text-indigo-600 sm:text-5xl">
         Themes / Tracks
       </div>
 
       {/* Beautifully theme in tailwind css */}
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:grid-cols-3">
         {themesData.map((theme) => (
           <div
             key={theme.id}
-            className="z-10 flex flex-col items-center justify-center space-y-4  rounded-lg p-8 shadow-lg"
+            className="z-10 flex flex-col items-center justify-center space-y-4 rounded-lg border p-8 shadow-[10px_10px_0px_0px_rgb(0,0,0)] transition duration-200 hover:shadow"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-500">
               {theme.id === 1 && <IconActivity size={32} color="white" />}
@@ -68,10 +68,10 @@ export const Themes = () => {
               {theme.id === 5 && <IconGps size={32} color="white" />}
               {theme.id === 6 && <IconRobot size={32} color="white" />}
             </div>
-            <div className="text-center text-2xl font-semibold text-gray-200">
+            <div className="text-center text-2xl font-semibold text-gray-800">
               {theme.name}
             </div>
-            <div className="text-center text-gray-300">{theme.description}</div>
+            <div className="text-center text-gray-700">{theme.description}</div>
           </div>
         ))}
       </div>

@@ -1,31 +1,58 @@
 import { useState } from "react";
 
 const NavLinks = [
-  "Home",
-  "About",
-  "Prizes",
-  "Themes",
-  "Schedule",
-  "Sponsors",
-  "Organizers",
-  "FAQs",
-  "ContactUs",
+  {
+    name: "Home",
+    link: "#",
+  },
+  {
+    name: "About",
+    link: "About",
+  },
+  {
+    name: "Prizes",
+    link: "Prizes",
+  },
+  {
+    name: "Themes",
+    link: "Themes",
+  },
+  {
+    name: "Schedule",
+    link: "Schedule",
+  },
+  {
+    name: "Sponsors",
+    link: "Sponsors",
+  },
+  {
+    name: "Organizers",
+    link: "Organizers",
+  },
+  {
+    name: "FAQs",
+    link: "FAQs",
+  },
+  {
+    name: "Contact Us",
+    link: "ContactUs",
+  },
 ];
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className="fixed left-0 right-0 top-0 z-20 h-14 bg-opacity-80 backdrop-blur-lg backdrop-filter">
+    <div className="fixed left-0 right-0 top-0 z-20 h-14 border-b border-gray-700 bg-gray-900 bg-opacity-80 backdrop-blur-lg backdrop-filter">
       {/* Desktop Header */}
       <div className="hidden h-full md:block">
         <div className="flex h-full items-center justify-around px-4">
           {NavLinks.map((link) => (
             <a
               className="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500"
-              key={link}
-              href={`#${link}`}
+              key={link.name}
+              href={`#${link.link}`}
             >
-              {link}
+              {link.name}
             </a>
           ))}
         </div>
@@ -73,14 +100,14 @@ export const Header = () => {
           </button>
         </div>
         {openMenu && (
-          <div className="absolute left-0 right-0 top-14 flex flex-col space-y-6 bg-gray-950  bg-opacity-95 px-10 py-8 backdrop-blur-lg backdrop-filter">
+          <div className="absolute left-0 right-0 top-14 flex flex-col space-y-6 bg-gray-900  bg-opacity-95 px-10 py-8 backdrop-blur-lg backdrop-filter">
             {NavLinks.map((link) => (
               <a
                 className="indigo cursor-pointer text-lg text-gray-200 antialiased hover:text-indigo-500"
-                key={link}
-                href={`#${link}`}
+                key={link.name}
+                href={`#${link.link}`}
               >
-                {link}
+                {link.name}
               </a>
             ))}
           </div>
