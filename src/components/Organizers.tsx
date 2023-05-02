@@ -79,12 +79,12 @@ export const OrganizersSection = () => {
   return (
     <section
       id="Organizers"
-      className="min-h-screen px-2 pb-10 pt-5 sm:px-10 bg-gray-900 sm:pt-10"
+      className="min-h-screen bg-gray-900 px-2 pb-10 pt-5 sm:px-10 sm:pt-10"
     >
       <div className="my-10 text-center text-4xl font-semibold text-indigo-600 sm:mt-20 sm:text-5xl">
         Organizers Team
       </div>
-      <div className="flex flex-wrap gap-10 justify-center">
+      <div className="flex flex-wrap justify-center gap-10">
         {OrganizersData.map((organizer) => (
           <div
             className="z-10 flex flex-col items-center space-y-5 rounded py-5"

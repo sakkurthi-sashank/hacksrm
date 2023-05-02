@@ -52,7 +52,7 @@ export const WhyHackSRMAp = () => {
         {WhyHackSRMApData.map((data, index) => (
           <div
             key={index}
-            className="flex flex-col bg-white p-6 rounded items-center justify-center space-y-3"
+            className="flex flex-col items-center justify-center space-y-3 rounded bg-white p-6"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600">
               {data.icon}

@@ -48,7 +48,7 @@ export const HeroSection = () => {
       <ThreeJsBackground />
       <section
         id="Home"
-        className="m-auto flex min-h-screen w-full flex-col items-center justify-evenly py-10 bg-gray-900 px-0 xl:flex-row-reverse xl:justify-between xl:px-6"
+        className="m-auto flex min-h-screen w-full flex-col items-center justify-evenly bg-gray-900 px-0 py-10 xl:flex-row-reverse xl:justify-between xl:px-6"
       >
         <img
           className="z-10 m-auto h-[300px] w-auto xl:h-[520px]"
