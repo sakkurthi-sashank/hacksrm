@@ -30,25 +30,28 @@ const themesData = [
     id: 4,
     name: "Fin-Tech",
     description:
-      "Financial technology is the technology and innovation that aims to compete with traditional financial methods in the delivery of financial services.",
+      "Build solutions that can help people manage their finances better, and help them make better financial decisions.",
   },
   {
     id: 5,
     name: "Travel & Tourism",
     description:
-      "The travel and tourism industry is one of the world’s largest industries with a global economic contribution of over 7.6 trillion U.S. dollars in 2016.",
+      "Promote sustainable tourism, promote local culture and products, and build a better future for everyone.",
   },
   {
     id: 6,
     name: "Open Innovation",
     description:
-      "An open-ended theme where the only restriction is your imagination. Build the ideas that you believe in and make a difference. It can either be hardware or software.",
+      "An open-ended theme where the only restriction is your imagination. Build the ideas that you believe in and make a difference.",
   },
 ];
 
 export const Themes = () => {
   return (
-    <section id="Themes" className="min-h-screen w-full px-0 py-16 md:px-10">
+    <section
+      id="Themes"
+      className="min-h-screen w-full bg-gray-100 px-0 py-16 md:px-10"
+    >
       <div className="mb-20 text-center text-4xl font-semibold text-indigo-600 sm:text-5xl">
         Themes / Tracks
       </div>
@@ -58,7 +61,7 @@ export const Themes = () => {
         {themesData.map((theme) => (
           <div
             key={theme.id}
-            className="z-10 flex flex-col items-center justify-center space-y-4 rounded-lg border p-8 shadow-[10px_10px_0px_0px_rgb(0,0,0)] transition duration-200 hover:shadow"
+            className="z-10 flex flex-col items-center justify-evenly space-y-4 rounded-lg border bg-white p-8 shadow-[10px_10px_0px_0px_rgb(0,0,0)] transition duration-200 hover:shadow"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-500">
               {theme.id === 1 && <IconActivity size={32} color="white" />}

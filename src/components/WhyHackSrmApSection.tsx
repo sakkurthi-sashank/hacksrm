@@ -36,7 +36,7 @@ export const WhyHackSRMAp = () => {
   return (
     <section
       id="About"
-      className="my-0 min-h-screen bg-white px-6 py-16 sm:px-20 sm:pt-28"
+      className="my-0 min-h-screen bg-gray-100 px-6 py-16 sm:px-20 sm:pt-28"
     >
       <div className="max-w-3xl space-y-3">
         <h2 className="mb-6 text-4xl font-semibold text-indigo-600 sm:text-5xl">
@@ -52,7 +52,7 @@ export const WhyHackSRMAp = () => {
         {WhyHackSRMApData.map((data, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center space-y-3"
+            className="flex flex-col bg-white p-6 rounded items-center justify-center space-y-3"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600">
               {data.icon}

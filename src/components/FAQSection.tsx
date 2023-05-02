@@ -18,29 +18,29 @@ const FAQData = [
       "Nope! You can learn along the way or team up with experienced programmers. Skills such as designing, business planning, and etc are all going to impact the projects in various ways!",
   },
   {
-    question: "How do I get started?",
+    question: "How much does it cost to participate in HackSRM ??",
     answer:
       "Zero. Zip. Zilch. Nada. Nothing. Admission to HackSRM is completely free, thanks to our sponsors!",
   },
   {
-    question: "What if I don't have a team?",
+    question: "Is it a team event ?",
     answer:
-      "No worries! We will have a team formation session at the beginning of the event. You can also join our Discord server to find teammates before the event!",
+      "Yes, you can form teams of up to 4 people. If you don't have a team, don't worry! We will have a few workshops and talks to help you get started. You can also join our Discord server to find teammates before the event!",
   },
   {
-    question: "What if I don't have any ideas?",
+    question: "Can I apply individually ?",
+    answer: "Yes, you can also form a team after you get selected.",
+  },
+
+  {
+    question: "Is there a code of conduct ?",
     answer:
-      "We will have a few workshops and talks to help you get started. You can also join our Discord server to find teammates before the event!",
+      "Attendees must abide by our Code of Conduct. We want to respect each other and keep HackSRM a safe environment for all participants.",
   },
   {
-    question: "What if I don't have any experience?",
+    question: "What is the venue of the hackathon ?",
     answer:
-      "That's okay! We will have a few workshops and talks to help you get started.",
-  },
-  {
-    question: "What if I don't have any hardware?",
-    answer:
-      "That's okay! We will have a few workshops and talks to help you get started.",
+      "HackSRM will be hosted on May 19th - 20th 2023. All you need is to create a Discord account to communicate with our HackSRM community.",
   },
 ];
 
@@ -83,7 +83,7 @@ const QuestionsAndAnswers = ({
         }}
         className="flex cursor-pointer justify-between gap-2 py-3 text-gray-800 hover:text-indigo-500 active:text-indigo-500"
       >
-        <span className="text-lg font-normal antialiased transition duration-100">
+        <span className="text-base font-normal antialiased transition duration-100">
           {faq.question}
         </span>
         <span>
