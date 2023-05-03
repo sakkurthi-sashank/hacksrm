@@ -1,48 +1,58 @@
 import {
-  IconActivity,
-  IconBooks,
-  IconBuildingBank,
-  IconGps,
   IconRobot,
-  IconShieldCheck,
+  IconBrandXbox,
+  IconCircuitDiodeZener,
+  IconCurrencyEthereum,
+  IconCardboards,
+  IconBrandOpenSource,
 } from "@tabler/icons-react";
 
 const themesData = [
   {
     id: 1,
-    name: "Health Care",
+    name: "AI AND ML",
     description:
-      "Code against health problems, aim for real-life challenges and draw solutions that can drive social impact",
+      "Create innovative applications that leverage machine learning algorithms to solve complex problems, such as predictive analytics, natural language processing and computer vision.",
+    icon: <IconRobot className="h-10 w-10 text-white" stroke={1.5} />,
   },
   {
     id: 2,
-    name: "Education",
+    name: "GAME DEVELOPMENT",
     description:
-      "Find new ways for the acquisition of the knowledge, skills. Showcase what could be the future of education. ",
+      "Develop immersive and engaging games, leveraging cutting-edge game engines and technologies to create captivating gameplay experiences.",
+    icon: <IconBrandXbox className="h-10 w-10 text-white" stroke={1.5} />,
   },
   {
     id: 3,
-    name: "Women's Safety",
+    name: "I-O-T",
     description:
-      "The day when a woman can freely walk on the roads at night is the day of real Independence - Mahatma Gandhi.",
+      "Build connected devices and systems that collect and analyze data in real-time, creating innovative solutions that improve efficiency and productivity across industries.",
+    icon: (
+      <IconCircuitDiodeZener className="h-10 w-10 text-white" stroke={1.5} />
+    ),
   },
   {
     id: 4,
-    name: "Fin-Tech",
+    name: "WEB3 AND FIN-TECH",
     description:
-      "Build solutions that can help people manage their finances better, and help them make better financial decisions.",
+      "Build decentralized applications (dApps) that run on the blockchain, leveraging smart contracts to facilitate secure and transparent transactions.",
+    icon: (
+      <IconCurrencyEthereum className="h-10 w-10 text-white" stroke={1.5} />
+    ),
   },
   {
     id: 5,
-    name: "Travel & Tourism",
+    name: "AR / VR",
     description:
-      "Promote sustainable tourism, promote local culture and products, and build a better future for everyone.",
+      "Use augmented and virtual reality technologies to create innovative applications, such as training simulations, entertainment experiences, and marketing campaigns.",
+    icon: <IconCardboards className="h-10 w-10 text-white" stroke={1.5} />,
   },
   {
     id: 6,
-    name: "Open Innovation",
+    name: "OPEN INNOVATION",
     description:
-      "An open-ended theme where the only restriction is your imagination. Build the ideas that you believe in and make a difference.",
+      "Envision and engineer pioneering hardware or software solutions, poised to effectuate a benevolent and lasting influence on the global stage.",
+    icon: <IconBrandOpenSource className="h-10 w-10 text-white" stroke={1.5} />,
   },
 ];
 
@@ -50,9 +60,9 @@ export const Themes = () => {
   return (
     <section
       id="Themes"
-      className="min-h-screen w-full bg-gray-100 px-0 py-16 md:px-10"
+      className="min-h-screen w-full bg-gray-900 px-0 py-16 md:px-10"
     >
-      <div className="mb-20 text-center text-4xl font-semibold text-indigo-600 sm:text-5xl">
+      <div className="mb-20 text-center text-4xl font-semibold title-gradient sm:text-5xl">
         Themes / Tracks
       </div>
 
@@ -61,20 +71,15 @@ export const Themes = () => {
         {themesData.map((theme) => (
           <div
             key={theme.id}
-            className="z-10 flex flex-col items-center justify-evenly space-y-4 rounded-lg border bg-white p-8 shadow-[10px_10px_0px_0px_rgb(0,0,0)] transition duration-200 hover:shadow"
+            className="z-10 flex flex-col items-center justify-evenly space-y-4 rounded-lg border border-gray-700 p-8"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-500">
-              {theme.id === 1 && <IconActivity size={32} color="white" />}
-              {theme.id === 2 && <IconBooks size={32} color="white" />}
-              {theme.id === 3 && <IconShieldCheck size={32} color="white" />}
-              {theme.id === 4 && <IconBuildingBank size={32} color="white" />}
-              {theme.id === 5 && <IconGps size={32} color="white" />}
-              {theme.id === 6 && <IconRobot size={32} color="white" />}
+              {theme.icon}
             </div>
-            <div className="text-center text-2xl font-semibold text-gray-800">
+            <div className="text-center text-2xl font-semibold text-white">
               {theme.name}
             </div>
-            <div className="text-center text-gray-700">{theme.description}</div>
+            <div className="text-center text-gray-300">{theme.description}</div>
           </div>
         ))}
       </div>

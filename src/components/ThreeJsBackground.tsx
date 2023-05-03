@@ -5,7 +5,7 @@ import { random } from "maath";
 
 export const ThreeJsBackground = () => {
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="fixed inset-0 z-0">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Stars />
       </Canvas>

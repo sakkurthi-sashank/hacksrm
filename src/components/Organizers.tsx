@@ -2,76 +2,11 @@ import { IconBrandTwitter, IconBrandLinkedin } from "@tabler/icons-react";
 
 const OrganizersData = [
   {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
-  },
-  {
-    name: "Random Name",
-    image: "https://bit.ly/kent-c-dodds",
-    linkedin: "#",
-    twitter: "#",
+    name: "",
+    image: "",
+    team: "",
+    linkedin: "",
+    twitter: "",
   },
 ];
 
@@ -79,12 +14,12 @@ export const OrganizersSection = () => {
   return (
     <section
       id="Organizers"
-      className="min-h-screen bg-gray-900 px-2 pb-10 pt-5 sm:px-10 sm:pt-10"
+      className="min-h-screen px-2 pb-4 pt-5 bg-gray-900 sm:px-10 sm:pt-10"
     >
-      <div className="my-10 text-center text-4xl font-semibold text-indigo-600 sm:mt-20 sm:text-5xl">
+      <div className="my-10 text-center text-4xl font-semibold title-gradient sm:mt-20 sm:text-5xl">
         Organizers Team
       </div>
-      <div className="flex flex-wrap justify-center gap-10">
+      {/* <div className="flex flex-wrap justify-center gap-10">
         {OrganizersData.map((organizer) => (
           <div
             className="z-10 flex flex-col items-center space-y-5 rounded py-5"
@@ -94,17 +29,19 @@ export const OrganizersSection = () => {
               src={organizer.image}
               loading="lazy"
               alt=""
-              className="object-fit h-16 rounded-2xl object-center sm:h-28"
+              className="h-20 w-20 rounded-2xl object-cover object-center sm:h-28"
             />
             <div>
-              <div className="indigo mb-2 text-center text-sm font-normal text-gray-200 antialiased md:text-lg">
+              <div className="indigo mb-2 text-center text-xs font-normal text-gray-700 antialiased md:text-base">
                 {organizer.name}
               </div>
-
+              <div className="my-2 rounded-xl border border-indigo-500 py-0.5 text-center text-xs font-normal text-indigo-500 antialiased">
+                {organizer.team}
+              </div>
               <div className="flex justify-center">
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href={organizer.linkedin}
                     target="_blank"
                     className="text-gray-500 transition duration-100"
                   >
@@ -115,7 +52,7 @@ export const OrganizersSection = () => {
                   </a>
 
                   <a
-                    href="#"
+                    href={organizer.twitter}
                     target="_blank"
                     className="text-gray-500 transition duration-100"
                   >
@@ -129,7 +66,7 @@ export const OrganizersSection = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

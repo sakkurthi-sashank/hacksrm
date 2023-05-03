@@ -36,13 +36,13 @@ export const WhyHackSRMAp = () => {
   return (
     <section
       id="About"
-      className="my-0 min-h-screen bg-gray-100 px-6 py-16 sm:px-20 sm:pt-28"
+      className="my-0 min-h-screen bg-gray-900 px-6 py-16 sm:px-20 sm:pt-28"
     >
       <div className="max-w-3xl space-y-3">
-        <h2 className="mb-6 text-4xl font-semibold text-indigo-600 sm:text-5xl">
+        <h2 className="title-gradient z-10 mb-6 text-4xl font-semibold sm:text-5xl">
           Why you need to participate in HackSRM?
         </h2>
-        <p className="text-gray-800">
+        <p className="z-10 text-gray-200">
           Hack SRM is a 36-hour hackathon where you can build your dream project
           with your friends and win exciting prizes. It is a great opportunity
           to learn new skills, meet new people, and have fun.
@@ -52,15 +52,15 @@ export const WhyHackSRMAp = () => {
         {WhyHackSRMApData.map((data, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center space-y-3 rounded bg-white p-6"
+            className="z-10 flex flex-col items-center justify-center space-y-3 p-8 transition duration-200 hover:shadow-lg"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600">
               {data.icon}
             </div>
-            <h3 className="text-center text-xl font-semibold text-gray-900">
+            <h3 className="text-center text-xl font-semibold text-white">
               {data.title}
             </h3>
-            <p className="text-center text-gray-700">{data.description}</p>
+            <p className="text-center text-gray-300">{data.description}</p>
           </div>
         ))}
       </div>
