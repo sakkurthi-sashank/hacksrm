@@ -36,7 +36,7 @@ export const Sponsors = () => {
               src={sponsor.image}
               loading="lazy"
               alt=""
-              className="h-16 w-auto rounded-2xl bg-white object-cover object-center p-3 sm:h-28"
+              className="h-16 w-auto rounded-2xl bg-gray-900 object-cover object-center p-3 sm:h-28"
             />
           </div>
         ))}

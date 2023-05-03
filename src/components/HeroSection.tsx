@@ -50,11 +50,13 @@ export const HeroSection = () => {
         id="Home"
         className="m-auto flex w-full flex-col items-center justify-around  px-0 py-10 xl:flex-row-reverse xl:justify-between xl:px-6"
       >
-        <img
-          className="z-10 m-auto h-[360px] w-auto md:h-[360px] xl:h-[520px]"
-          src="hack-srm-logo.svg"
-        />
-        <div className="w-full space-y-0 xl:space-y-10">
+        <div className="flex w-full items-center justify-center">
+          <img
+            className="z-10 m-auto h-[280px] w-auto pt-10 md:h-[360px] xl:h-[450px]"
+            src="hack-srm-logo.png"
+          />
+        </div>
+        <div className="w-full space-y-0 py-10 xl:space-y-6">
           <div className="title-gradient flex flex-row justify-center gap-1 text-4xl font-bold sm:text-7xl">
             <div className="flex flex-col gap-2 text-center">
               <span>{days}</span>
