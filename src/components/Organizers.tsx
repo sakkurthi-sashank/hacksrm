@@ -1,14 +1,14 @@
-import { IconBrandTwitter, IconBrandLinkedin } from "@tabler/icons-react";
+// import { IconBrandTwitter, IconBrandLinkedin } from "@tabler/icons-react";
 
-const OrganizersData = [
-  {
-    name: "",
-    image: "",
-    team: "",
-    linkedin: "",
-    twitter: "",
-  },
-];
+// const OrganizersData = [
+//   {
+//     name: "",
+//     image: "",
+//     team: "",
+//     linkedin: "",
+//     twitter: "",
+//   },
+// ];
 
 export const OrganizersSection = () => {
   return (
