@@ -14,9 +14,9 @@ export const OrganizersSection = () => {
   return (
     <section
       id="Organizers"
-      className="min-h-screen px-2 pb-4 pt-5 bg-gray-900 sm:px-10 sm:pt-10"
+      className="min-h-screen bg-gray-900 px-2 pb-4 pt-5 sm:px-10 sm:pt-10"
     >
-      <div className="my-10 text-center text-4xl font-semibold title-gradient sm:mt-20 sm:text-5xl">
+      <div className="title-gradient my-10 text-center text-4xl font-semibold sm:mt-20 sm:text-5xl">
         Organizers Team
       </div>
       {/* <div className="flex flex-wrap justify-center gap-10">

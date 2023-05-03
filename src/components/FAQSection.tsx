@@ -47,7 +47,7 @@ const FAQData = [
 export function FAQSection() {
   return (
     <section id="FAQs" className="min-h-screen bg-gray-900 py-4 pt-20">
-      <div className="mb-20 text-center text-4xl font-semibold title-gradient sm:text-5xl">
+      <div className="title-gradient mb-20 text-center text-4xl font-semibold sm:text-5xl">
         Frequently Asked Questions
       </div>
       <div className="mx-auto px-3">
@@ -83,7 +83,7 @@ const QuestionsAndAnswers = ({
         }}
         className="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500"
       >
-        <span className="text-base z-10 font-medium antialiased transition duration-100">
+        <span className="z-10 text-base font-medium antialiased transition duration-100">
           {faq.question}
         </span>
         <span>

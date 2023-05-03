@@ -62,16 +62,15 @@ export const Themes = () => {
       id="Themes"
       className="min-h-screen w-full bg-gray-900 px-0 py-16 md:px-10"
     >
-      <div className="mb-20 text-center text-4xl font-semibold title-gradient sm:text-5xl">
+      <div className="title-gradient mb-20 text-center text-4xl font-semibold sm:text-5xl">
         Themes / Tracks
       </div>
 
-      {/* Beautifully theme in tailwind css */}
       <div className="grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:grid-cols-3">
         {themesData.map((theme) => (
           <div
             key={theme.id}
-            className="z-10 flex flex-col items-center justify-evenly space-y-4 rounded-lg border border-gray-700 p-8"
+            className="z-10 flex flex-col items-center justify-evenly space-y-4 rounded-lg border border-gray-700 bg-gray-900 p-8"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-500">
               {theme.icon}

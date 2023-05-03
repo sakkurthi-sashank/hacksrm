@@ -44,7 +44,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative flex h-screen items-center justify-center bg-gray-900">
+    <div className="flex h-screen items-center justify-center bg-gray-900">
       <Header />
       <section
         id="Home"

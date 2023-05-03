@@ -6,6 +6,7 @@ import { PrizeWorthSection } from "./components/PrizeWorth";
 import { Themes } from "./components/Theme";
 import { ThreeJsBackground } from "./components/ThreeJsBackground";
 import { WhyHackSRMAp } from "./components/WhyHackSrmApSection";
+import { Sponsors } from "./components/Sponsors";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       <WhyHackSRMAp />
       <PrizeWorthSection />
       <Themes />
+      <Sponsors />
       <OrganizersSection />
       <FAQSection />
       <ContactUs />

@@ -3,7 +3,7 @@ import { IconBrandDiscord, IconMail } from "@tabler/icons-react";
 export const ContactUs = () => {
   return (
     <section id="ContactUs" className="min-h-screen bg-gray-900 py-10">
-      <div className="my-20 text-center text-4xl font-semibold title-gradient sm:text-5xl">
+      <div className="title-gradient my-20 text-center text-4xl font-semibold sm:text-5xl">
         Contact Us
       </div>
       <div className="my-8 flex flex-col items-center justify-evenly space-y-10">
@@ -27,17 +27,15 @@ export const ContactUs = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center flex-col space-y-6 pt-8 text-white">
-        <h5 className="text-center font-semibold text-2xl text-gray-200">
+      <div className="flex flex-col items-center justify-center space-y-6 pt-8 text-white">
+        <h5 className="text-center text-2xl font-semibold text-gray-200">
           In Collaboration With
         </h5>
-        <div className="flex items-center justify-center space-x-6">
-          <img
-            src="/next-tech-lab-logo.png"
-            alt="NextTech Logo"
-            className="z-10 h-20 rounded-sm p-2"
-          />
-        </div>
+        <img
+          src="/next-tech-lab-logo.png"
+          alt="NextTech Logo"
+          className="z-10 h-20 rounded-md bg-white p-4"
+        />
       </div>
     </section>
   );
