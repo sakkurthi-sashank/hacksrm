@@ -2,27 +2,37 @@ const SponsorsData = [
   {
     name: "Devfolio",
     image: "/sponsores/devfolio.png",
+    link: "https://devfolio.co",
     sponsorsCategory: "",
+    alt: "DEVFOLIO LOGO",
   },
   {
     name: "Polygon",
     image: "/sponsores/polygon.png",
+    link: "https://polygon.technology/",
     sponsorsCategory: "",
+    alt: "POLYGON LOGO",
   },
   {
     name: "solana",
     image: "/sponsores/solana.png",
+    link: "https://solana.com/",
     sponsorsCategory: "",
+    alt: "SOLANA LOGO",
   },
   {
     name: "filecoin",
     image: "/sponsores/filecoin.png",
+    link: "https://filecoin.io/",
     sponsorsCategory: "",
+    alt: "FILECOIN LOGO",
   },
   {
     name: "Replit",
     image: "/sponsores/replit.png",
+    link: "https://replit.com/",
     sponsorsCategory: "",
+    alt: "REPLIT LOGO",
   },
 ];
 
@@ -41,12 +51,14 @@ export const Sponsors = () => {
             className="z-10 flex flex-col items-center space-y-5 rounded py-5"
             key={sponsor.name}
           >
-            <img
-              src={sponsor.image}
-              loading="lazy"
-              alt=""
-              className={`h-16 w-auto rounded-2xl bg-gray-900 object-cover object-center p-3 sm:h-28`}
-            />
+            <a href={sponsor.link}>
+              <img
+                src={sponsor.image}
+                loading="lazy"
+                alt={sponsor.alt}
+                className={`h-16 w-auto rounded-2xl bg-gray-900 object-cover object-center p-3 sm:h-28`}
+              />
+            </a>
           </div>
         ))}
       </div>
