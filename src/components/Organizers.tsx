@@ -1,11 +1,11 @@
-const OrganizersData = [
+const AdvisorsData = [
   {
     name: "Abhiram C",
     image:
       "https://media.licdn.com/dms/image/C4D03AQHewEBNiwtebw/profile-displayphoto-shrink_800_800/0/1653160094622?e=2147483647&v=beta&t=3OP-RlPP8PDpMQqclfISOo3N9Cp4OwVXztaXVceEllQ",
   },
   {
-    name: "Karthikay",
+    name: "Karthikay G",
     image:
       "https://lh3.googleusercontent.com/u/0/d/1KJ0Sszju4bxRl0k9sRKKGMKYO1K_VnLg=w2438-h1560-iv1",
   },
@@ -24,6 +24,9 @@ const OrganizersData = [
     image:
       "https://media.licdn.com/dms/image/C5603AQGlhn-LejxWTw/profile-displayphoto-shrink_200_200/0/1602429225647?e=1687392000&v=beta&t=pRn9HnMCMptwRUIefXYcyIItpIvZn1ZxkBsINsA0K-g",
   },
+];
+
+const OrganizersData = [
   {
     name: "Omkar G",
     image:
@@ -39,21 +42,7 @@ const OrganizersData = [
     image:
       "https://lh3.googleusercontent.com/a/AGNmyxanMCOnucIHGQVixkZOa9u_-lJrzThqLqAzzgMH3A=s576-c-no",
   },
-  {
-    name: "Lokesh",
-    image:
-      "https://lh3.googleusercontent.com/fife/APg5EOYXBUy2D69me6DTqS7Vyl0Q263qf1PPL0fJ4Ly3rMKOeAxTQyW_utFWusy-mBDXvCz7_lRfq_Gwhc9zprRi7SeLuVssKq0MHiqaP4OBavW_4gTPBEhfD0NMfZPwlM9si4k9JJ-N3mmhZSGTvKGl9xrfyHhZ5B45AOABFU-WcKMypyqJTK9TMXnIUr_aCmwXgeC0cY_t8JYYHJ81WqmEfCp31aziId511nYpizyvbjiffaim8yqAx5ryFWnMZBtEg5005wrw3jrpwf_TfI3BmiVklPyI6dXTmh-kG-h_T3IJ-cE2nWLo4Mr6-lwNgYcp8cSkpJplQflUjywOl5VFxO7SP5Y7laW37eOHs8SNl-sm5B4Io4aEl4QerLL3e38jFLaCGEZ1cf5Lb7Cwdssoh2zYOOk9wwaBlozpghU-3JyguLpjEGzlx5WWMkiYHIFRAd-W4Jm-B4ofLT5XLwu_bxSmWBwHcmYPDQxr43bcK2AlM-LL-osxZjL8NFmKiUymoJ6Yoxsf7XV_6uXvfVH5petduJbfzANIBcxlIoSWow6BmpqdyBhQGOqc7LKnkcOZQ_5eTp-xn1l1U47Vbla4Hq0CSpi0v3lz6d6KuwhPzTnE9nbvkWT6sMaaQJq5yr4s0u7J83gfySVCsiu3SL-TNzqczyGhz5ijdirXA1Gnv5fcXS2ElcnUCVRBLosKpaFcJFf1ze7VcyFOb1Gb__UuwJKteBrACC0Z9ZSk5RDsWo2aN0Gt2fPaimagb5Ut9uzDwxAdWL9RoDKJ0HsgtwM4T7Xsr33t6w2GpJFtX8N13ldVRDuwUJjIGO7wpu3W1MC_VHcjdV9tr1nm3wxcwJ27910hutJsrm-lSj3clcJf_V9dbXH8Vpl_4Yg1pJIcYYquZL4kTDPcgHnR-K0uOPg1ffI6FtfbyJqA4nZSA6k7pkGJqMcnDusxT_SPXOqgXoo7Rxngp-y21gI_JBfuB8AGxkyUXnsDCNXAdM2SUyBotNKjGiGPKEcYizRRTicUB5oJ5Q9bXel-qKaNYLuxKksLIrnY86N-RfSy1irIzaH4hgvC-nMrvYJhUcVmZCwP9444BZXgCdabhFxNOjprOWUzUr0MXeHeaRzgy9SmbDAsl5vXRz8oC2FY6sfb_WKReaMx59pCxgmZ3kqIihd8ir7bjbco9rjRDjl-nb_kkd-7FcWlU2g_7R-uxMnbonXHT1v1GF77mLsErivkaEycPd3ncAtOq4NLUeTj7Dfbo3RLu8o2Km8VVPjYck37sCxtU0lj2-9hC6ks8UUmacrH9aEm_88Id59P8t1Crr0F_zjIwiaQy1QgDF_VjtaFW5fUYXJ6Jlau_Et_TcSa1j9oGiUhn6d1kDxF4Tm-2I9drk6YpE9CwulhumfVE9d2UXxx5Rttgl_GOKQtM0qP9d9RWgho_LXbY7QfXbACG8wwJZ7F0c9Eojp0OEg1aR_w9N7avwapIfHEpdYWdkXtNUyqEdQkMKk8yuHeB9pHiLenHFOAWP4FfyueWNNjgcQR3jkU2hUkAf963K2nCZrSCxr_lolaXDPO7rFv_xnCW2OA1JE=w1994-h1528",
-  },
-  {
-    name: "Subash",
-    image:
-      "https://lh3.googleusercontent.com/fife/APg5EObTmqcuz8YjBL8mtgHE61qSGaePzbqDbfs_sBKoJ6MDu16aqL3pZq6LOCXm1ERS0t5koRet9vCG14wo2t24DHRylwJLkOJfDHpWIb3z_G71MILpYM5H5fZd2Uhudb1Zftq0rYIGWLp2_GMRow76D69jaTg9Qj11CI64ydWEdseiGfRSm8muEbq4vR2Z3Y0zqv9yuNFSTImMu6Vv68D_iMWzHu1eEnrGCagPaXSVyikyeT1WwMKQtMeHOUUBGU8d1m2WDoWxVRzHM7rX5KQ9MAoXlwFeABiR4VtkyPgsgnoKDao0fMFoaw8S9MyNhzCy121PxnHjUiFYjsJlSz6zhik6yCS4jYaBUSrTG0TTsWrZlnLFVqFM1Q9MidzMUUB1dN0jdSY3fADoISkaDjGlhRIAdVEqVs7Fesz6d8MI0USHelYPN2OGxYeyv_Bd9YmRb0HrdkUVyM-tT_DJ8vEXYvGB-IgqWdQ8AwLD0zcWCE_UR8Q5s1Dynz-yG8-HNHvIoTLyfzI0amUMQlud2ctye8zwUGGs-Fw2r2Vy3Kl8sOxKF-vYBzrd1_AAOgFhPyL6eFz9Q78csubDfJpFAq08-kSTHn-tvmVP2OThxjhlq2Cvfr3M5F_IWjna-0TqlLs-19MC1wiLlnT7wzPV70xChDBQWA2uNieRD-cHLrHRBuyDHJGKGYMeduGVSGz0YqD67Y1rGbo-PNs2X_jQMaC1tdV9VxQMa-7QeZ4T1Ks_yICid-tgdpkXW30uqZS40ogq70sRllp-ncpy6tZZnRvqPRn8fHy0a6WQwlUPVLlt1pcYho3rLIm5P3wtXeuS3l7laBH3FrKa7Ge0pSvpAN0alFLUNWa3YMpHG11yXsEk7kUaGKqseilmBfYR98j_XVfAee_tPNNcltCk82GG5X1lbHsWC13sK5sl4TVQIsAT9M8oSH_Ekd1LbCd3SA0nFhZLbDMpnA3GZ7JyA7zGfe75E41obSNrYNff1RS2-K4p__YaGi0j__kDPIo55psRXL3JceDjAhnA0njwgGogtLlYSGEfj94jeqtshs3_avxV1HdfUXflmTQQbM6PyVFO9Yltx4RmQxO-bhXuL-fb6IFk703P71q2cw4vIAe6_ER_mO0fZjz5vHIVvzbH5AshnH92SbiavdjNezm1uBNrZDeOHz9SYp0JGCobCVjxEmvfH0mk9wtDhGvKNdejRduOKb8hq5VijcIxPo1qJJ3Y5exra_UWYPdvHfZUwNhxhwR1XKlMTuD2aYODBQRCAjfDQVzA06MuiBZDFrLydDC2w16DVPntpeTZuwMpZ8tldsA0edZDckSLDT-kFpJucuFLKP7AV8DrtQVNdEBC4z6YWQ4JxFsdU9801NEHtEDHwcqvSgW7c9bRFLqukV0E4ZJKTxvULudFr7npBU5Gxrq4G1PnKj3z4cCka26bFPKyr3_y2yGVHU-SGAec9GcKeMLPmE1DB6SohYlrwsAG1OnlUVmqMh-tlIrw7hMRTTHojjjIKNbksD1pI6SfPxziAY3xoxDfDCvdKIlGCHBTtsYG-oE8-_BHAmZ3mXPOL7kSd6k=w4000-h8220",
-  },
-  {
-    name: "Kumar Sashank",
-    image:
-      "https://lh3.googleusercontent.com/fife/APg5EOZZ1bBSABknjg74fxH73HPVshYiLNlUlaALXbGU9GAqnQcOta307NywZgnYrwEL3XRyIcRENWjTT8wt0W8ZOL-8wMx7CKcE4rfoKZS7N9kzcwc_jMxU6RYvz_IXgt7XQIBmoAJ7qj8K3CNvbZvbjEDH-0n8Q6C9FzF-N88r3iYqQy2bsOUDXziLgy2Bw16EBD_IzsUknAIuswWWtWgMNvkqyn3ZmWdThzHikq__Yt9ZGyKVUk12YzGnRtvjbz5ZnldsGBYSV16zxMLkj0z27wAACy5FInSebmfk0hjwEx-5DhkxFyRf3aTLUWfWJ-nkcPYX66yDQeaxTFuWF5_DWF2kdcu6uxv6vBiAnxhD-Y2A0_xf3yihY9ZlxABp_ek9WTzL_9qXP0KrPhJWuQXVwiha6ZkOz9UqFgTBNWzxFj-9kdrR0vdTtDCvfbbwhxRaGtWFWczfewiOsnGaZfVCnrLGRtF-1rpxr7ByDmP46FRa6EOODT0mqDdLWOZIa29GC-NUXffUr1FlEMXW9i73GuoYV1Vj8IcleBBTFFAvp2c-JpV2qX_h97KvKVzUwOKKmLms4BfnuDP_CzGqRd3bGAuIEB7RwGWJXvVxJMOJYl0e8npCGaNt_XNu7j97ViNwU-0248gZjfL0mhU6RuorcnRz5PcGucDuNZJ64l-LjO-Ph8ObzjVR6V4De5vDMwo61UYWmvl1Olyx0Z2H8KAaQ28BgjaMEOqFk8Ag1YwJzu79SUSRNgze-0-wtKoB4P7DtdMku5SxtsmlBpCRXE1DsJkIMVCL4NYl_ClXeH0jHa5bZS9LtIQaqUKuaVkpOE0hXOJL1WzCXBEQZQNaHYBS2RTRIgKrDzSZxrpw8EEIwhAsQFT2A7rryntkAM6XauucwMurNr9cQ_9hAaPFzdwS195qF3beuJdacOlY4wzjs2Mst51N0EZ6W2mrbx2ZdcxZDtd9fhsblbg9O03dRc5YSuPv6NuiYARgGh04EwJs6Ses22if9niVkvZAyy5BpDmYegP6B0R7IqhF24l-UKLiHmyWvBVkjQ_1MWtPyZJja39m7fdIjLPSYeMrtxnJf17w5yUWMuzqnhtxyhCKrntok_khmx5fprb6FVsc8H-KtTjcQPFrbq_GvF0cFcMkIhSBaJsvbGCkm6_kikQpxafSh6N1UD7YBMSK5IOY441i0Z_chbBOUJxfZ_wTnBQ5cA0mR9u4ZgDhlvXNYe3yINnhhk_Zd3zBbr3zPekER6ZdvY_p2MHjJd1xQzYV5BfonpolKwRLYTo65LLhY20mX-AqBoKwQ3KNpWOEYkuArAegEQzpp6C53p-KzR7HPlP3NnrW39oMm7wVDwvZKm3m1WNYhghAWw-0z-fwQX7jN72sV1X5VXgvhTJb3gBYyfGgP1s3HXGi84zUdj7Xq-cLpL1Mx-CxDgaxfy0NDMxw9R-JjH79cflOWvz8od-acUKwFJAtTCu7PnBNQe9t_l8aINjwOf4m7_jNVAAuw92MwzZke_8CiI4rSI5OEVLTLFD2sbXUpVG0iJI1tGgrehtRWj9Zukwq3MNA9v3_3EBfcCE=w1994-h1528",
-  },
+
   {
     name: "Shivansh",
     image:
@@ -87,13 +76,54 @@ const OrganizersData = [
   },
 ];
 
+const Desiginers = [
+  {
+    name: "Lokesh",
+    image:
+      "https://lh3.googleusercontent.com/fife/APg5EOYXBUy2D69me6DTqS7Vyl0Q263qf1PPL0fJ4Ly3rMKOeAxTQyW_utFWusy-mBDXvCz7_lRfq_Gwhc9zprRi7SeLuVssKq0MHiqaP4OBavW_4gTPBEhfD0NMfZPwlM9si4k9JJ-N3mmhZSGTvKGl9xrfyHhZ5B45AOABFU-WcKMypyqJTK9TMXnIUr_aCmwXgeC0cY_t8JYYHJ81WqmEfCp31aziId511nYpizyvbjiffaim8yqAx5ryFWnMZBtEg5005wrw3jrpwf_TfI3BmiVklPyI6dXTmh-kG-h_T3IJ-cE2nWLo4Mr6-lwNgYcp8cSkpJplQflUjywOl5VFxO7SP5Y7laW37eOHs8SNl-sm5B4Io4aEl4QerLL3e38jFLaCGEZ1cf5Lb7Cwdssoh2zYOOk9wwaBlozpghU-3JyguLpjEGzlx5WWMkiYHIFRAd-W4Jm-B4ofLT5XLwu_bxSmWBwHcmYPDQxr43bcK2AlM-LL-osxZjL8NFmKiUymoJ6Yoxsf7XV_6uXvfVH5petduJbfzANIBcxlIoSWow6BmpqdyBhQGOqc7LKnkcOZQ_5eTp-xn1l1U47Vbla4Hq0CSpi0v3lz6d6KuwhPzTnE9nbvkWT6sMaaQJq5yr4s0u7J83gfySVCsiu3SL-TNzqczyGhz5ijdirXA1Gnv5fcXS2ElcnUCVRBLosKpaFcJFf1ze7VcyFOb1Gb__UuwJKteBrACC0Z9ZSk5RDsWo2aN0Gt2fPaimagb5Ut9uzDwxAdWL9RoDKJ0HsgtwM4T7Xsr33t6w2GpJFtX8N13ldVRDuwUJjIGO7wpu3W1MC_VHcjdV9tr1nm3wxcwJ27910hutJsrm-lSj3clcJf_V9dbXH8Vpl_4Yg1pJIcYYquZL4kTDPcgHnR-K0uOPg1ffI6FtfbyJqA4nZSA6k7pkGJqMcnDusxT_SPXOqgXoo7Rxngp-y21gI_JBfuB8AGxkyUXnsDCNXAdM2SUyBotNKjGiGPKEcYizRRTicUB5oJ5Q9bXel-qKaNYLuxKksLIrnY86N-RfSy1irIzaH4hgvC-nMrvYJhUcVmZCwP9444BZXgCdabhFxNOjprOWUzUr0MXeHeaRzgy9SmbDAsl5vXRz8oC2FY6sfb_WKReaMx59pCxgmZ3kqIihd8ir7bjbco9rjRDjl-nb_kkd-7FcWlU2g_7R-uxMnbonXHT1v1GF77mLsErivkaEycPd3ncAtOq4NLUeTj7Dfbo3RLu8o2Km8VVPjYck37sCxtU0lj2-9hC6ks8UUmacrH9aEm_88Id59P8t1Crr0F_zjIwiaQy1QgDF_VjtaFW5fUYXJ6Jlau_Et_TcSa1j9oGiUhn6d1kDxF4Tm-2I9drk6YpE9CwulhumfVE9d2UXxx5Rttgl_GOKQtM0qP9d9RWgho_LXbY7QfXbACG8wwJZ7F0c9Eojp0OEg1aR_w9N7avwapIfHEpdYWdkXtNUyqEdQkMKk8yuHeB9pHiLenHFOAWP4FfyueWNNjgcQR3jkU2hUkAf963K2nCZrSCxr_lolaXDPO7rFv_xnCW2OA1JE=w1994-h1528",
+  },
+  {
+    name: "Subash",
+    image:
+      "https://lh3.googleusercontent.com/fife/APg5EObTmqcuz8YjBL8mtgHE61qSGaePzbqDbfs_sBKoJ6MDu16aqL3pZq6LOCXm1ERS0t5koRet9vCG14wo2t24DHRylwJLkOJfDHpWIb3z_G71MILpYM5H5fZd2Uhudb1Zftq0rYIGWLp2_GMRow76D69jaTg9Qj11CI64ydWEdseiGfRSm8muEbq4vR2Z3Y0zqv9yuNFSTImMu6Vv68D_iMWzHu1eEnrGCagPaXSVyikyeT1WwMKQtMeHOUUBGU8d1m2WDoWxVRzHM7rX5KQ9MAoXlwFeABiR4VtkyPgsgnoKDao0fMFoaw8S9MyNhzCy121PxnHjUiFYjsJlSz6zhik6yCS4jYaBUSrTG0TTsWrZlnLFVqFM1Q9MidzMUUB1dN0jdSY3fADoISkaDjGlhRIAdVEqVs7Fesz6d8MI0USHelYPN2OGxYeyv_Bd9YmRb0HrdkUVyM-tT_DJ8vEXYvGB-IgqWdQ8AwLD0zcWCE_UR8Q5s1Dynz-yG8-HNHvIoTLyfzI0amUMQlud2ctye8zwUGGs-Fw2r2Vy3Kl8sOxKF-vYBzrd1_AAOgFhPyL6eFz9Q78csubDfJpFAq08-kSTHn-tvmVP2OThxjhlq2Cvfr3M5F_IWjna-0TqlLs-19MC1wiLlnT7wzPV70xChDBQWA2uNieRD-cHLrHRBuyDHJGKGYMeduGVSGz0YqD67Y1rGbo-PNs2X_jQMaC1tdV9VxQMa-7QeZ4T1Ks_yICid-tgdpkXW30uqZS40ogq70sRllp-ncpy6tZZnRvqPRn8fHy0a6WQwlUPVLlt1pcYho3rLIm5P3wtXeuS3l7laBH3FrKa7Ge0pSvpAN0alFLUNWa3YMpHG11yXsEk7kUaGKqseilmBfYR98j_XVfAee_tPNNcltCk82GG5X1lbHsWC13sK5sl4TVQIsAT9M8oSH_Ekd1LbCd3SA0nFhZLbDMpnA3GZ7JyA7zGfe75E41obSNrYNff1RS2-K4p__YaGi0j__kDPIo55psRXL3JceDjAhnA0njwgGogtLlYSGEfj94jeqtshs3_avxV1HdfUXflmTQQbM6PyVFO9Yltx4RmQxO-bhXuL-fb6IFk703P71q2cw4vIAe6_ER_mO0fZjz5vHIVvzbH5AshnH92SbiavdjNezm1uBNrZDeOHz9SYp0JGCobCVjxEmvfH0mk9wtDhGvKNdejRduOKb8hq5VijcIxPo1qJJ3Y5exra_UWYPdvHfZUwNhxhwR1XKlMTuD2aYODBQRCAjfDQVzA06MuiBZDFrLydDC2w16DVPntpeTZuwMpZ8tldsA0edZDckSLDT-kFpJucuFLKP7AV8DrtQVNdEBC4z6YWQ4JxFsdU9801NEHtEDHwcqvSgW7c9bRFLqukV0E4ZJKTxvULudFr7npBU5Gxrq4G1PnKj3z4cCka26bFPKyr3_y2yGVHU-SGAec9GcKeMLPmE1DB6SohYlrwsAG1OnlUVmqMh-tlIrw7hMRTTHojjjIKNbksD1pI6SfPxziAY3xoxDfDCvdKIlGCHBTtsYG-oE8-_BHAmZ3mXPOL7kSd6k=w4000-h8220",
+  },
+  {
+    name: "Kumar Sashank",
+    image:
+      "https://lh3.googleusercontent.com/fife/APg5EOZZ1bBSABknjg74fxH73HPVshYiLNlUlaALXbGU9GAqnQcOta307NywZgnYrwEL3XRyIcRENWjTT8wt0W8ZOL-8wMx7CKcE4rfoKZS7N9kzcwc_jMxU6RYvz_IXgt7XQIBmoAJ7qj8K3CNvbZvbjEDH-0n8Q6C9FzF-N88r3iYqQy2bsOUDXziLgy2Bw16EBD_IzsUknAIuswWWtWgMNvkqyn3ZmWdThzHikq__Yt9ZGyKVUk12YzGnRtvjbz5ZnldsGBYSV16zxMLkj0z27wAACy5FInSebmfk0hjwEx-5DhkxFyRf3aTLUWfWJ-nkcPYX66yDQeaxTFuWF5_DWF2kdcu6uxv6vBiAnxhD-Y2A0_xf3yihY9ZlxABp_ek9WTzL_9qXP0KrPhJWuQXVwiha6ZkOz9UqFgTBNWzxFj-9kdrR0vdTtDCvfbbwhxRaGtWFWczfewiOsnGaZfVCnrLGRtF-1rpxr7ByDmP46FRa6EOODT0mqDdLWOZIa29GC-NUXffUr1FlEMXW9i73GuoYV1Vj8IcleBBTFFAvp2c-JpV2qX_h97KvKVzUwOKKmLms4BfnuDP_CzGqRd3bGAuIEB7RwGWJXvVxJMOJYl0e8npCGaNt_XNu7j97ViNwU-0248gZjfL0mhU6RuorcnRz5PcGucDuNZJ64l-LjO-Ph8ObzjVR6V4De5vDMwo61UYWmvl1Olyx0Z2H8KAaQ28BgjaMEOqFk8Ag1YwJzu79SUSRNgze-0-wtKoB4P7DtdMku5SxtsmlBpCRXE1DsJkIMVCL4NYl_ClXeH0jHa5bZS9LtIQaqUKuaVkpOE0hXOJL1WzCXBEQZQNaHYBS2RTRIgKrDzSZxrpw8EEIwhAsQFT2A7rryntkAM6XauucwMurNr9cQ_9hAaPFzdwS195qF3beuJdacOlY4wzjs2Mst51N0EZ6W2mrbx2ZdcxZDtd9fhsblbg9O03dRc5YSuPv6NuiYARgGh04EwJs6Ses22if9niVkvZAyy5BpDmYegP6B0R7IqhF24l-UKLiHmyWvBVkjQ_1MWtPyZJja39m7fdIjLPSYeMrtxnJf17w5yUWMuzqnhtxyhCKrntok_khmx5fprb6FVsc8H-KtTjcQPFrbq_GvF0cFcMkIhSBaJsvbGCkm6_kikQpxafSh6N1UD7YBMSK5IOY441i0Z_chbBOUJxfZ_wTnBQ5cA0mR9u4ZgDhlvXNYe3yINnhhk_Zd3zBbr3zPekER6ZdvY_p2MHjJd1xQzYV5BfonpolKwRLYTo65LLhY20mX-AqBoKwQ3KNpWOEYkuArAegEQzpp6C53p-KzR7HPlP3NnrW39oMm7wVDwvZKm3m1WNYhghAWw-0z-fwQX7jN72sV1X5VXgvhTJb3gBYyfGgP1s3HXGi84zUdj7Xq-cLpL1Mx-CxDgaxfy0NDMxw9R-JjH79cflOWvz8od-acUKwFJAtTCu7PnBNQe9t_l8aINjwOf4m7_jNVAAuw92MwzZke_8CiI4rSI5OEVLTLFD2sbXUpVG0iJI1tGgrehtRWj9Zukwq3MNA9v3_3EBfcCE=w1994-h1528",
+  },
+];
+
 export const OrganizersSection = () => {
   return (
     <section
       id="Organizers"
       className="min-h-screen bg-gray-900 px-2 pb-4 pt-5 sm:px-10 sm:pt-10"
     >
-      <div className="title-gradient my-10 py-3 text-center text-4xl font-semibold sm:mt-20 sm:text-5xl">
+      <div className="title-gradient my-10 py-3 text-center text-4xl font-semibold sm:mt-20">
+        Adivsory Board
+      </div>
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
+        {AdvisorsData.map((organizer) => (
+          <div
+            className="z-10 flex flex-col items-center space-y-5 rounded py-5"
+            key={organizer.name}
+          >
+            <img
+              src={organizer.image}
+              loading="lazy"
+              alt=""
+              className="h-10 w-10 rounded-md object-cover object-center sm:h-20 sm:w-20"
+            />
+            <div>
+              <div className="indigo mb-2 text-center text-xs font-normal text-gray-200 antialiased md:text-base">
+                {organizer.name}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="title-gradient my-10 py-3 text-center text-4xl font-semibold sm:mt-20">
         Organizers Team
       </div>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
@@ -112,9 +142,29 @@ export const OrganizersSection = () => {
               <div className="indigo mb-2 text-center text-xs font-normal text-gray-200 antialiased md:text-base">
                 {organizer.name}
               </div>
-              {/* <div className="my-2 rounded-xl border border-indigo-500 px-2 py-0.5 text-center text-xs font-normal text-indigo-500 antialiased">
-                {organizer.team}
-              </div> */}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="title-gradient my-10 py-3 text-center text-4xl font-semibold sm:mt-20">
+        Desiginers Team
+      </div>
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
+        {Desiginers.map((organizer) => (
+          <div
+            className="z-10 flex flex-col items-center space-y-5 rounded py-5"
+            key={organizer.name}
+          >
+            <img
+              src={organizer.image}
+              loading="lazy"
+              alt=""
+              className="h-10 w-10 rounded-md object-cover object-center sm:h-20 sm:w-20"
+            />
+            <div>
+              <div className="indigo mb-2 text-center text-xs font-normal text-gray-200 antialiased md:text-base">
+                {organizer.name}
+              </div>
             </div>
           </div>
         ))}
