@@ -74,9 +74,6 @@ const OrganizersData = [
     image:
       "https://media.licdn.com/dms/image/C4E03AQGhh1NyGhBcGA/profile-displayphoto-shrink_100_100/0/1652032587884?e=1688601600&v=beta&t=otJVfQaSmX4V6SeI1oLKPMZbs15HC_dypzdwLTosRM4",
   },
-];
-
-const Desiginers = [
   {
     name: "Lokesh",
     image:
@@ -128,29 +125,6 @@ export const OrganizersSection = () => {
       </div>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
         {OrganizersData.map((organizer) => (
-          <div
-            className="z-10 flex flex-col items-center space-y-5 rounded py-5"
-            key={organizer.name}
-          >
-            <img
-              src={organizer.image}
-              loading="lazy"
-              alt=""
-              className="h-10 w-10 rounded-md object-cover object-center sm:h-20 sm:w-20"
-            />
-            <div>
-              <div className="indigo mb-2 text-center text-xs font-normal text-gray-200 antialiased md:text-base">
-                {organizer.name}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="title-gradient my-10 py-3 text-center text-4xl font-semibold sm:mt-20">
-        Desiginers Team
-      </div>
-      <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
-        {Desiginers.map((organizer) => (
           <div
             className="z-10 flex flex-col items-center space-y-5 rounded py-5"
             key={organizer.name}

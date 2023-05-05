@@ -43,7 +43,7 @@ export const WhyHackSRMAp = () => {
           Why you need to participate in HackSRM?
         </h2>
         <p className="z-10 text-gray-200">
-          Hack SRM is a 36-hour hackathon where you can build your dream project
+          Hack SRM is a 24-hour hackathon where you can build your dream project
           with your friends and win exciting prizes. It is a great opportunity
           to learn new skills, meet new people, and have fun.
         </p>
