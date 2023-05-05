@@ -1,18 +1,27 @@
 const SponsorsData = [
   {
-    name: "Code Chef",
-    image: "https://cdn.codechef.com/images/cc-logo.svg",
+    name: "Devfolio",
+    image: "/sponsores/devfolio.png",
     sponsorsCategory: "",
   },
   {
-    name: "Taskade",
-    image:
-      "https://www.taskade.com/static_images/taskade-circle-logo-full-black.png",
+    name: "Polygon",
+    image: "/sponsores/polygon.png",
     sponsorsCategory: "",
   },
   {
-    name: "Wolfram",
-    image: "https://www.wolframalpha.com/_next/static/images/Logo_1t99UmgS.svg",
+    name: "solana",
+    image: "/sponsores/solana.png",
+    sponsorsCategory: "",
+  },
+  {
+    name: "filecoin",
+    image: "/sponsores/filecoin.png",
+    sponsorsCategory: "",
+  },
+  {
+    name: "Replit",
+    image: "/sponsores/replit.png",
     sponsorsCategory: "",
   },
 ];
@@ -36,7 +45,7 @@ export const Sponsors = () => {
               src={sponsor.image}
               loading="lazy"
               alt=""
-              className="h-16 w-auto rounded-2xl bg-gray-900 object-cover object-center p-3 sm:h-28"
+              className={`h-16 w-auto rounded-2xl bg-gray-900 object-cover object-center p-3 sm:h-28`}
             />
           </div>
         ))}

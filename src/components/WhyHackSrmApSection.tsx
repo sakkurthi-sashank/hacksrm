@@ -39,7 +39,7 @@ export const WhyHackSRMAp = () => {
       className="my-0 min-h-screen bg-gray-900 px-6 py-16 sm:px-20 sm:pt-28"
     >
       <div className="max-w-3xl space-y-3">
-        <h2 className="title-gradient z-10 mb-6 font-orbitron text-4xl font-semibold sm:text-5xl">
+        <h2 className="title-gradient font-orbitron z-10 mb-6 text-4xl font-semibold sm:text-5xl">
           Why you need to participate in HackSRM?
         </h2>
         <p className="z-10 text-gray-200">
