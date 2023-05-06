@@ -98,7 +98,7 @@ export const OrganizersSection = () => {
       className="min-h-screen bg-gray-900 px-2 pb-4 pt-5 sm:px-10 sm:pt-10"
     >
       <div className="title-gradient my-10 py-3 text-center text-4xl font-semibold sm:mt-20">
-        Adivsory Board
+        Organizers Heads
       </div>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
         {AdvisorsData.map((organizer) => (
@@ -110,7 +110,7 @@ export const OrganizersSection = () => {
               src={organizer.image}
               loading="lazy"
               alt=""
-              className="h-10 w-10 rounded-md object-cover object-center sm:h-20 sm:w-20"
+              className="h-14 w-14 rounded-md object-cover object-center sm:h-24 sm:w-24"
             />
             <div>
               <div className="indigo mb-2 text-center text-xs font-normal text-gray-200 antialiased md:text-base">
@@ -121,7 +121,7 @@ export const OrganizersSection = () => {
         ))}
       </div>
       <div className="title-gradient my-10 py-3 text-center text-4xl font-semibold sm:mt-20">
-        Organizers Team
+        Organization Team
       </div>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
         {OrganizersData.map((organizer) => (
@@ -133,7 +133,7 @@ export const OrganizersSection = () => {
               src={organizer.image}
               loading="lazy"
               alt=""
-              className="h-10 w-10 rounded-md object-cover object-center sm:h-20 sm:w-20"
+              className="h-14 w-14 rounded-md object-cover object-center sm:h-24 sm:w-24"
             />
             <div>
               <div className="indigo mb-2 text-center text-xs font-normal text-gray-200 antialiased md:text-base">

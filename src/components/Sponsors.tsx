@@ -42,8 +42,20 @@ export const Sponsors = () => {
       id="Sponsors"
       className="min-h-screen bg-gray-900 px-2 pb-4 pt-5 sm:px-10 sm:pt-10"
     >
-      <div className="title-gradient my-10 text-center text-4xl font-semibold sm:mt-20 sm:text-5xl">
-        Sponsors
+      <div className="flex w-full flex-col items-center justify-center py-10">
+        <div className="mr-10 pb-10 text-3xl font-semibold text-indigo-600 sm:text-5xl">
+          Title Sponsor
+        </div>
+        <img
+          src="https://nimblebox.ai/_next/static/media/site-logo-light.148d6d0b.svg"
+          alt=""
+          className="h-20 px-4"
+        />
+      </div>
+      <div className="flex w-full flex-col items-center justify-center py-10">
+        <div className="mr-10 pb-8 text-3xl font-semibold text-indigo-600 sm:text-5xl">
+          Sponsor
+        </div>
       </div>
       <div className="flex flex-wrap justify-center gap-10">
         {SponsorsData.map((sponsor) => (
@@ -56,7 +68,7 @@ export const Sponsors = () => {
                 src={sponsor.image}
                 loading="lazy"
                 alt={sponsor.alt}
-                className={`h-16 w-auto rounded-2xl bg-gray-900 object-cover object-center p-3 sm:h-28`}
+                className={`h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28`}
               />
             </a>
           </div>

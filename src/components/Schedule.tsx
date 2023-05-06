@@ -39,7 +39,7 @@ export const Schedule = () => {
 
   return (
     <section
-      id="Sponsors"
+      id="Schedule"
       className="flex min-h-screen flex-col items-center justify-center bg-gray-900 px-4 pb-4 pt-5 sm:px-10 sm:pt-10"
     >
       <div className="title-gradient my-10 text-center text-4xl font-semibold sm:mt-20 sm:text-5xl">

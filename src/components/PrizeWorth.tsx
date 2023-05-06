@@ -8,7 +8,7 @@ export const PrizeWorthSection = () => {
     >
       <ThreeJsBackground />
       <div className="mb-6 text-center text-3xl font-semibold leading-relaxed text-indigo-500 sm:text-5xl">
-        Prizes Worth more than 4 Lakhs 🎉
+        Prizes Worth more than 20 Lakhs 🎉
       </div>
       <div className="mb-6 text-center text-2xl font-semibold text-gray-300 sm:text-3xl">
         Will Be Announced Soon
