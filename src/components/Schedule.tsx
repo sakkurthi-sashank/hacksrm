@@ -45,8 +45,8 @@ export const Schedule = () => {
       <div className="title-gradient my-10 text-center text-4xl font-semibold sm:mt-20 sm:text-5xl">
         Schedule
       </div>
-      <div className="z-10 mt-20 w-full max-w-2xl rounded-xl border border-gray-700 bg-white">
-        <div className="flex h-14 justify-between rounded-lg border-b border-gray-300">
+      <div className="z-10 mt-20 w-full max-w-2xl rounded-xl border border-gray-700 bg-gray-900">
+        <div className="flex h-14 justify-between rounded-lg border-b border-gray-700">
           <div className="flex h-14 w-20 items-center justify-center">
             <IconChevronLeft
               onClick={() => {
@@ -54,11 +54,11 @@ export const Schedule = () => {
                 setDayNumber("Day 1 - 19th May");
               }}
               stroke={1}
-              className="h-10 w-10 rounded-lg text-gray-700 hover:bg-gray-100"
+              className="h-10 w-10 rounded-lg text-gray-300 hover:bg-gray-100"
             />
           </div>
           <div className="flex h-14 w-full items-center justify-center">
-            <div className="text-base font-bold text-gray-700 md:text-2xl">
+            <div className="text-base font-bold text-gray-200 md:text-2xl">
               {dayNumber}
             </div>
           </div>
@@ -69,20 +69,20 @@ export const Schedule = () => {
                 setDayNumber("Day 2 - 20th May");
               }}
               stroke={1}
-              className="h-10 w-10 rounded-lg text-gray-700 hover:bg-gray-100"
+              className="h-10 w-10 rounded-lg text-gray-300 hover:bg-gray-100"
             />
           </div>
         </div>
-        <div className="flex min-h-[400px] w-full flex-col divide-y divide-gray-300 overflow-y-scroll">
+        <div className="flex min-h-[400px] w-full flex-col divide-y divide-gray-700 overflow-y-scroll">
           {day.map((item) => (
             <div key={item.title} className="flex flex-col p-4">
-              <div className="text-base font-semibold text-gray-600 md:text-xl">
+              <div className="text-base font-semibold text-gray-300 md:text-xl">
                 {item.time}
               </div>
-              <div className="text-base font-semibold text-gray-600 md:text-lg">
+              <div className="text-base font-semibold text-gray-300 md:text-lg">
                 {item.title}
               </div>
-              <div className="text-gray-500">{item.description}</div>
+              <div className="text-gray-400">{item.description}</div>
             </div>
           ))}
         </div>

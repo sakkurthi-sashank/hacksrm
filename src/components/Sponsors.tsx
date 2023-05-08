@@ -46,11 +46,17 @@ export const Sponsors = () => {
         <div className="mr-10 pb-10 text-3xl font-semibold text-indigo-600 sm:text-5xl">
           Title Sponsor
         </div>
-        <img
-          src="https://nimblebox.ai/_next/static/media/site-logo-light.148d6d0b.svg"
-          alt=""
-          className="h-20 px-4"
-        />
+        <a
+          href="https://nimblebox.ai/"
+          target="_blank"
+          className="z-10 cursor-pointer"
+        >
+          <img
+            src="https://nimblebox.ai/_next/static/media/site-logo-light.148d6d0b.svg"
+            alt=""
+            className="h-20 px-4"
+          />
+        </a>
       </div>
       <div className="flex w-full flex-col items-center justify-center py-10">
         <div className="mr-10 pb-8 text-3xl font-semibold text-indigo-600 sm:text-5xl">

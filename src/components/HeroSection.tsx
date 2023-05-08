@@ -51,7 +51,7 @@ export const HeroSection = () => {
       <Header />
       <section
         id="Home"
-        className="m-auto flex w-full flex-col items-center justify-evenly  px-0 py-10 xl:flex-row-reverse xl:justify-between xl:px-6"
+        className="m-auto flex w-full flex-col justify-evenly  px-0 xl:flex-row-reverse xl:justify-between xl:px-6"
       >
         <div className="flex w-full items-center justify-start">
           <img
@@ -59,8 +59,7 @@ export const HeroSection = () => {
             src="hack-srm-logo.png"
           />
         </div>
-        <div className="w-full max-w-md space-y-0 py-10 xl:space-y-6">
-          {/* Title */}
+        <div className="relative w-full max-w-md space-y-0 py-10 xl:space-y-6">
           <div className="title-gradient flex items-center justify-center space-y-4">
             Hackathon will start in
           </div>
@@ -101,16 +100,18 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex w-full flex-col flex-wrap items-center justify-center gap-4 pt-14 text-sm sm:text-base">
+          <div className="absolute flex w-full flex-col flex-wrap items-center justify-center gap-4 pt-0 pt-6 text-sm sm:text-base">
             <div
               className="apply-button z-10"
               data-hackathon-slug="hack-srm"
               data-button-theme="light"
               style={{ height: "44px", width: "312px" }}
             ></div>
-            <button className="z-10 w-80 rounded-sm bg-white p-2.5 text-indigo-600 hover:bg-gray-100">
-              Join Discord
-            </button>
+            <a href="https://discord.com/widget?id=1101575465384300737&theme=dark">
+              <button className="z-10 w-80 rounded-sm bg-white p-2.5 font-medium text-indigo-600 hover:bg-gray-100">
+                Join Discord
+              </button>
+            </a>
           </div>
         </div>
       </section>
