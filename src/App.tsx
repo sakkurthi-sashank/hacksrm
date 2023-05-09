@@ -11,7 +11,7 @@ import { Schedule } from "./components/Schedule";
 
 export const App = () => {
   return (
-    <div>
+    <div className="">
       <ThreeJsBackground />
       <HeroSection />
       <WhyHackSRMAp />

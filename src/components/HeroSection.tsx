@@ -102,7 +102,7 @@ export const HeroSection = () => {
 
           <div className="absolute flex w-full flex-col flex-wrap items-center justify-center gap-4 pt-0 pt-6 text-sm sm:text-base">
             <div
-              className="apply-button z-10"
+              className="apply-button bottom-0 cursor-pointer z-10"
               data-hackathon-slug="hack-srm"
               data-button-theme="light"
               style={{ height: "44px", width: "312px" }}
