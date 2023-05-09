@@ -63,7 +63,7 @@ export const Themes = () => {
       className="min-h-screen w-full bg-gray-900 px-0 py-16 md:px-10"
     >
       <div className="title-gradient mb-20 text-center text-4xl font-semibold sm:text-5xl">
-        Themes / Tracks
+        Themes
       </div>
 
       <div className="grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:grid-cols-3">

@@ -52,6 +52,13 @@ const OrganizationHead = [
     team: "Technical",
   },
   {
+    name: "Amandeep Kumar",
+    image:
+      "https://cdn.discordapp.com/attachments/1101453061681057812/1105093954518651031/profile.jpg",
+    position: "Member",
+    team: "Technical",
+  },
+  {
     name: "Lokesh",
     image:
       "https://cdn.discordapp.com/attachments/1105379652379353148/1105380326315925564/Lokesh_SSS.jpg",
@@ -98,13 +105,6 @@ const OrganizationHead = [
     image:
       "https://media.discordapp.net/attachments/1104858606563762307/1104859143770222742/cc6e7247bfa4dfe212a4dc1149cc9346.png",
     position: "Associate",
-    team: "Technical",
-  },
-  {
-    name: "Amandeep Kumar",
-    image:
-      "https://cdn.discordapp.com/attachments/1101453061681057812/1105093954518651031/profile.jpg",
-    position: "Member",
     team: "Technical",
   },
   {

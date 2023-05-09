@@ -18,12 +18,12 @@ const NavLinks = [
     link: "Themes",
   },
   {
-    name: "Schedule",
-    link: "Schedule",
-  },
-  {
     name: "Sponsors",
     link: "Sponsors",
+  },
+  {
+    name: "Schedule",
+    link: "Schedule",
   },
   {
     name: "Organizers",

@@ -42,22 +42,15 @@ const PlatinumSponsorsData = [
 
 const GoldSponsorsData = [
   {
-    name: "Devfolio",
-    image: "/sponsores/devfolio.png",
-    link: "https://devfolio.co",
-    sponsorsCategory: "",
-    alt: "DEVFOLIO LOGO",
-  },
-];
-
-const SilverSponsorsData = [
-  {
     name: "Polygon",
     image: "/sponsores/polygon.png",
     link: "https://polygon.technology/",
     sponsorsCategory: "",
     alt: "POLYGON LOGO",
   },
+];
+
+const SilverSponsorsData = [
   {
     name: "solana",
     image: "/sponsores/solana.png",
