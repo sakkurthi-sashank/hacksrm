@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { IconBrandDiscord } from "@tabler/icons-react";
 import { Header } from "./Header";
 
 export const HeroSection = () => {
@@ -55,15 +56,15 @@ export const HeroSection = () => {
       >
         <div className="flex w-full items-center justify-start">
           <img
-            className="z-10 m-auto h-[280px] w-auto pt-10 md:h-[360px] xl:h-[500px]"
-            src="hack-srm-logo.png"
+            className="z-10 m-auto h-[280px] w-auto md:h-[360px] xl:h-[500px]"
+            src="/hack-srm-logo.png"
           />
         </div>
-        <div className="relative w-full max-w-md space-y-0 py-10 xl:space-y-6">
-          <div className="title-gradient flex items-center justify-center space-y-4">
-            Hackathon will start in
+        <div className="relative mx-auto w-full max-w-md space-y-0 py-20 xl:space-y-6">
+          <div className="title-gradient flex items-center justify-center space-y-4 text-2xl font-semibold">
+            HACKATHON STARTS IN
           </div>
-          <div className="title-gradient flex flex-row justify-center gap-1 text-4xl font-bold sm:text-6xl">
+          <div className="title-gradient flex flex-row justify-center gap-1 text-4xl font-bold sm:text-7xl">
             <div className="flex flex-col gap-2 text-center">
               <span>{days}</span>
               <span className="text-sm lg:text-lg">Days</span>
@@ -80,37 +81,21 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* Venue and Date */}
-          <div className="flex flex-col items-center justify-center space-y-4 pt-6 text-white">
-            <div className="flex flex-col items-center justify-center space-y-2 text-white">
-              <span className="text-center text-lg">
-                DATES:
-                <span className="pl-3 font-medium text-indigo-400">
-                  19th - 20th May 2023
-                </span>
-              </span>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-2 text-white">
-              <span className="text-center text-lg">
-                VENUE: SRM University AP
-              </span>
-              <span className="text-base sm:text-lg">
-                Amaravati, Andhra Pradesh
-              </span>
-            </div>
-          </div>
-
-          <div className="absolute flex w-full flex-col flex-wrap items-center justify-center gap-4 pt-0 pt-6 text-sm sm:text-base">
+          <div className="absolute flex w-full flex-col flex-wrap items-center justify-center gap-4 pt-10 text-sm sm:text-base">
             <div
-              className="apply-button bottom-0 cursor-pointer z-10"
+              className="apply-button bottom-0 z-10 cursor-pointer"
               data-hackathon-slug="hack-srm"
               data-button-theme="light"
               style={{ height: "44px", width: "312px" }}
             ></div>
-            <a href="https://discord.com/widget?id=1101575465384300737&theme=dark">
-              <button className="z-10 w-80 rounded-sm bg-white p-2.5 font-medium text-indigo-600 hover:bg-gray-100">
-                Join Discord
-              </button>
+            <a
+              href="https://discord.com/widget?id=1101575465384300737&theme=dark"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-80 items-center justify-center gap-2 rounded-md bg-indigo-500 py-2.5 text-white"
+            >
+              <IconBrandDiscord size={24} />
+              <span>Join Discord</span>
             </a>
           </div>
         </div>

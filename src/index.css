@@ -11,23 +11,12 @@ html {
 
 @layer components {
   .title-gradient {
-    @apply bg-gradient-to-b from-indigo-600 to-indigo-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-b from-indigo-600 to-indigo-100 bg-clip-text text-transparent;
   }
 }
 
-
 ::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-gray-800;
-  /* background-color: #6b46c1; /* dark purple / */
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f3e8ff;
+  width: 0px;
 }
 
 .main {
@@ -50,7 +39,7 @@ html {
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  width: 4px;
+  width: 2px;
 }
 .main .timeline .timeline-item {
   clear: both;
@@ -59,14 +48,14 @@ html {
   position: relative;
 }
 .main .timeline .timeline-item:before {
-  background: #6260ec;
+  background: linear-gradient(to bottom, #7947e7, #6260ec);
   border-radius: 50%;
   content: "";
-  height: 20px;
+  height: 15px;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  width: 20px;
+  width: 15px;
 }
 .main .timeline .timeline-item .timeline-content {
   padding: 1em;

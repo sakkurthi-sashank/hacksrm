@@ -1,6 +1,53 @@
-import { IconBrandDiscord, IconMail } from "@tabler/icons-react";
+import {
+  IconMail,
+  IconBrandInstagram,
+  IconBrandTwitter,
+  IconBrandLinkedin,
+} from "@tabler/icons-react";
+
+const SocialIcon = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-200 hover:text-gray-400"
+  >
+    {children}
+  </a>
+);
 
 export const ContactUs = () => {
+  const socials = [
+    {
+      href: "https://www.instagram.com/hacksrm23/",
+      icon: (
+        <IconBrandInstagram
+          size={50}
+          stroke={1.5}
+          className="text-fuchsia-500"
+        />
+      ),
+    },
+    {
+      href: "https://twitter.com/HackSrm23",
+      icon: (
+        <IconBrandTwitter size={50} stroke={1.5} className="text-blue-400" />
+      ),
+    },
+    {
+      href: "https://www.linkedin.com/in/hack-srm-0a5624274/",
+      icon: (
+        <IconBrandLinkedin size={50} stroke={1.5} className="text-blue-600" />
+      ),
+    },
+  ];
+
   return (
     <section id="ContactUs" className="min-h-screen bg-gray-900 py-10">
       <div className="title-gradient my-20 text-center text-4xl font-semibold sm:text-5xl">
@@ -12,17 +59,22 @@ export const ContactUs = () => {
             className="h-20 w-20  rounded-full bg-indigo-600 p-4 text-white sm:h-24 sm:w-24"
             stroke={1.5}
           />
-          <div className="indigo text-center text-xl text-gray-200 antialiased sm:text-2xl">
-            help@hacksrm.tech
+
+          <div className="indigo z-10 text-center text-xl text-gray-200 antialiased sm:text-2xl">
+            <a href="mailto:help@hacksrm.tech">help@hacksrm.tech</a>
           </div>
         </div>
-        <div className="flex items-center justify-center">
-          <a href="https://discord.com/widget?id=1101575465384300737&theme=dark">
-            <button className="z-10 w-80 rounded-sm bg-white p-2.5 font-medium text-indigo-600 hover:bg-gray-100">
-              Join Discord
-            </button>
-          </a>
-        </div>
+      </div>
+
+      <div className="flex items-center justify-center space-x-6">
+        {socials.map(({ href, icon }) => (
+          <div
+            key={href}
+            className="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"
+          >
+            <SocialIcon href={href}>{icon}</SocialIcon>
+          </div>
+        ))}
       </div>
 
       <div className="flex flex-col items-center justify-center space-y-6 pt-8 text-white">
@@ -30,9 +82,9 @@ export const ContactUs = () => {
           In Collaboration With
         </h5>
         <img
-          src="/next-tech-lab-logo.png"
+          src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512128867213382/ntllogo.png"
           alt="NextTech Logo"
-          className="z-10 h-20 rounded-md bg-white p-4"
+          className="z-10 h-24 rounded-md p-4"
         />
       </div>
     </section>
