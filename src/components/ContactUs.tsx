@@ -13,17 +13,15 @@ export const ContactUs = () => {
             stroke={1.5}
           />
           <div className="indigo text-center text-xl text-gray-200 antialiased sm:text-2xl">
-            hacksrm@srmap.edu.in
+            help@hacksrm.tech
           </div>
         </div>
-        <div className="flex items-center justify-center space-x-6">
-          <IconBrandDiscord
-            className="h-20 w-20  rounded-full bg-indigo-600 p-4 text-white sm:h-24 sm:w-24"
-            stroke={1.5}
-          />
-          <div className="indigo text-center text-xl text-gray-200 antialiased sm:text-2xl">
-            discord.gg/nexttech
-          </div>
+        <div className="flex items-center justify-center">
+          <a href="https://discord.com/widget?id=1101575465384300737&theme=dark">
+            <button className="z-10 w-80 rounded-sm bg-white p-2.5 font-medium text-indigo-600 hover:bg-gray-100">
+              Join Discord
+            </button>
+          </a>
         </div>
       </div>
 

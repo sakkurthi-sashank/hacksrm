@@ -1,42 +1,4 @@
-import { useState } from "react";
-import { IconChevronRight, IconChevronLeft } from "@tabler/icons-react";
-
-const scheduleDataDay1 = [
-  {
-    time: "12:00 PM - 01:00 PM",
-    title: "Opening Ceremony",
-    description:
-      "Vice Chancellor Speech, Sponsor Speech, Rules and Problem Statement",
-  },
-  {
-    time: "01:00 PM",
-    title: "Start of Hackathon",
-    description: "Participants start working on their projects",
-  },
-];
-
-const scheduleDataDay2 = [
-  {
-    time: "02:30 PM - 05:00 PM",
-    title: "Presentation Round",
-    description: "Participants present their projects to the judges",
-  },
-  {
-    time: "05:00 PM - 05:30 PM",
-    title: "Announcement of Results",
-    description: "Winners are announced and prizes are distributed",
-  },
-  {
-    time: "05:30 PM - 06:00 PM",
-    title: "Closing Ceremony",
-    description: "Closing Speech, Thank you note, and Feedback",
-  },
-];
-
 export const Schedule = () => {
-  const [day, setDay] = useState(scheduleDataDay1);
-  const [dayNumber, setDayNumber] = useState("Day 1 - 19th May");
-
   return (
     <section
       id="Schedule"
@@ -45,46 +7,117 @@ export const Schedule = () => {
       <div className="title-gradient my-10 text-center text-4xl font-semibold sm:mt-20 sm:text-5xl">
         Schedule
       </div>
-      <div className="z-10 mt-20 w-full max-w-2xl rounded-xl border border-gray-700 bg-gray-900">
-        <div className="flex h-14 justify-between rounded-lg border-b border-gray-700">
-          <div className="flex h-14 w-20 items-center justify-center">
-            <IconChevronLeft
-              onClick={() => {
-                setDay(scheduleDataDay1);
-                setDayNumber("Day 1 - 19th May");
-              }}
-              stroke={1}
-              className="h-10 w-10 rounded-lg text-gray-300 hover:bg-gray-100"
-            />
-          </div>
-          <div className="flex h-14 w-full items-center justify-center">
-            <div className="text-base font-bold text-gray-200 md:text-2xl">
-              {dayNumber}
-            </div>
-          </div>
-          <div className="flex h-14 w-20 items-center justify-center">
-            <IconChevronRight
-              onClick={() => {
-                setDay(scheduleDataDay2);
-                setDayNumber("Day 2 - 20th May");
-              }}
-              stroke={1}
-              className="h-10 w-10 rounded-lg text-gray-300 hover:bg-gray-100"
-            />
-          </div>
-        </div>
-        <div className="flex min-h-[400px] w-full flex-col divide-y divide-gray-700 overflow-y-scroll">
-          {day.map((item) => (
-            <div key={item.title} className="flex flex-col p-4">
-              <div className="text-base font-semibold text-gray-300 md:text-xl">
-                {item.time}
+      <div className="">
+        <div className="main">
+          {/* <div className="mb-4 flex justify-center">
+            <h1 className="text-3xl font-bold text-zinc-400">
+              Day 1 - 19th May
+            </h1>
+          </div> */}
+          <ul className="timeline">
+            <li className="timeline-item">
+              <div className="timeline-content mr-[500px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+                <h2 className="ml-5 text-3xl font-semibold text-white">
+                  12:00 PM, 19th May
+                </h2>
+                <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+                  Opening Ceremony
+                </h2>
+                <p className="text-gray-300">
+                  Vice Chancellor Speech, Sponsors Speech, Rules and Problem
+                  Statement
+                </p>
               </div>
-              <div className="text-base font-semibold text-gray-300 md:text-lg">
-                {item.title}
+            </li>
+            <li className="timeline-item">
+              <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+                <h2 className="ml-5 text-3xl font-semibold text-white">
+                  01:00 PM, 19th May
+                </h2>
+                <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+                  Start of Hackathon
+                </h2>
+                <p className="text-gray-300">
+                  The hackathon kicks Off! Participants begin working on their
+                  projects
+                </p>
               </div>
-              <div className="text-gray-400">{item.description}</div>
-            </div>
-          ))}
+            </li>
+            <li className="timeline-item">
+              <div className="timeline-content mr-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+                <h2 className="ml-5 text-3xl font-semibold text-white">
+                  1:30PM, 19th May
+                </h2>
+                <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+                  Lunch Break
+                </h2>
+              </div>
+            </li>
+            <li className="timeline-item">
+              <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+                <h2 className="ml-5 text-3xl font-semibold text-white">
+                  06:00PM, 19th May
+                </h2>
+                <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+                  Mentorship Session
+                </h2>
+                <p className="text-gray-300">
+                  Mentorship sessions where industry experts and seasoned
+                  professionals will guide you with tips for success in the tech
+                  industry.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul className="timeline">
+            <li className="timeline-item">
+              <div className="timeline-content mr-[500px] w-[46%] rounded-lg border border-gray-700 bg-gray-900">
+                <h2 className="ml-5 text-3xl font-semibold text-white">
+                  01:30PM, 20th May
+                </h2>
+                <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+                  Hackathon Ends!
+                </h2>
+              </div>
+            </li>
+            <li className="timeline-item">
+              <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+                <h2 className="ml-5 text-3xl font-semibold text-white">
+                  2:30PM, 20th May
+                </h2>
+                <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+                  Presentation Round
+                </h2>
+                <p className="text-gray-300">
+                  Participants present their projects to the judges
+                </p>
+              </div>
+            </li>
+            <li className="timeline-item">
+              <div className="timeline-content mr-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+                <h2 className="ml-5 text-3xl font-semibold text-white">
+                  05:00PM, 20th May
+                </h2>
+                <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+                  Announcement of Results
+                </h2>
+                <p className="text-gray-300">
+                  Winners will be announced and prizes will be distributed.
+                </p>
+              </div>
+            </li>
+            <li className="timeline-item">
+              <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+                <h2 className="ml-5 text-3xl font-semibold text-white">
+                  05:30PM, 20th May
+                </h2>
+                <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+                  Closing Ceremony
+                </h2>
+                <p className="text-gray-300">Closing Ceremony</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
