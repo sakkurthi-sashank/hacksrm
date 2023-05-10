@@ -29,7 +29,7 @@ const Images = [
   },
   {
     key: "one",
-    img: "https://media.discordapp.net/attachments/1046339552027082803/1105798786560823296/Group_37.png?width=844&height=740",
+    img: "https://media.discordapp.net/attachments/1046339552027082803/1105799411910590524/repl.png?width=844&height=740",
     alt: "replit",
   },
 
@@ -55,11 +55,7 @@ export const Tracks = () => {
       <div className=" flex w-full flex-wrap justify-center">
         {TopImages.map((image) => (
           <div className="mb-10 sm:mx-5" key={image.key}>
-            <img
-              src={image.img}
-              alt={image.alt}
-              className="w-64"
-            />
+            <img src={image.img} alt={image.alt} className="w-64" />
           </div>
         ))}
         {Images.map((image) => (

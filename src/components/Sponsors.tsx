@@ -26,8 +26,7 @@ const PlatinumSponsorsData = [
   },
   {
     name: "avairsense",
-    image:
-      "/sponsores/avairsense.png",
+    image: "/sponsores/avairsense.png",
     link: "https://www.avairsense.com/",
     sponsorsCategory: "",
     alt: "avairsense LOGO",

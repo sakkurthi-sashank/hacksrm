@@ -1,13 +1,13 @@
 const Images = [
   {
-    key: "second",
-    img: "/sponsores/2nd.png",
-    alt: "SECOND",
-  },
-  {
     key: "first",
     img: "/sponsores/1st.png",
     alt: "FIRST",
+  },
+  {
+    key: "second",
+    img: "/sponsores/2nd.png",
+    alt: "SECOND",
   },
   {
     key: "third",
@@ -25,7 +25,7 @@ export const PrizeWorthSection = () => {
       <div className="mb-6 flex flex-wrap items-center justify-center space-x-3 pb-10 text-center text-3xl font-semibold leading-relaxed text-indigo-200 sm:text-5xl">
         <div>Prizes Worth more than</div>
         <div className="rounded-2xl bg-indigo-500 px-3 py-1.5 text-white">
-        ₹40 LAKHS!
+          ₹40 LAKHS!
         </div>
         {/* <div className="">Rupees</div> */}
       </div>
