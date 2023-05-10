@@ -9,17 +9,17 @@ export const Schedule = () => {
       </div>
       <div className="main">
         {/* <div className="mb-4 flex justify-center">
-            <h1 className="text-3xl font-bold text-zinc-400">
+            <h1 className="text-2xl font-bold text-zinc-400">
               Day 1 - 19th May
             </h1>
           </div> */}
         <ul className="timeline">
           <li className="timeline-item">
-            <div className="timeline-content mr-[500px] min-h-[200px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-              <h2 className="ml-5 text-3xl font-semibold text-white">
+            <div className="timeline-content mr-[500px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+              <h2 className="ml-5 text-2xl font-semibold text-white">
                 12:00 PM, 19th May
               </h2>
-              <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+              <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Opening Ceremony
               </h2>
               <p className="text-gray-300">
@@ -29,11 +29,11 @@ export const Schedule = () => {
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content ml-32 min-h-[200px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-              <h2 className="ml-5 text-3xl font-semibold text-white">
+            <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+              <h2 className="ml-5 text-2xl font-semibold text-white">
                 01:00 PM, 19th May
               </h2>
-              <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+              <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Start of Hackathon
               </h2>
               <p className="text-gray-300">
@@ -43,21 +43,21 @@ export const Schedule = () => {
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content mr-32 min-h-[200px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-              <h2 className="ml-5 text-3xl font-semibold text-white">
+            <div className="timeline-content mr-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+              <h2 className="ml-5 text-2xl font-semibold text-white">
                 1:30PM, 19th May
               </h2>
-              <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+              <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Lunch Break
               </h2>
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content ml-32 min-h-[200px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-              <h2 className="ml-5 text-3xl font-semibold text-white">
+            <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+              <h2 className="ml-5 text-2xl font-semibold text-white">
                 06:00PM, 19th May
               </h2>
-              <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+              <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Mentorship Session
               </h2>
               <p className="text-gray-300">
@@ -70,21 +70,21 @@ export const Schedule = () => {
         </ul>
         <ul className="timeline">
           <li className="timeline-item">
-            <div className="timeline-content mr-[500px] min-h-[200px] w-[46%] rounded-lg border border-gray-700 bg-gray-900">
-              <h2 className="ml-5 text-3xl font-semibold text-white">
+            <div className="timeline-content mr-[500px] w-[46%] rounded-lg border border-gray-700 bg-gray-900">
+              <h2 className="ml-5 text-2xl font-semibold text-white">
                 01:30PM, 20th May
               </h2>
-              <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+              <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Hackathon Ends!
               </h2>
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content ml-32 min-h-[200px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-              <h2 className="ml-5 text-3xl font-semibold text-white">
+            <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+              <h2 className="ml-5 text-2xl font-semibold text-white">
                 2:30PM, 20th May
               </h2>
-              <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+              <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Presentation Round
               </h2>
               <p className="text-gray-300">
@@ -93,11 +93,11 @@ export const Schedule = () => {
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content mr-32 min-h-[200px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-              <h2 className="ml-5 text-3xl font-semibold text-white">
+            <div className="timeline-content mr-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+              <h2 className="ml-5 text-2xl font-semibold text-white">
                 05:00PM, 20th May
               </h2>
-              <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+              <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Announcement of Results
               </h2>
               <p className="text-gray-300">
@@ -106,11 +106,11 @@ export const Schedule = () => {
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content ml-32 min-h-[200px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-              <h2 className="ml-5 text-3xl font-semibold text-white">
+            <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+              <h2 className="ml-5 text-2xl font-semibold text-white">
                 05:30PM, 20th May
               </h2>
-              <h2 className="ml-5 text-2xl font-semibold text-gray-300">
+              <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Closing Ceremony
               </h2>
               <p className="text-gray-300">Closing Ceremony</p>

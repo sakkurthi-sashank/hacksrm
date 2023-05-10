@@ -11,7 +11,7 @@ const TitleSponsers = [
 const PlatinumSponsorsData = [
   {
     name: ".xyz",
-    image: "/sponsores/xyz.png",
+    image: "/sponsores/xyz_1.png",
     link: "https://gen.xyz/",
     sponsorsCategory: "",
     alt: "XYZ LOGO",
@@ -23,6 +23,14 @@ const PlatinumSponsorsData = [
     link: "https://www.taskade.com/",
     sponsorsCategory: "",
     alt: "TASKADE LOGO",
+  },
+  {
+    name: "avairsense",
+    image:
+      "/sponsores/avairsense.png",
+    link: "https://www.avairsense.com/",
+    sponsorsCategory: "",
+    alt: "avairsense LOGO",
   },
   {
     name: "wolfram",
@@ -85,8 +93,11 @@ export const Sponsors = () => {
           <h1 className="flex justify-center">TITLE SPONSOR</h1>
         </div>
         {TitleSponsers.map((title) => (
-          <div className="flex justify-center py-10" key={title.name}>
-            <a href={title.link}>
+          <div
+            className="z-10 flex cursor-pointer justify-center py-10"
+            key={title.name}
+          >
+            <a href={title.link} target="_blank" className="z-10">
               <img src={title.image} alt={title.alt} className="h-20 px-4" />
             </a>
           </div>

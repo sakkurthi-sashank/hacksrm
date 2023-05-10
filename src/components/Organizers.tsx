@@ -2,7 +2,7 @@ const AdvisorsData = [
   {
     name: "Abhiram C",
     image:
-      "https://media.licdn.com/dms/image/C4D03AQHewEBNiwtebw/profile-displayphoto-shrink_800_800/0/1653160094622?e=2147483647&v=beta&t=3OP-RlPP8PDpMQqclfISOo3N9Cp4OwVXztaXVceEllQ",
+      "https://media.discordapp.net/attachments/1028192038463750184/1105801830593736724/Profile.jpg?width=1020&height=1020",
     position: "Advisor",
     team: "",
   },
@@ -31,12 +31,18 @@ const AdvisorsData = [
   {
     name: "Pranav P",
     image:
-      "https://media.licdn.com/dms/image/C5603AQGlhn-LejxWTw/profile-displayphoto-shrink_200_200/0/1602429225647?e=1687392000&v=beta&t=pRn9HnMCMptwRUIefXYcyIItpIvZn1ZxkBsINsA0K-g",
+      "https://media.discordapp.net/attachments/1105806992129396776/1105814416139751484/IMG-20220222-WA0016.jpg?width=764&height=1020",
     position: "Advisor",
     team: "",
   },
 ];
 const OrganizationHead = [
+  {
+    name: "Sashank sakkurthi",
+    image: "/organizers/sakkurthi-sashank.jpeg",
+    position: "Syndicate",
+    team: "Technical",
+  },
   {
     name: "Subrabala Dash",
     image:
@@ -44,13 +50,7 @@ const OrganizationHead = [
     position: "Syndicate",
     team: "Technical",
   },
-  {
-    name: "Sashank sakkurthi",
-    image:
-      "https://media.licdn.com/dms/image/D5603AQEpx_s5egJgnA/profile-displayphoto-shrink_400_400/0/1678972233878?e=1689206400&v=beta&t=qYsAl_Gmepd0t-32-ZDc6YWRon_TJ1wMUtV_vhLnZoI",
-    position: "Syndicate",
-    team: "Technical",
-  },
+
   {
     name: "Amandeep Kumar",
     image:
@@ -101,7 +101,7 @@ const OrganizationHead = [
     team: "Technical",
   },
   {
-    name: "Annirudha",
+    name: "Aniruddha",
     image:
       "https://media.discordapp.net/attachments/1104858606563762307/1104859143770222742/cc6e7247bfa4dfe212a4dc1149cc9346.png",
     position: "Associate",
