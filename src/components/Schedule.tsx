@@ -8,11 +8,6 @@ export const Schedule = () => {
         Schedule
       </div>
       <div className="main">
-        {/* <div className="mb-4 flex justify-center">
-            <h1 className="text-2xl font-bold text-zinc-400">
-              Day 1 - 19th May
-            </h1>
-          </div> */}
         <ul className="timeline">
           <li className="timeline-item">
             <div className="timeline-content mr-[500px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
@@ -20,9 +15,8 @@ export const Schedule = () => {
                 12:00 PM, 19th May
               </h2>
               <h2 className="ml-5 text-xl font-semibold text-gray-300">
-                Opening Ceremony
+                Hackathon Start/Kick Off
               </h2>
-              <p className="text-gray-300">Start Kick off Event</p>
             </div>
           </li>
           <li className="timeline-item">
@@ -33,35 +27,26 @@ export const Schedule = () => {
               <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Start of Hackathon
               </h2>
-              <p className="text-gray-300">
-                The hackathon kicks Off! Participants begin working on their
-                projects
-              </p>
             </div>
           </li>
           <li className="timeline-item">
             <div className="timeline-content mr-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
               <h2 className="ml-5 text-2xl font-semibold text-white">
-                1:30PM, 19th May
+                3:00 PM, 19th May
               </h2>
               <h2 className="ml-5 text-xl font-semibold text-gray-300">
-                Lunch Break
+                A Checkin on the Participants and their Progress (not mandatory)
               </h2>
             </div>
           </li>
           <li className="timeline-item">
             <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
               <h2 className="ml-5 text-2xl font-semibold text-white">
-                06:00PM, 19th May
+                4:00 PM, 19th May
               </h2>
               <h2 className="ml-5 text-xl font-semibold text-gray-300">
-                Mentorship Session
+                Session by Cartesi
               </h2>
-              <p className="text-gray-300">
-                Mentorship sessions where industry experts and seasoned
-                professionals will guide you with tips for success in the tech
-                industry.
-              </p>
             </div>
           </li>
         </ul>
@@ -72,7 +57,7 @@ export const Schedule = () => {
                 01:30PM, 20th May
               </h2>
               <h2 className="ml-5 text-xl font-semibold text-gray-300">
-                Hackathon Ends!
+                Submission Deadline
               </h2>
             </div>
           </li>
@@ -84,9 +69,6 @@ export const Schedule = () => {
               <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Presentation Round
               </h2>
-              <p className="text-gray-300">
-                Participants present their projects to the judges
-              </p>
             </div>
           </li>
           <li className="timeline-item">
@@ -97,20 +79,6 @@ export const Schedule = () => {
               <h2 className="ml-5 text-xl font-semibold text-gray-300">
                 Announcement of Results
               </h2>
-              <p className="text-gray-300">
-                Winners will be announced and prizes will be distributed.
-              </p>
-            </div>
-          </li>
-          <li className="timeline-item">
-            <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-              <h2 className="ml-5 text-2xl font-semibold text-white">
-                05:30PM, 20th May
-              </h2>
-              <h2 className="ml-5 text-xl font-semibold text-gray-300">
-                Closing Ceremony
-              </h2>
-              <p className="text-gray-300">Closing Ceremony</p>
             </div>
           </li>
         </ul>

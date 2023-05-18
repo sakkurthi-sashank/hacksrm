@@ -11,6 +11,7 @@ const themesData = [
   {
     id: 1,
     name: "AI AND ML",
+    prize: "₹ 10,000",
     description:
       "Create innovative applications that leverage machine learning algorithms to solve complex problems, such as predictive analytics, natural language processing and computer vision.",
     icon: <IconRobot className="h-10 w-10 text-white" stroke={1.5} />,
@@ -18,6 +19,7 @@ const themesData = [
   {
     id: 2,
     name: "GAME DEVELOPMENT",
+    prize: "₹ 10,000",
     description:
       "Develop immersive and engaging games, leveraging cutting-edge game engines and technologies to create captivating gameplay experiences.",
     icon: <IconBrandXbox className="h-10 w-10 text-white" stroke={1.5} />,
@@ -25,6 +27,7 @@ const themesData = [
   {
     id: 3,
     name: "I-O-T",
+    prize: "₹ 10,000",
     description:
       "Build connected devices and systems that collect and analyze data in real-time, creating innovative solutions that improve efficiency and productivity across industries.",
     icon: (
@@ -34,6 +37,7 @@ const themesData = [
   {
     id: 4,
     name: "WEB3 AND FIN-TECH",
+    prize: "₹ 10,000",
     description:
       "Build decentralized applications (dApps) that run on the blockchain, leveraging smart contracts to facilitate secure and transparent transactions.",
     icon: (
@@ -43,15 +47,17 @@ const themesData = [
   {
     id: 5,
     name: "AR / VR",
+    prize: "₹ 10,000",
     description:
       "Use augmented and virtual reality technologies to create innovative applications, such as training simulations, entertainment experiences, and marketing campaigns.",
     icon: <IconCardboards className="h-10 w-10 text-white" stroke={1.5} />,
   },
   {
     id: 6,
-    name: "OPEN INNOVATION",
+    name: "BEST WOMEN TECH",
+    prize: "₹ 15,000",
     description:
-      "Envision and engineer pioneering hardware or software solutions, poised to effectuate a benevolent and lasting influence on the global stage.",
+      "Create innovative applications that leverage machine learning algorithms to solve complex problems, such as predictive analytics, natural language processing and computer vision.",
     icon: <IconBrandOpenSource className="h-10 w-10 text-white" stroke={1.5} />,
   },
 ];
@@ -77,6 +83,9 @@ export const Themes = () => {
             </div>
             <div className="text-center text-2xl font-semibold text-white">
               {theme.name}
+            </div>
+            <div className="text-center text-2xl font-semibold text-white">
+              {theme.prize}
             </div>
             <div className="text-center text-gray-300">{theme.description}</div>
           </div>

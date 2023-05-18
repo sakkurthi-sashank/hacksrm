@@ -1,18 +1,13 @@
 const Images = [
   {
     key: "first",
-    img: "/sponsores/1st.png",
+    img: "https://media.discordapp.net/attachments/1026519493100453942/1107723257274175618/new1st.png?width=794&height=1050",
     alt: "FIRST",
   },
   {
     key: "second",
-    img: "/sponsores/2nd.png",
+    img: "https://media.discordapp.net/attachments/1026519493100453942/1107723257538412755/new2nd.png?width=802&height=1050",
     alt: "SECOND",
-  },
-  {
-    key: "third",
-    img: "/sponsores/3rd.png",
-    alt: "THIRD",
   },
 ];
 

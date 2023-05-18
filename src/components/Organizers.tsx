@@ -108,6 +108,13 @@ const OrganizationHead = [
     team: "Technical",
   },
   {
+    name: "N Chaitanya",
+    image:
+      "https://media.discordapp.net/attachments/1101453061681057812/1108285903799070820/IMG-20230517-WA0002.jpg?width=788&height=1050",
+    position: "Associate",
+    team: "Technical",
+  },
+  {
     name: "Shivansh Goel",
     image:
       "https://media.licdn.com/dms/image/D5603AQHJKgrPj7UBZQ/profile-displayphoto-shrink_100_100/0/1670266813666?e=1688601600&v=beta&t=8CMFgzDBV6r6zVRztJuFfUsPK6YydNMS50Juukh5XCU",
@@ -182,6 +189,13 @@ const OrganizationHead = [
     name: "Piyush S",
     image:
       "https://cdn.discordapp.com/attachments/1104869741165826048/1105108287046811708/njkbkj.jpg",
+    position: "Member",
+    team: "Public Relations",
+  },
+  {
+    name: "Rishabh Ranjan",
+    image:
+      "https://media.discordapp.net/attachments/1105053537790074901/1108368778263269427/IMG-20230517-WA0000.jpg?width=592&height=1048",
     position: "Member",
     team: "Public Relations",
   },

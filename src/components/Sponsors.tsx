@@ -1,13 +1,3 @@
-const TitleSponsers = [
-  {
-    name: "nimblebox.ai",
-    image:
-      "https://nimblebox.ai/_next/static/media/site-logo-light.148d6d0b.svg",
-    link: "https://nimblebox.ai/",
-    alt: "NIMBLEBOX LOGO",
-  },
-];
-
 const PlatinumSponsorsData = [
   {
     name: ".xyz",
@@ -88,7 +78,7 @@ export const Sponsors = () => {
       className="min-h-screen bg-gray-900 px-2 pb-4 pt-5 sm:px-10 sm:pt-10"
     >
       <div className="w-full py-10">
-        <div className="title-gradient title-gradient pb-10 text-3xl font-bold sm:text-4xl">
+        {/* <div className="title-gradient title-gradient pb-10 text-3xl font-bold sm:text-4xl">
           <h1 className="flex justify-center">TITLE SPONSOR</h1>
         </div>
         {TitleSponsers.map((title) => (
@@ -100,7 +90,7 @@ export const Sponsors = () => {
               <img src={title.image} alt={title.alt} className="h-20 px-4" />
             </a>
           </div>
-        ))}
+        ))} */}
       </div>
       <h1 className="title-gradient flex justify-center text-4xl font-bold">
         PLATINUM SPONSORS
