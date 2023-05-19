@@ -1,5 +1,20 @@
 const PlatinumSponsorsData = [
   {
+    name: "Lumos Labs",
+    image:
+      "https://media.discordapp.net/attachments/1101453061681057812/1109043353804353546/Lumos_Logo_white.png?width=2206&height=894",
+    link: "https://www.lumoslabs.co/",
+    sponsorsCategory: "",
+    alt: "LUMOS LABS LOGO",
+  },
+  {
+    name: "Cartesi",
+    image:
+      "https://media.discordapp.net/attachments/1100861897756131368/1109022353981198397/Cartesi-ProfilePicture-Brandline-CoreYellow_1646390644HhvVcXpB8b.png?width=1050&height=1050",
+    link: "https://cartesi.io/",
+    sponsorsCategory: "",
+  },
+  {
     name: ".xyz",
     image: "/sponsores/xyz_1.png",
     link: "https://gen.xyz/",
