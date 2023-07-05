@@ -22,7 +22,7 @@ const SocialIcon = ({
   </a>
 );
 
-export const ContactUs = () => {
+export const ContactUsSection = () => {
   const socials = [
     {
       href: "https://www.instagram.com/hacksrm23/",
@@ -49,18 +49,18 @@ export const ContactUs = () => {
   ];
 
   return (
-    <section id="ContactUs" className="min-h-screen bg-gray-900 py-10">
-      <div className="title-gradient my-20 text-center text-4xl font-semibold sm:text-5xl">
+    <section id="ContactUs" className="min-h-screen py-10 space-y-20">
+      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         Contact Us
       </div>
-      <div className="my-8 flex flex-col items-center justify-evenly space-y-10">
+      <div className="my-8 font-roboto-mono flex flex-col items-center justify-evenly">
         <div className="flex items-center justify-center space-x-6">
           <IconMail
             className="h-20 w-20  rounded-full bg-indigo-600 p-4 text-white sm:h-24 sm:w-24"
             stroke={1.5}
           />
 
-          <div className="indigo z-10 text-center text-xl text-gray-200 antialiased sm:text-2xl">
+          <div className="indigo z-10 text-center text-3xl text-gray-200 antialiased sm:text-4xl">
             <a href="mailto:help@hacksrm.tech">help@hacksrm.tech</a>
           </div>
         </div>
@@ -77,7 +77,7 @@ export const ContactUs = () => {
         ))}
       </div>
 
-      <div className="flex flex-col items-center justify-center space-y-6 pt-8 text-white">
+      <div className="flex flex-col font-roboto-mono items-center justify-center space-y-6 pt-8 text-white">
         <h5 className="text-center text-2xl font-semibold text-gray-200">
           In Collaboration With
         </h5>

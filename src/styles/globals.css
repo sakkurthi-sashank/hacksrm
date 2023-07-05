@@ -1,19 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply font-ibm_plex_mono;
-  scroll-behavior: smooth;
+:root {
+  @apply bg-gray-950 antialiased;
 }
 
-@layer components {
-  .title-gradient {
-    @apply bg-gradient-to-b from-indigo-600 to-indigo-100 bg-clip-text text-transparent;
-  }
-}
 
 ::-webkit-scrollbar {
   width: 0px;

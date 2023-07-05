@@ -32,27 +32,27 @@ const WhyHackSRMApData = [
   },
 ];
 
-export const WhyHackSRMAp = () => {
+export const WhyHackSRM = () => {
   return (
     <section
       id="About"
-      className="my-0 min-h-screen bg-gray-900 px-6 py-16 sm:px-20 sm:pt-28"
+      className="my-0 min-h-screen px-6 py-16 sm:px-20 sm:pt-28"
     >
       <div className="max-w-3xl space-y-3">
-        <h2 className="title-gradient font-orbitron z-10 mb-6 text-4xl font-semibold sm:text-5xl">
+        <h2 className="font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA] font-orbitron z-10 mb-6 text-4xl font-semibold sm:text-5xl">
           Why you need to participate in HackSRM?
         </h2>
-        <p className="z-10 text-gray-200">
+        <p className="z-10 font-roboto-mono text-gray-200">
           Hack SRM is a 24-hour hackathon where you can build your dream project
           with your friends and win exciting prizes. It is a great opportunity
           to learn new skills, meet new people, and have fun.
         </p>
       </div>
-      <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <div className="mt-16 grid font-roboto-mono font-light grid-cols-1 gap-6 sm:grid-cols-2">
         {WhyHackSRMApData.map((data, index) => (
           <div
             key={index}
-            className="z-10 flex flex-col items-center justify-center space-y-3 rounded-sm border-2 border-indigo-600 bg-indigo-800 bg-opacity-10 p-8 transition duration-200 hover:shadow-lg"
+            className="z-10 flex flex-col items-center justify-center space-y-3 rounded-sm bg-opacity-10 p-8 transition duration-200 hover:shadow-lg"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600">
               {data.icon}

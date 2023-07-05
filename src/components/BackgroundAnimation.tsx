@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import { random } from "maath";
 
-export const ThreeJsBackground = () => {
+export const BackgroundAnimation = () => {
   return (
     <div className="fixed inset-0 z-0">
       <Canvas camera={{ position: [0, 0, 1] }}>
@@ -17,7 +17,7 @@ export const Stars = (props: any) => {
   const ref = useRef<HTMLInputElement>();
 
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.5 })
+    random.inSphere(new Float32Array(4000), { radius: 2.5 })
   );
 
   useFrame((_state, delta) => {

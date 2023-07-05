@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AdvisorsData = [
   {
     name: "Abhiram C",
@@ -205,22 +207,24 @@ export const OrganizersSection = () => {
   return (
     <section
       id="Organizers"
-      className="min-h-screen rounded-lg bg-gray-900 px-2 pb-4 pt-5 text-lg sm:px-10 sm:pt-10 "
+      className="min-h-screen rounded-lg bg-gray-950 px-2 pb-4 pt-5 text-lg sm:px-10 sm:pt-10 "
     >
-      <div className="title-gradient mb-12 flex justify-center text-4xl font-semibold">
+      <div className="mb-16 pb-4 text-center text-4xl font-semibold sm:text-5xl font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         Organizing Heads
       </div>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
         {AdvisorsData.map((organizer) => (
           <div
-            className="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6"
+            className="z-10 flex w-[44%] font-roboto-mono flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6"
             key={organizer.name}
           >
-            <img
+            <Image
               src={organizer.image}
               loading="lazy"
+              width={64}
+              height={64}
               alt=""
-              className="h-16 w-16 rounded-md object-cover object-center sm:h-32 sm:w-32"
+              className="rounded-md object-cover object-center sm:h-32 sm:w-32"
             />
             <div>
               <div className="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">
@@ -233,7 +237,7 @@ export const OrganizersSection = () => {
           </div>
         ))}
       </div>
-      <div className="title-gradient my-10 py-3 text-center text-4xl font-semibold sm:mt-20">
+      <div className="mb-16 pb-4 text-center text-4xl font-semibold sm:text-5xl font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         Organizers
       </div>
       <div className="flex flex-wrap justify-center gap-4 sm:gap-10">
@@ -242,11 +246,13 @@ export const OrganizersSection = () => {
             className="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6"
             key={organizer.name}
           >
-            <img
+            <Image
               src={organizer.image}
-              loading="lazy"
               alt=""
-              className="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28"
+              loading="lazy"
+              width={64}
+              height={64}
+              className="rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28"
             />
             <div>
               <div className="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">

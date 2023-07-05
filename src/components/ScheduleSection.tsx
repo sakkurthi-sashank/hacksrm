@@ -1,16 +1,16 @@
-export const Schedule = () => {
+export const ScheduleSection = () => {
   return (
     <section
       id="Schedule"
-      className="flex min-h-screen flex-col items-center justify-center bg-gray-900 px-4 pb-4 pt-5 sm:px-10 sm:pt-10"
+      className="flex min-h-screen flex-col items-center justify-center bg-gray-950 px-4 pb-4 pt-5 sm:px-10 sm:pt-10"
     >
-      <div className="title-gradient my-10 text-center text-4xl font-semibold sm:mt-20 sm:text-5xl">
+      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         Schedule
       </div>
-      <div className="main">
+      <div className="main font-roboto-mono">
         <ul className="timeline">
           <li className="timeline-item">
-            <div className="timeline-content mr-[500px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+            <div className="timeline-content mr-[500px] w-[46%] rounded-sm border border-gray-700 bg-gray-950 ">
               <h2 className="ml-5 text-2xl font-semibold text-white">
                 12:00 PM, 19th May
               </h2>
@@ -20,7 +20,7 @@ export const Schedule = () => {
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+            <div className="timeline-content ml-32 w-[46%] rounded-sm border border-gray-700 bg-gray-950">
               <h2 className="ml-5 text-2xl font-semibold text-white">
                 01:00 PM, 19th May
               </h2>
@@ -30,7 +30,7 @@ export const Schedule = () => {
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content mr-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+            <div className="timeline-content mr-32 w-[46%] rounded-sm border border-gray-700 bg-gray-950">
               <h2 className="ml-5 text-2xl font-semibold text-white">
                 3:00 PM, 19th May
               </h2>
@@ -40,7 +40,7 @@ export const Schedule = () => {
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+            <div className="timeline-content ml-32 w-[46%] rounded-sm border border-gray-700 bg-gray-950">
               <h2 className="ml-5 text-2xl font-semibold text-white">
                 4:00 PM, 19th May
               </h2>
@@ -52,7 +52,7 @@ export const Schedule = () => {
         </ul>
         <ul className="timeline">
           <li className="timeline-item">
-            <div className="timeline-content mr-[500px] w-[46%] rounded-lg border border-gray-700 bg-gray-900">
+            <div className="timeline-content mr-[500px] w-[46%] rounded-sm border border-gray-700 bg-gray-950">
               <h2 className="ml-5 text-2xl font-semibold text-white">
                 01:30PM, 20th May
               </h2>
@@ -62,7 +62,7 @@ export const Schedule = () => {
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+            <div className="timeline-content ml-32 w-[46%] rounded-sm border border-gray-700 bg-gray-950">
               <h2 className="ml-5 text-2xl font-semibold text-white">
                 2:30PM, 20th May
               </h2>
@@ -72,7 +72,7 @@ export const Schedule = () => {
             </div>
           </li>
           <li className="timeline-item">
-            <div className="timeline-content mr-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
+            <div className="timeline-content mr-32 w-[46%] rounded-sm border border-gray-700 bg-gray-950">
               <h2 className="ml-5 text-2xl font-semibold text-white">
                 05:00PM, 20th May
               </h2>

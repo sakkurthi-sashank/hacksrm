@@ -86,28 +86,13 @@ const SilverSponsorsData = [
   },
 ];
 
-export const Sponsors = () => {
+export const SponsorSection = () => {
   return (
     <section
       id="Sponsors"
-      className="min-h-screen bg-gray-900 px-2 pb-4 pt-5 sm:px-10 sm:pt-10"
+      className="min-h-screen px-2 pb-4 pt-5 sm:px-10 sm:pt-10"
     >
-      <div className="w-full py-10">
-        {/* <div className="title-gradient title-gradient pb-10 text-3xl font-bold sm:text-4xl">
-          <h1 className="flex justify-center">TITLE SPONSOR</h1>
-        </div>
-        {TitleSponsers.map((title) => (
-          <div
-            className="z-10 flex cursor-pointer justify-center py-10"
-            key={title.name}
-          >
-            <a href={title.link} target="_blank" className="z-10">
-              <img src={title.image} alt={title.alt} className="h-20 px-4" />
-            </a>
-          </div>
-        ))} */}
-      </div>
-      <h1 className="title-gradient flex justify-center text-4xl font-bold">
+      <h1 className="flex justify-center text-4xl font-bold font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         PLATINUM SPONSORS
       </h1>
       <div className="flex flex-wrap justify-center gap-10 py-10">
@@ -121,13 +106,13 @@ export const Sponsors = () => {
                 src={sponsor.image}
                 loading="lazy"
                 alt={sponsor.alt}
-                className={`h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28`}
+                className={`h-auto w-72 rounded-2xl bg-gray-950 object-contain p-3 sm:h-28`}
               />
             </a>
           </div>
         ))}
       </div>
-      <h1 className="title-gradient flex justify-center text-4xl font-bold">
+      <h1 className="flex justify-center text-4xl font-bold font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         GOLD SPONSORS
       </h1>
       <div className="flex flex-wrap justify-center gap-10 py-10">
@@ -141,13 +126,13 @@ export const Sponsors = () => {
                 src={sponsor.image}
                 loading="lazy"
                 alt={sponsor.alt}
-                className={`h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28`}
+                className={`h-auto w-72 rounded-2xl bg-gray-950 object-contain p-3 sm:h-28`}
               />
             </a>
           </div>
         ))}
       </div>
-      <h1 className="title-gradient flex justify-center text-4xl font-bold">
+      <h1 className="flex justify-center text-4xl font-bold font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         SILVER SPONSORS
       </h1>
       <div className="flex flex-wrap justify-center gap-10 py-10">
@@ -161,7 +146,7 @@ export const Sponsors = () => {
                 src={sponsor.image}
                 loading="lazy"
                 alt={sponsor.alt}
-                className={`h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28`}
+                className={`h-auto w-72 rounded-2xl bg-gray-950 object-contain p-3 sm:h-28`}
               />
             </a>
           </div>
