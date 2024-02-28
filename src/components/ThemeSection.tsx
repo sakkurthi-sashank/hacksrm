@@ -18,14 +18,6 @@ const themesData = [
   },
   {
     id: 2,
-    name: "GAME DEVELOPMENT",
-    prize: "10,000 INR",
-    description:
-      "Develop immersive and engaging games, leveraging cutting-edge game engines and technologies to create captivating gameplay experiences.",
-    icon: <IconBrandXbox className="h-10 w-10 text-white" stroke={1.5} />,
-  },
-  {
-    id: 3,
     name: "I-O-T",
     prize: "10,000 INR",
     description:
@@ -35,7 +27,7 @@ const themesData = [
     ),
   },
   {
-    id: 4,
+    id: 3,
     name: "WEB3 AND FIN-TECH",
     prize: "10,000 INR",
     description:
@@ -45,30 +37,38 @@ const themesData = [
     ),
   },
   {
-    id: 5,
-    name: "AR / VR",
-    prize: "10,000 INR",
-    description:
-      "Use augmented and virtual reality technologies to create innovative applications, entertainment experiences, and marketing campaigns.",
-    icon: <IconCardboards className="h-10 w-10 text-white" stroke={1.5} />,
-  },
-  {
-    id: 6,
-    name: "BEST WOMEN TECH",
+    id: 4,
+    name: "OPEN INNOVATION",
     prize: "15,000 INR",
     description:
       "Make Best use of Technology to solve real world problems and make a difference. which women can relate to.",
     icon: <IconBrandOpenSource className="h-10 w-10 text-white" stroke={1.5} />,
+  },
+  {
+    id: 5,
+    name: "Best hack built on Polygon",
+    description:
+      "Polygon is a protocol and a framework for building and connecting Ethereum-compatible blockchain networks.",
+    prize: "200 USD",
+    icon: <IconCardboards className="h-10 w-10 text-white" stroke={1.5} />,
+  },
+  {
+    id: 6,
+    name: "Best hack built on Ethereum",
+    description:
+      "ETHIndia is empowering the Ethereum Community through its various initiatives including hackathons, fellowships, grants, and more!",
+    prize: "100 USD",
+    icon: <IconBrandXbox className="h-10 w-10 text-white" stroke={1.5} />,
   },
 ];
 
 export const ThemeSection = () => {
   return (
     <section id="Themes" className="min-h-screen w-full px-0 py-16 md:px-10">
-      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
+      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-josefin-sans bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         Themes and Prizes
       </div>
-      <div className="grid grid-cols-1 font-roboto-mono gap-10 px-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 font-josefin-sans gap-10 px-4 md:grid-cols-2 lg:grid-cols-3">
         {themesData.map((theme) => (
           <div
             key={theme.id}

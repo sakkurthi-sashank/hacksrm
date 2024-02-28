@@ -4,6 +4,7 @@ import {
   IconBrandTwitter,
   IconBrandLinkedin,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 const SocialIcon = ({
   href,
@@ -35,12 +36,6 @@ export const ContactUsSection = () => {
       ),
     },
     {
-      href: "https://twitter.com/HackSrm23",
-      icon: (
-        <IconBrandTwitter size={50} stroke={1.5} className="text-blue-400" />
-      ),
-    },
-    {
       href: "https://www.linkedin.com/in/hack-srm-0a5624274/",
       icon: (
         <IconBrandLinkedin size={50} stroke={1.5} className="text-blue-600" />
@@ -50,10 +45,10 @@ export const ContactUsSection = () => {
 
   return (
     <section id="ContactUs" className="min-h-screen py-10 space-y-20">
-      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
+      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-josefin-sans bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         Contact Us
       </div>
-      <div className="my-8 font-roboto-mono flex flex-col items-center justify-evenly">
+      <div className="my-8 font-josefin-sans flex flex-col items-center justify-evenly">
         <div className="flex items-center justify-center space-x-6">
           <IconMail
             className="h-20 w-20  rounded-full bg-indigo-600 p-4 text-white sm:h-24 sm:w-24"
@@ -61,7 +56,7 @@ export const ContactUsSection = () => {
           />
 
           <div className="indigo z-10 text-center text-3xl text-gray-200 antialiased sm:text-4xl">
-            <a href="mailto:help@hacksrm.tech">help@hacksrm.tech</a>
+            <a href="mailto:hacksrm23@gmail.com">hacksrm23@gmail.com</a>
           </div>
         </div>
       </div>
@@ -77,14 +72,16 @@ export const ContactUsSection = () => {
         ))}
       </div>
 
-      <div className="flex flex-col font-roboto-mono items-center justify-center space-y-6 pt-8 text-white">
+      <div className="flex flex-col font-josefin-sans items-center justify-center space-y-6 pt-8 text-white">
         <h5 className="text-center text-2xl font-semibold text-gray-200">
-          In Collaboration With
+          Organized by
         </h5>
-        <img
-          src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512128867213382/ntllogo.png"
-          alt="NextTech Logo"
-          className="z-10 h-24 rounded-md p-4"
+        <Image
+          src="/images/student-council.png"
+          alt="Student Council"
+          className="z-10 rounded-md p-4"
+          width={300}
+          height={300}
         />
       </div>
     </section>

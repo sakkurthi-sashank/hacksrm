@@ -40,18 +40,18 @@ const FAQData = [
   {
     question: "What is the venue of the hackathon?",
     answer:
-      "HackSRM will be hosted on May 19th - 20th 2023 through Online. All you need is to create a Discord account to communicate with our HackSRM community.",
+      "HackSRM will be hosted on March 20th - 21sth 2024 at SRM University AP.",
   },
 ];
 
 export function FAQSection() {
   return (
     <section id="FAQs" className="min-h-screen py-4 pt-20">
-      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
+      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-josefin-sans bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         Frequently Asked Questions
       </div>
       <div className="mx-auto px-3">
-        <div className="mx-auto flex max-w-2xl font-roboto-mono flex-col space-y-3 rounded-md">
+        <div className="mx-auto flex max-w-2xl font-josefin-sans flex-col space-y-3 rounded-md">
           {FAQData.map((faq) => {
             return (
               <div key={faq.question} className="z-10">
@@ -78,7 +78,7 @@ const QuestionsAndAnswers = ({
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500"
+        className="flex cursor-pointer bg-black border px-3 border-gray-700 rounded-md justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500"
       >
         <span className="z-10 text-lg font-light antialiased transition duration-100">
           {faq.question}
@@ -96,6 +96,10 @@ const QuestionsAndAnswers = ({
           {faq.answer}
         </p>
       ) : null}
+
+      <div>
+        <span></span>
+      </div>
     </div>
   );
 };

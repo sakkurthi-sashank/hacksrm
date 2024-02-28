@@ -8,7 +8,6 @@ module.exports = {
   theme: {
     fontFamily: {
       "josefin-sans": "var(--font-josefin-sans)",
-      "roboto-mono": "var(--font-roboto-mono)",
     },
   },
   plugins: [],

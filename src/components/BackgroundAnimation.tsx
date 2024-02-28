@@ -17,7 +17,7 @@ export const Stars = (props: any) => {
   const ref = useRef<HTMLInputElement>();
 
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(4000), { radius: 2.5 })
+    random.inSphere(new Float32Array(10000), { radius: 3 })
   );
 
   useFrame((_state, delta) => {

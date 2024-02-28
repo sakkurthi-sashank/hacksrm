@@ -4,10 +4,10 @@ export const ScheduleSection = () => {
       id="Schedule"
       className="flex min-h-screen flex-col items-center justify-center bg-gray-950 px-4 pb-4 pt-5 sm:px-10 sm:pt-10"
     >
-      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-roboto-mono bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
+      <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-josefin-sans bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
         Schedule
       </div>
-      <div className="main font-roboto-mono">
+      <div className="main font-josefin-sans">
         <ul className="timeline">
           <li className="timeline-item">
             <div className="timeline-content mr-[500px] w-[46%] rounded-sm border border-gray-700 bg-gray-950 ">
