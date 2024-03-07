@@ -11,7 +11,7 @@ const themesData = [
   {
     id: 1,
     name: "AI AND ML",
-    prize: "10,000 INR",
+    prize: "120 USD",
     description:
       "Create innovative applications that leverage machine learning algorithms to solve complex problems, natural language and computer vision.",
     icon: <IconRobot className="h-10 w-10 text-white" stroke={1.5} />,
@@ -19,7 +19,7 @@ const themesData = [
   {
     id: 2,
     name: "I-O-T",
-    prize: "10,000 INR",
+    prize: "120 USD",
     description:
       "Build connected devices and systems that collect and analyze data in real-time, creating innovative solutions that improve efficiency.",
     icon: (
@@ -29,7 +29,7 @@ const themesData = [
   {
     id: 3,
     name: "WEB3 AND FIN-TECH",
-    prize: "10,000 INR",
+    prize: "120 USD",
     description:
       "Build decentralized applications (dApps) that run on the blockchain, smart contracts to facilitate secure and transparent transactions.",
     icon: (
@@ -39,7 +39,7 @@ const themesData = [
   {
     id: 4,
     name: "OPEN INNOVATION",
-    prize: "15,000 INR",
+    prize: "60 USD",
     description:
       "Make Best use of Technology to solve real world problems and make a difference. which women can relate to.",
     icon: <IconBrandOpenSource className="h-10 w-10 text-white" stroke={1.5} />,
@@ -66,7 +66,7 @@ export const ThemeSection = () => {
   return (
     <section id="Themes" className="min-h-screen w-full px-0 py-16 md:px-10">
       <div className="mb-20 text-center text-4xl font-semibold sm:text-5xl font-josefin-sans bg-clip-text text-transparent bg-gradient-to-b from-white to-[#AAAAAA]">
-        Themes and Prizes
+        Track Prizes
       </div>
       <div className="grid grid-cols-1 font-josefin-sans gap-10 px-4 md:grid-cols-2 lg:grid-cols-3">
         {themesData.map((theme) => (

@@ -10,6 +10,11 @@
   width: 0px;
 }
 
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 .main {
   padding: 2em 0;
 }

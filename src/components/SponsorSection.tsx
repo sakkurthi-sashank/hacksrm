@@ -1,7 +1,7 @@
 const GoldSponsorsData = [
   {
     name: "Marblism",
-    image: "/sponsores/marblism.jpeg",
+    image: "/sponsores/marblism.png",
     link: "https://www.marblism.com/",
     sponsorsCategory: "",
     alt: "MARBLISM LOGO",
@@ -52,7 +52,7 @@ export const SponsorSection = () => {
                 src={sponsor.image}
                 loading="lazy"
                 alt={sponsor.alt}
-                className={`h-auto w-72 rounded-2xl bg-gray-950 object-contain p-3 sm:h-28`}
+                className={`h-auto w-[500px] rounded-2xl object-contain p-3`}
               />
             </a>
           </div>
@@ -72,7 +72,7 @@ export const SponsorSection = () => {
                 src={sponsor.image}
                 loading="lazy"
                 alt={sponsor.alt}
-                className={`h-auto w-72 rounded-2xl bg-gray-950 object-contain p-3 sm:h-28`}
+                className={`h-auto w-72 rounded-2xl object-contain p-3 sm:h-28`}
               />
             </a>
           </div>

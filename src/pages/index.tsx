@@ -3,6 +3,7 @@ import { ContactUsSection } from "@/components/ContactUsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
+import { MainPrizes } from "@/components/MainPrizes";
 import { OrganizersSection } from "@/components/OrganizersSection";
 import { PrizeSection } from "@/components/PrizeSection";
 import { ScheduleSection } from "@/components/ScheduleSection";
@@ -23,6 +24,7 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <WhyHackSRM />
+      <MainPrizes />
       <ThemeSection />
       <PrizeSection />
       <SponsorSection />

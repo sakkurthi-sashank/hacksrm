@@ -1,3 +1,4 @@
+import { IconBrandDiscord } from "@tabler/icons-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -85,13 +86,22 @@ export const HeroSection = () => {
             <span className="text-lg font-normal">Minutes</span>
           </div>
         </div>
-        <div className="pt-6 z-10 flex gap-x-4">
+        <div className="pt-6 z-10 flex gap-x-4 flex-col gap-y-4">
           <div
             className="apply-button"
             data-hackathon-slug="hack-srm24"
             data-button-theme="light"
             style={{ height: "44px", width: "312px" }}
           ></div>
+          <a
+            href="https://discord.gg/H7tcpbv7Vq"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-80 items-center justify-center gap-2 rounded-md bg-indigo-500 py-2.5 text-white"
+          >
+            <IconBrandDiscord size={24} />
+            <span>Join Discord</span>
+          </a>
         </div>
       </div>
     </section>

@@ -29,10 +29,6 @@ const NavLinks = [
     name: "FAQs",
     link: "FAQs",
   },
-  {
-    name: "Contact Us",
-    link: "ContactUs",
-  },
 ];
 
 export const Header = () => {
@@ -51,6 +47,10 @@ export const Header = () => {
               {link.name}
             </a>
           ))}
+
+          <a className="bg-fuchsia-600 font-medium rounded-md px-3 py-2 text-white">
+            Infinitus
+          </a>
         </div>
       </div>
 
